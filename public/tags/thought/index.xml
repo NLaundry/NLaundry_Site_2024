@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Thought on Nathan Laundry&#39;s Blog</title>
-    <link>https://example.org/tags/thought/</link>
+    <link>https://nathanlaundry.com/tags/thought/</link>
     <description>Recent content in Thought on Nathan Laundry&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 21 Mar 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://example.org/tags/thought/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://nathanlaundry.com/tags/thought/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My Journey Through Reductionism and Determinism</title>
-      <link>https://example.org/shower-thoughts/reductionism/</link>
+      <link>https://nathanlaundry.com/shower-thoughts/reductionism/</link>
       <pubDate>Tue, 21 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>https://example.org/shower-thoughts/reductionism/</guid>
+      <guid>https://nathanlaundry.com/shower-thoughts/reductionism/</guid>
       <description>👋 Hey Friends, Some kids grow up wanting to be firefighters, astronauts, or teachers … I wanted to be Laplace’s Demon. Let me explain.&#xA;Pierre Simon Laplace hypothesized:&#xA;if we knew both the laws of physics and the location of every particle in the universe, we would be able to predict everything that would happen in the future. — Paraphrasing Pierre Simon Laplace on Laplace’s demon&#xA;Laplace attributed these powers to an imagined demon with almost infinite intellect.</description>
     </item>
   </channel>

@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Publications on Nathan Laundry&#39;s Blog</title>
-    <link>https://example.org/publications/</link>
+    <link>https://nathanlaundry.com/publications/</link>
     <description>Recent content in Publications on Nathan Laundry&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 23 Feb 2024 20:09:26 -0500</lastBuildDate>
-    <atom:link href="https://example.org/publications/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://nathanlaundry.com/publications/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ABScribe: Rapid Exploration of Multiple Writing Variations in Human-AI Co-Writing Tasks using Large Language Models</title>
-      <link>https://example.org/publications/abscribe/</link>
+      <link>https://nathanlaundry.com/publications/abscribe/</link>
       <pubDate>Fri, 23 Feb 2024 20:09:26 -0500</pubDate>
-      <guid>https://example.org/publications/abscribe/</guid>
+      <guid>https://nathanlaundry.com/publications/abscribe/</guid>
       <description>Accepted at CHI 2024&#xA;Pre-Print&#xA;Github: ABScribe&#xA;Abstract Exploring alternative ideas by rewriting text is integral to the writing process. State-of-the-art large language models (LLMs) can simplify writing variation generation. However, current interfaces pose challenges for simultaneous consideration of multiple variations: creating new versions without overwriting text can be difficult, and pasting them sequentially can clutter documents, increasing workload and disrupting writers&amp;rsquo; flow. To tackle this, we present ABScribe, an interface that supports rapid, yet visually structured, exploration of writing variations in human-AI co-writing tasks.</description>
     </item>
     <item>
       <title>Toward a Computational Thinking Paradigm</title>
-      <link>https://example.org/publications/masters-thesis/</link>
+      <link>https://nathanlaundry.com/publications/masters-thesis/</link>
       <pubDate>Thu, 23 Feb 2023 20:09:26 -0500</pubDate>
-      <guid>https://example.org/publications/masters-thesis/</guid>
+      <guid>https://nathanlaundry.com/publications/masters-thesis/</guid>
       <description>Master&amp;rsquo;s Thesis&#xA;PDF: [Toward a Computational Thinking Paradigm](Designing, Deploying, and Analyzing Adaptive Educational Field Experiments)&#xA;Abstract Computational Thinking (CT) is crucial in today’s world, but the lack of a shared paradigm poses challenges for researchers addressing key issues like effective teaching. Diverse stakeholder motivations further complicate consensus on definitions, methods, and metrics. This research proposes a CT meta-framework, integrating cognitive science and stakeholder hypotheses, to disambiguate definitions and clarify experimental methods for a CT transfer experiment.</description>
     </item>
     <item>
       <title>Using A/B Testing as a Pedagogical Tool for Iterative Design in HCI Classrooms</title>
-      <link>https://example.org/publications/abtesting-as-a-pedagogical-tool/</link>
+      <link>https://nathanlaundry.com/publications/abtesting-as-a-pedagogical-tool/</link>
       <pubDate>Wed, 23 Feb 2022 20:09:26 -0500</pubDate>
-      <guid>https://example.org/publications/abtesting-as-a-pedagogical-tool/</guid>
+      <guid>https://nathanlaundry.com/publications/abtesting-as-a-pedagogical-tool/</guid>
       <description>Submitted to EduCHI-2023&#xA;Find it Here: PDF&#xA;Abstract This paper explores the use of A/B testing as a pedagogical tool&#xA;for iterative design in HCI classrooms and outlines a vision for&#xA;experiment-inspired design. The traditional focus on the statistical&#xA;aspects of A/B testing education has meant that the equally crucial&#xA;role of iterative design embedded within the experimental process&#xA;has not received commensurate attention. By incorporating iter-&#xA;ative design learning activities that are scaffolded by A/B testing</description>
     </item>
     <item>
       <title>Code Smells as a Framework for Automated Feedback for Novice Programmers - ICERI2021</title>
-      <link>https://example.org/publications/code-smells-as-a-framework/</link>
+      <link>https://nathanlaundry.com/publications/code-smells-as-a-framework/</link>
       <pubDate>Sun, 23 Feb 2020 20:09:26 -0500</pubDate>
-      <guid>https://example.org/publications/code-smells-as-a-framework/</guid>
+      <guid>https://nathanlaundry.com/publications/code-smells-as-a-framework/</guid>
       <description>[Full Paper Here](https://library.iated.org/view/LAUNDRY2021COD) Abstract Students who receive high quality, rapid feedback about their work are advantaged. The absence of feedback within a reasonable timeline can reinforce incorrect learning, instigate student frustration, and ultimately lead to student disengagement. Automated feedback has been shown to be an effective tool that can scale easily to large class sizes and has positive impacts on student learning. Existing feedback mechanisms for computer programmers such as messages produced by compilers and linters are cryptic and not aimed at novice coders.</description>
     </item>
     <item>
       <title>Designing, Deploying, and Analyzing Adaptive Educational Field Experiments</title>
-      <link>https://example.org/publications/designing-deploying-analyzing-educational-field-experiments-workshop/</link>
+      <link>https://nathanlaundry.com/publications/designing-deploying-analyzing-educational-field-experiments-workshop/</link>
       <pubDate>Sun, 23 Feb 2020 20:09:26 -0500</pubDate>
-      <guid>https://example.org/publications/designing-deploying-analyzing-educational-field-experiments-workshop/</guid>
+      <guid>https://nathanlaundry.com/publications/designing-deploying-analyzing-educational-field-experiments-workshop/</guid>
       <description>SIGCSE 2023&#xA;LINK: Designing, Deploying, and Analyzing Adaptive Educational Field Experiments&#xA;Abstract Digital experiments can be used in CSedu to test hypotheses about interventions and conditions&amp;rsquo; efficacy (or inefficacy). This workshop will discuss and deconstruct the design process and analysis for various experiments conducted in CS1. E.g., experiments testing which explanations students find helpful, which emails get them to start homework early, or which webpages effectively encourage and motivate students.</description>
     </item>
   </channel>
