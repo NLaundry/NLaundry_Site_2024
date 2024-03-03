@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Academia on Nathan Laundry&#39;s Blog</title>
+    <link>https://example.org/tags/academia/</link>
+    <description>Recent content in Academia on Nathan Laundry&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 29 Mar 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://example.org/tags/academia/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Turn GPT-4 Into your Personal Literature Review Bot</title>
+      <link>https://example.org/shower-thoughts/chatgpt-litreview/</link>
+      <pubDate>Wed, 29 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>https://example.org/shower-thoughts/chatgpt-litreview/</guid>
+      <description>👋 Hey Friends, Getting into a new field of research requires reading dozens of landmark and seminal papers to understand that field’s foundations. This usually involves the manual process of searching key-words on google scholar, finding papers, polling friends, advisors, colleagues, and other experts for the most important papers. It’s an ad-hoc process that can take months.&#xA;Even more time intensive is conducting a proper, methodical, literature review. Establishing a method, identifying the correct keywords, finding the right databases - it’s difficult but vital work.</description>
+    </item>
+    <item>
+      <title>Turn GPT-4 Into your Personal Literature Review Bot</title>
+      <link>https://example.org/tech/chatgpt-litreview/</link>
+      <pubDate>Wed, 29 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>https://example.org/tech/chatgpt-litreview/</guid>
+      <description>👋 Hey Friends, Getting into a new field of research requires reading dozens of landmark and seminal papers to understand that field’s foundations. This usually involves the manual process of searching key-words on google scholar, finding papers, polling friends, advisors, colleagues, and other experts for the most important papers. It’s an ad-hoc process that can take months.&#xA;Even more time intensive is conducting a proper, methodical, literature review. Establishing a method, identifying the correct keywords, finding the right databases - it’s difficult but vital work.</description>
+    </item>
+    <item>
+      <title>Reconnecting a New Graduate Student Community Post-Covid</title>
+      <link>https://example.org/shower-thoughts/gradstudent-community/</link>
+      <pubDate>Sat, 04 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>https://example.org/shower-thoughts/gradstudent-community/</guid>
+      <description>Tldr; 📧 What Canadian Computer Science Lost in the COVID Years&#xA;📣 How the Loss of Pillar Events will be Felt by our Communities&#xA;📶 Connection for Graduate Computer Science Students&#xA;🦋 Emergent research ideas: how connectivity leads to inspiration&#xA;💔 The Splintering of Research Communities&#xA;🔗 How do we Un-Splinter The COVID Generation of Researchers?&#xA;📲 Concluding: a Call to Action&#xA;📧 What Canadian Computer Science Lost in the COVID Years We’ve all read enough “Covid sucks and here’s why” articles.</description>
+    </item>
+    <item>
+      <title>The 9–5 Graduate Student Schedule: Why I Treat Research Like any Other Job</title>
+      <link>https://example.org/shower-thoughts/9-5gradschool/</link>
+      <pubDate>Sat, 25 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>https://example.org/shower-thoughts/9-5gradschool/</guid>
+      <description>Between 33% and 46% of Ph.D. Students don’t complete their degree [1].&#xA;I don’t know about you, but that sends shivers down my spine. In my reading and previous article on how to succeed with one’s doctoral pursuits, we discussed the many ways that professors have seen graduate students fail to finish their degrees. While most agree on the big things: write consistently, learn by doing, don’t aim too high or low, a major point of contention was time management.</description>
+    </item>
+    <item>
+      <title>Surviving Grad School: What they don&#39;t tell you in Undergrad</title>
+      <link>https://example.org/shower-thoughts/surving-grad-school/</link>
+      <pubDate>Sat, 28 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>https://example.org/shower-thoughts/surving-grad-school/</guid>
+      <description>Hi! I’m Nathan. Hope this little Grad School Survival guide helps :)&#xA;Check out my other work at Nathanlaundry.com&#xA;The TLDR on how to survive your master’s/phd&#xA;Priortize your research, not your grades Listen to your advisors but know when to take the lead Don’t read too much (there is a sweet spot) Learn by problem-solving Don’t leave all your writing to the end As I approach the end of my first year as a graduate student, I’ve begun to look forward; crafting a path towards a successful thesis and setting up for my PhD.</description>
+    </item>
+    <item>
+      <title>How to Write your own HCI Related Works Section Template</title>
+      <link>https://example.org/shower-thoughts/how-to-write-your-own-lit-review-template/</link>
+      <pubDate>Thu, 24 Feb 2022 00:00:00 +0000</pubDate>
+      <guid>https://example.org/shower-thoughts/how-to-write-your-own-lit-review-template/</guid>
+      <description>What you’ll find here&#xA;My process for figuring out what to include in a literature review The template I built for writing future literature reviews So recently I had to write a literature review for one of my classes and I wanted to formalize my approach to doing so. I’ve been working on it for the past few days and thought I’d share what I’ve done so any new graduate students, like myself, can learn from it and hopefully share their own tips and tricks.</description>
+    </item>
+  </channel>
+</rss>

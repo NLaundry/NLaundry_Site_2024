@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<style type=text/css>body{font-family:monospace;}</style>
+	<title>Execute shell commands from inside Vim</title>
+	
+	
+	<link rel="stylesheet" href="/css/style.css">
+	
+	
+</head>
+<body>
+	<header>
+    <h1>Nathan Laundry&#39;s Blog</h1>
+
+    <nav>
+        <a href="/"><b>Home</b></a>.
+        
+        
+        <a href="/shower-thoughts/"><b>Shower Thoughts</b></a>.
+        
+        <a href="/tech/"><b>Tech</b></a>.
+        
+        <a href="/poetry/"><b>Poetry</b></a>.
+        
+        <a href="/talks/"><b>Talks</b></a>.
+        
+        <a href="/publications/"><b>Publications</b></a>.
+        
+    </nav>
+
+    <br/>
+
+	
+</header>
+
+	
+	<main>
+		<article>
+			<h1>Execute shell commands from inside Vim</h1>
+			<b><time>25.02.2024 20:09</time></b>
+		       
+		           <a href="/tags/cli">CLI</a>
+        	       
+		           <a href="/tags/vim">Vim</a>
+        	       
+
+			<div>
+				<p>Vim has some really useful but lesser known features that can be really useful when creating temporary shell scripts. In this tech quickie post, I use Vim <code>:'&lt;,'&gt;!</code> syntax to help me quickly define an entire project in <a href="https://taskwarrior.org/">Taskwarrior - a CLI for task and project management</a>.</p>
+<h3 id="visually-select-a-set-of-lines">Visually Select a Set of Lines</h3>
+<p>In my case, I was setting a series of tasks to port my docker server from Ubuntu to Debian - a subset of the task are listed below.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>task add <span style="color:#e6db74">&#34;REBUILD: server with Debian&#34;</span> project:home_lab.server_redo
+</span></span><span style="display:flex;"><span>task add <span style="color:#e6db74">&#34;CONFIGURE: fresh Debian server with basic settings - user, sudo, etc&#34;</span> project:home_lab.server_redo
+</span></span><span style="display:flex;"><span>task add <span style="color:#e6db74">&#34;SETUP: tailscale&#34;</span> project:home_lab.server_redo
+</span></span><span style="display:flex;"><span>task add <span style="color:#e6db74">&#34;CONFIGURE: Syncthing for DB and Nvim&#34;</span> project:home_lab.server_redo
+</span></span><span style="display:flex;"><span>task add <span style="color:#e6db74">&#34;ADJUST: pihole configurations for more logical IP addresses&#34;</span> project:home_lab.server_redo
+</span></span><span style="display:flex;"><span>task add <span style="color:#e6db74">&#34;SETUP: pihole&#34;</span> project:home_lab.server_redo
+</span></span><span style="display:flex;"><span>...
+</span></span></code></pre></div><p>Typing all this out one by one would&rsquo;ve been a massive pain in the ass. So I used Vim to edit this list of shell commands and execute them quickly and easily.</p>
+<h3 id="entering-ex-mode-with-a-visual-selection">Entering Ex Mode with a Visual Selection</h3>
+<p>After visually selecting the lines you wish to execute, hitting the colon (<code>:</code>) key will enter Ex mode with the visual selection active, which is indicated by:</p>
+<pre tabindex="0"><code class="language-vimscript" data-lang="vimscript">:&#39;&lt;,&#39;&gt;
+</code></pre><p>This notation signifies that Vim has set a mark at the start (<code>'&lt;</code>) and the end (<code>'&gt;</code>) of the visual selection, creating a range. Any command you issue next in this Ex command mode will act on that range.</p>
+<h3 id="executing-shell-commands">Executing Shell Commands</h3>
+<p>To execute the selected lines as shell commands, we use the <code>!</code> Ex command, which tells Vim to execute the following command in the shell. For example, you can execute a simple <code>curl</code> command by typing:</p>
+<pre tabindex="0"><code class="language-vimscript" data-lang="vimscript">!curl https://nathanlaundry.com
+</code></pre><p>Or, to insert the output of the <code>curl</code> command into a temporary buffer in Vim, you can use:</p>
+<pre tabindex="0"><code class="language-vimscript" data-lang="vimscript">:r! curl https://nathanlaundry.com
+</code></pre><h3 id="piping-the-visual-selection-to-the-shell">Piping the Visual Selection to the Shell</h3>
+<p>In our case, we want to execute multiple shell commands listed in our visual selection. To do this, we pipe the text between the markers for the start and end of the visual selection (<code>'&lt;</code> and <code>'&gt;</code>), into <code>sh</code> (the shell), by running:</p>
+<pre tabindex="0"><code class="language-vimscript" data-lang="vimscript">:&#39;&lt;,&#39;&gt;! sh
+</code></pre><p>This command will replace the contents of the visual range with the result of the execution. If you prefer to keep your original commands in the buffer instead of the execution result, simply press <code>u</code> to undo the overwrite in the buffer.</p>
+<p>This is a quick and easy way to write, manipulate, and execute a series of inconveniently long shell commands that you don&rsquo;t want to save as a script and then execute them from the comforts of Vim. Much nicer than saving it as a .sh file, chmod + x, and executing it, followed by deleting the file.</p>
+
+			</div>
+		</article>
+	</main>
+<aside>
+	<div>
+		<div>
+			<h3>LATEST POSTS</h3>
+		</div>
+		<div>
+			<ul>
+				
+				<li><a href="/shower-thoughts/the-point-of-dance/">The Point of Dance</a></li>
+				
+				<li><a href="/tech/execute_sh_commands_from_vim/">Execute shell commands from inside Vim</a></li>
+				
+				<li><a href="/publications/abscribe/">ABScribe: Rapid Exploration of Multiple Writing Variations in Human-AI Co-Writing Tasks using Large Language Models</a></li>
+				
+				<li><a href="/poetry/clockwork-and_clay/">Clockwork and Clay</a></li>
+				
+				<li><a href="/shower-thoughts/its-the-comforts-that-make-us-feel-numb/">It&#39;s the Comforts That Make us Feel Numb.</a></li>
+				
+			</ul>
+		</div>
+	</div>
+</aside>
+
+
+	<footer>
+	<p>&copy; 2024 <a href="https://example.org/"><b>Nathan Laundry&#39;s Blog</b></a>.
+	<a href="https://github.com/example"><b>Github</b></a>.
+	<a href="https://example.com/@user"><b>Mastodon</b></a>.
+	<a href="https://example.substack.com"><b>Substack</b></a>.
+	</p>
+</footer>
+
+</body>
+</html>

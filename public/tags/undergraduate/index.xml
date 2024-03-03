@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Undergraduate on Nathan Laundry&#39;s Blog</title>
+    <link>https://example.org/tags/undergraduate/</link>
+    <description>Recent content in Undergraduate on Nathan Laundry&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 11 Feb 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://example.org/tags/undergraduate/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Increasing Your Surface Area for Serendpity: Finding Opportunities as a Computer Science Undergrad</title>
+      <link>https://example.org/shower-thoughts/csundergrad-opportunities/</link>
+      <pubDate>Sat, 11 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>https://example.org/shower-thoughts/csundergrad-opportunities/</guid>
+      <description>🏃🏽 TLDR — How to find summer research opportunities and freelance programming jobs for undergraduates There is a huge unfulfilled need for programmers outside of the tech-sphere both in research and in industry&#xA;How to find research and freelance opportunities outside of the usual places:&#xA;Go to events and join clubs&#xA;Teach, tutor, and be taught&#xA;Say yes to opportunities wherever you find them&#xA;Opportunities to look out for:&#xA;Data is plentiful and in need of analysis.</description>
+    </item>
+  </channel>
+</rss>
