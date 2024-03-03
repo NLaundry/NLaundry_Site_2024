@@ -1,0 +1,122 @@
++++
+title = "Reconnecting a New Graduate Student Community Post-Covid"
+date = 2023-03-04
+draft = false
+tags = ['Academia', 'Community']
++++
+
+
+## Tldr;
+
+>    📧 What Canadian Computer Science Lost in the COVID Years
+>    📣 How the Loss of Pillar Events will be Felt by our Communities
+>    📶 Connection for Graduate Computer Science Students
+>    🦋 Emergent research ideas: how connectivity leads to inspiration
+>    💔 The Splintering of Research Communities
+>    🔗 How do we Un-Splinter The COVID Generation of Researchers?
+>    📲 Concluding: a Call to Action
+
+## 📧 What Canadian Computer Science Lost in the COVID Years
+
+We’ve all read enough “Covid sucks and here’s why” articles. So for both your and my sanity, I’m going to keep that discussion to a minimum. Instead, I’m going to focus on the Canadian Computer Science community and the broader new graduate student research community. Two events near and dear to my heart have either not been run since the start of COVID or have gone completely virtual and lost major attendance: CUSEC and CSGames.
+
+These events were pillars of the Canadian Computer Science community and identity. I love a good hackathon as much as the next guy, but CSGames and CUSEC were different. They weren’t about creating, instead they were fundamentally about connecting and inspiring. An opportunity to meet, connect and share ideas with Computer science students from all over Canada. They were our annual meeting grounds for nearly 20 years.
+
+Since the lockdowns swept across Canada in March 2020, CSGames has lived in limbo with no resurrection in sight and CUSEC has run online to diminished audiences. But here’s the kicker, even if they do run again someday, the students who organize and attend these events have graduated. When they did their knowledge went with them. It won’t be an easy road building these events back up.
+
+<br/>
+
+> 💡 It only takes 2 years for a student society to lose a tradition.
+
+<br/>
+
+During my undergrad, SOCIS — Guelph’s Computer Science Society — coordinated CUSEC and CSGames attendance. But CSGames has not run for the entirety of the current executives’ time at the university and CUSEC interest waned with its all virtual format. The students that attended these events in the past have graduated and with them, the stories of what made CUSEC and CSGames great have gone. This leaves the new executive with the difficult task of re-establishing the tradition of attending. Not only do they have to learn how to organize student trips and teams, but they also have to realize and share the value of it with a fresh cohort.
+
+It only took 2 years for a 20-year-old tradition to be lost.
+
+## 📣 How the Loss of Pillar Events will be Felt by our Communities
+
+I can only imagine a similar story in the many Computer Science societies across Canada. As interest in and knowledge of these core events flocks off-campus and into scarcely accessed alumni networks undergraduate students lose something intangible but invaluable. Undergraduates lose connection to a Canadian Computer Science network — we lose a broader community of peers.
+
+For every student who struggles to find like-mindedness locally, the students who can’t find the inspiration they need on campus, the students who crave just a little more perspective than their university’s small slice of computer science, Canadian events provided a chance to find it nationally. Without that, it makes me wonder, how many brilliant ideas and students will suffer this loss without even realizing it?
+
+## 📶 Connection for Graduate Computer Science Students
+
+Here’s the thing, the pain of this loss is just as sharp for new graduate students. All the same as our undergraduate colleagues, we are novices in a brand new space. We’re all building our careers from the ground up and the most important part of that process is what and who we let influence us. When we’re siloed off campus by campus and digitally unconnecting one virtual conference at a time, where and when do we find our inspiration and meet one another?
+
+I’m only 1 year into my master’s degree, so I won’t pretend to be an expert on the nature of research. All the same, I can’t help but imagine that the perspective we can gain by meeting other researchers from places and cultures different from our own will only serve to make us better at what we do. We can’t possibly conduct research that will benefit the world with such a narrow view of it. I believe that our ideas — our work — is tightly bound to the diversity of who and what we learn from.
+
+
+## 🦋 Emergent research ideas: how connectivity leads to inspiration
+
+>    Emergence Theory explained briefly by wikipedia:
+
+>    In philosophy, systems theory, science, and art, emergence occurs when an entity is observed to have properties its parts do not have on their own, properties or behaviors which emerge only when the parts interact in a wider whole. — wikipedia article on Emergence
+
+If we imagine that research communities are systems and the ideas and researchers within them are entities that interact when they connect, then it’s not unreasonable to believe that new, more complex, research emerges when those entities interact. The mixing and mingling of research entities produces greater ideas than the sums of their inspirations. This leads me to a totally unfounded but, I claim, plausible corolary.
+
+>   💡 “The diversity and quantity of research ideas generated by a researcher are proportional to the connectivity of the researcher and the research community(ies) they participate in.” — An unfounded corolary to emergence theory by Nathan Laundry
+
+Look, I’m not going to try to prove this to you, this is a blog post, not a paper. For a moment though, let’s assume this is true. We can imagine how it might be. If our only influences are our lab-mates and supervisors, with our readings sprinkled in for spice, the number of ideas floating around, interacting, mixing and mating in our minds, is a fraction of what it could be with a larger network.
+
+I’m told research is different wherever you go. Even just within Canada, this is true. It’s why they tell new graduate students not to get all their degrees from a single institution — to gain perspective. From UofT to Guelph, to UBC the culture is different — so too, I assume, are the very nature of the ideas that spawn from them. By connecting with others, (growing the density of connection in the graph above) we introduce new angles from which we can view our own ideas and enable existing ideas to mix in novel ways. I’d happily argue that this can only lead to the diversity, quantity, and quality of research trending upward.
+
+## 💔 The Splintering of Research Communities
+
+Just like we lost CUSEC and CSGames in undergrad, or their virtual versions have — to no fault of their organizers — produced an awkward sense of what I call unconnection, as graduate students, I imagine we have lost similar opportunities. The current iteration of SOCIS executives has lost the tradition of attending CSGames and CUSEC, so likewise, I wonder what traditions we have lost as new graduate students. I wonder in what ways those traditions would have enriched our experiences.
+
+The inadequacy of online events and the sting of lost conferences are much more impactful for us — new graduates — than our supervisors. Professors with established careers have alongside them, an established network. The tightly woven web of connections feeds new ideas and perspectives, nurtures and helps to grow their existing work. And when did they form those networks? I’d wager during their graduate degrees and the early years of their professorship.
+
+So where does that leave us — the COVID generation of researchers? Are we doomed to isolation and the resulting lack of inspiration? We don’t have to be. Personally, I refuse to be. But our disconnection is a problem that must be solved together and by us, so here’s how I imagine we fix it.
+
+## 🔗 How do we Un-Splinter The COVID Generation of Researchers?
+
+This doesn’t fix itself. The thing about social networks is their connectivity grows with momentum — something we sorely lack. So how do we get the ball rolling? We have to be intentional. There has to be an explicit unrelenting push from new graduate students to connect.
+
+To rebuild the bridges we lost or never got to build during COVID I think we must do three things:
+
+>    Establish novice spaces — publications, conferences, and events
+>    Push for greater inter-institution collaboration on research
+>    Intentionally adopt our supervisors’ networks
+
+## 🔑 Novice Spaces: A space just for us — the new researchers
+
+As a new graduate student, it’s intimidating trying to publish at famous conferences or to speak to monumental figures in the research space. It’s much easier to talk to people who are struggling with the same things we are. A conference or publication dedicated to master’s and Ph.D. students would act as a stepping stone, an introduction into the research space. Not only that, we would have the opportunity to meet people who we could work with for the rest of our careers.
+
+If convincing Springer to publish volumes of nothing but master’s and Ph.D. work sounds too daunting, meet-and-greet events would be an easier first step. Narrow your events down to a very specific niche to draw in exactly who you want to work with or leave it as broad as any and all graduate students just to meet new people. The point is to build momentum, to establish that there is a desire to reconnect.
+
+## 🥼 Inter-lab Collaboration
+
+If novice spaces are a floodlight, establishing a huge surface area of shallow, unfocused connections, inter-lab collaborations are the laser — exact, carving deep connections into our networks.
+
+Inter-lab collaborations give insight into how different researchers and labs conduct research. It’s an intentional injection of new ideas, cultures, and processes. This is key to the formative years of our careers and our research. I doubt there’s just one effective way to do good research so I say, if we’re going to spend the next 6 years or more learning how to do it, we may as well find our style too.
+
+What makes research fun and engaging to you? More than what fields interest you, what methods of conducting research interest you? Working with other labs and building strong connections with new graduates by working alongside them can help us get a grasp of not only what kind of research we want to do but, how we want to do it.
+
+## 🙌🏼 Handing Down Connections
+
+Our supervisors and professors likely have decades of connections built up — we can ask to borrow them. When we have new ideas for projects, chances are there is someone in the research community with ample experience to share — ask to meet them. This is a lot like the inter-lab collaboration but with WAY less overhead.
+
+Just have a chat with someone whose work seems interesting to you. Ask what inspired them to pursue that line of research and if their lab has any grad students working on something similar. We’re all going to spend a lot of time talking and writing about our work, we may as well practice doing so now. Who better to practice with than fellow grad students and who is easier to meet with than your supervisor’s friends and colleagues?
+
+## 📲 Concluding: a Call to Action
+
+What I’m trying to say is that there is a real problem with our lack of connection in the broader research space. Not only have we lost connectivity, much more gravely, we also lost or at least diminished the structures that build it. With this comes the loss of inspiration for ourselves and our work. We may not feel it yet, but the splintering of our generation of researchers will affect the landscape of academia for years to come if we don’t take action. So here it is, a call to action. Reach out to someone whose research interested you and ask about it. Seek out conferences that get you excited. Find inspiration in the connections you form and share that inspiration with others. If nothing else, just say hi to someone new tomorrow.
+
+---
+
+<br/>
+
+Cheers,
+Nathan Laundry
+
+Join my Email Newsletter #GuidingQuestions here
+
+If you liked this post you may like my previous 2:
+
+>    Breaking Down the Literature Review
+>    From Undergraduate to Masters/PhD: How to Handle the Mindset Shift
+
+If you’re curious how I manage my time, try my Notion Template for managing weekly todos
+https://nathanlaundry.com/notion-templates/weekly-sprint-template
+

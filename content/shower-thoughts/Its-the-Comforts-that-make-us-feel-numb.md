@@ -2,40 +2,32 @@
 title = "It's the Comforts That Make us Feel Numb."
 date = 2024-02-22T20:09:26-05:00
 draft = false
+tags = ['Time Management', 'My Life Philosophy']
 +++
 
-# It's the Comforts That Make us Feel Numb
-    #STOP: GRAB THE CHANGES FROM MEDIUM FIRST BEFORE YOU POST!
-    #STOP: GRAB THE CHANGES FROM MEDIUM FIRST BEFORE YOU POST!
-    #STOP: GRAB THE CHANGES FROM MEDIUM FIRST BEFORE YOU POST!
-    #STOP: GRAB THE CHANGES FROM MEDIUM FIRST BEFORE YOU POST!
-    #STOP: GRAB THE CHANGES FROM MEDIUM FIRST BEFORE YOU POST!
-    #STOP: GRAB THE CHANGES FROM MEDIUM FIRST BEFORE YOU POST!
-    #STOP: GRAB THE CHANGES FROM MEDIUM FIRST BEFORE YOU POST!
-    #STOP: GRAB THE CHANGES FROM MEDIUM FIRST BEFORE YOU POST!
-    #STOP: GRAB THE CHANGES FROM MEDIUM FIRST BEFORE YOU POST!
-
-#LifePhilosophy #Time #Effort #Agency 
+---
 
 > I heard once, "It's the comforts that make us feel numb" - Hozier
 
-I want to cover three topics that fall together under the umbrella thought based on the titular quote. To do this, I'll be leveraging Pirsig's notion of *Quality* from Zen and the Art of Motorcycle Maintenance and Frankfurt's concept of Bullshit. 
+And you know what? I think he's right.
 
-First let's lay down some definitions:
-> Quality: Pirsig intentionally does not define Quality, but loosely we can say it is pointed to by our intuitive sense of what is Good. For example, people have an intuitive sense of music, art, food, etc. that is Good, vs  that which is Bad. Note, this does not mean taste, but more so art that is highly skillful and expressive or music that is played well, recorded well, etc. There is a sense of Quality beyond a sense of taste. Moreover, Pirsig extends this into our day to day actions. Actions that put us in touch with reality, a belief that is not manufactured from self-deceit, etc. Actions that Pirsig points to as *High-Quality* tend to be rigourous and, done with attention, care, and effort.
+I think the ways in which we save time, the little eases and comforts, the ergonomics of our lives numb us and erode our sense of meaning. Now, does that mean I churn my own butter and sew my own clothes? Of course not, but it does make me think about the little moments that make up my life and how they make up my sense of meaning.
 
-> *Time-Saver*: Some action that is an alternative to another more effortful or time-consuming action. eg. listening to an audio summary of a book instead of reading the book.
+The conclusion I’ve come to is this:
 
-> *Bullshit* as per Frankfurt : a form of communication that is characterized not by lies but by a complete disregard for truth. I use Bullshit similarly but more to mean a kind of self-deceit that empowers one to accept lower *Quality* actions, beliefs, etc. that afford the Bullshitter some level of comfort whether that be to believe something comforting that is untrue, or to take an action that is lower Quality without acknowledging the sacrifice of *Quality*. For an example see my article on the [Digital Brain and Knowledge Dumping vs Learning](https://nathanlaundry.com/Shower-Thoughts/)
+1.  There are many faster, less effortful ways to do day to day tasks — Time-Savers.
+2.    The concept of a Time-Saver and our motivation to use them is based on Bullshit and it costs us our connection to Quality — ie. Time-Savers are lower Quality actions. We may think a Time-Saver saves us time while we achieve the same goal, but ultimately, any time we try to save-time, we lose out on Quality.
+3.    Doing High-Quality things and being in contact with Quality is core to having a sense of value and meaning in our lives.
 
-With these pseudo-definitions underfoot, the argument is as follows:
+> **Conclusion**: Time-Savers should be avoided at all points where they are not necessary.
 
-1. There are many faster, less effortful ways to do day to day tasks - *Time-Savers*.
-2. The concept of a *Time-Saver* and our motivation to use them is based on Bullshit and it costs us our connection to *Quality* - ie. *Time-Savers* are lower *Quality* actions.
-3. Doing *High-Quality* things and being in contact with *Quality* is core to having a sense of value and meaning in our lives.
+To lay down this argument, I want to make use of some definitions from some of my favourite books and articles.
 
+> **Quality**: Pirsig intentionally does not define Quality, but loosely we can say it is pointed to by our intuitive sense of what is Good. For example, people have an intuitive sense of music, art, food, etc. that is Good, vs  that which is Bad. Note, this does not mean taste, but more so art that is highly skillful and expressive or music that is played well, recorded well, etc. There is a sense of Quality beyond a sense of taste. Moreover, Pirsig extends this into our day to day actions. Actions that put us in touch with reality, a belief that is not manufactured from self-deceit, etc. Actions that Pirsig points to as *High-Quality* tend to be rigourous and, done with attention, care, and effort.
 
-Conclusion: *Time-Savers* should be avoided at all points where they are not necessary.
+> **Bullshit** as per Frankfurt : a form of communication that is characterized not by lies but by a complete disregard for truth. I use Bullshit similarly but more to mean a kind of self-deceit that empowers one to accept lower *Quality* actions, beliefs, etc. that afford the Bullshitter some level of comfort whether that be to believe something comforting that is untrue, or to take an action that is lower Quality without acknowledging the sacrifice of *Quality*. For an example see my article on the [Digital Brain and Knowledge Dumping vs Learning](https://nathanlaundry.com/Shower-Thoughts/)
+
+> **Time-Saver**: Some action that is an alternative to another more effortful or time-consuming action. eg. listening to an audio summary of a book instead of reading the book.
 
 
 ## The Human Intuition for Quality 
@@ -54,7 +46,7 @@ This pattern is everywhere. Many of us aspire to cook more of our own meals inst
 
 But why do we aspire to do the more effortful thing when the *Time-Saver*, satisfies the same goal on the todo-list more quickly and easily - isn't that just more productive? What, is driving our intuition that one is better than the other? 
 
-Pirsig argues it's our intuition for *Quality* that is nagging at us and I think he's right. Deep down we know that taking notes in class by hand will result in better learning than delegating note-taking to AI - and science has demonstrated this repeatedly [CITE](). There's an attention, care, and effort that hand-writing notes takes. It's what makes us skip the task when we're tired and it's what let's us know that the action is *High-Quality*. 
+Pirsig argues it's our intuition for *Quality* that is nagging at us and I think he's right. Deep down we know that taking notes in class by hand will result in better learning than delegating note-taking to AI - and science has demonstrated this repeatedly. There's an attention, care, and effort that hand-writing notes takes. It's what makes us skip the task when we're tired and it's what let's us know that the action is *High-Quality*. 
 
 In the same way, we can feel when music, art, food, exercise, learning is *High-Quality*. When an artefact (painting, song, software, experience, etc.) is produced with effort, care, and attention, for the most part, we can tell and we think of it as better. 
 
