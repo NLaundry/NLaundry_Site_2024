@@ -1,22 +1,15 @@
 +++
-title = "Will is not the Way: How to Actually Reduce Screentime with Choice Architecture"
+title = "Will is not the Way: How to Actually Reduce Screentime"
 date = 2024-02-24T20:09:26-05:00
 draft = true
 tags = ["Digital Minimalism", "Productivity", "Intervention"]
 +++
 
-> "I hate my damn phone but I cannot for the life of me put it down" - me circa 2022 averaging 4 hours of phone screentime a day
+> I don't want to be on my phone, but I can't put it down. - Anonymous Friend #TODO turn this into a quote about average screentime
 
+You've heard it before: "Your phone is killing your attention span and stealing your time!" I don't disagree. It's certainly eaten more of my life than I'd be proud to say. Many of us know the harm and feel the dissatisfaction of hours spent scrolling. And when we can't stop ourselves we point to willpower, energy, time, none of it is enough. 
 
-Over and over again I tried to get rid of my damn phone. I hated the way it demanded my attention at all hours of the day, yet I felt powerless to do anything about it. I would try and succeed for days or weeks at a time to limit my phone use, but eventually, I'd get tired of fighting myself, and begin the scroll of doom again.
-
-I thought if I could be more disciplined, if I could just *want it bad enough* eventually I would overcome it. 
-
-But was that really the limiting factor? Wanting it bad enough?
-
-As someone who believes that a life IS the moments it's comprised of, the thought of my life being ~1/6th scrolling (4hrs/24hrs), just half of what I spend sleeping, filled me with a deep sense of existential dread. Yet, even that wasn't enough to stop me. Will could move me, but not for too long. This problem needs better solutions than Grit. 
-
-Funnily enough, the brilliant PhD and author of Grit, was the one who pointed out to me Grit was not the way.
+I don't think we're wrong about that either. Willpower does really feel like it runs out, and when you do a full day's work, there's no shame in being tired. However, I think we are wrong about one thing: that *will* is what's holding us back.
 
 Duckworth et al. in their paper "Situational strategies for self-control" put it best:
 
@@ -26,11 +19,20 @@ If that's the case, the question is: **How do we arrange our lives to avoid enco
 
 ---
 
+This time last year I was averaging 3.5 hours of phone screentime a day - mostly on reddit, instgram, and youtube.I hated it.
+
+As someone who believes that a life IS the moments it's comprised of, the thought of my life being ~1/6th scrolling (4hrs/24hrs), just half of what I spend sleeping, filled me with a deep sense of existential dread. Yet, even that wasn't enough to stop me. Will wasn't enough to stop me.
 
 Now, I'm not saying willpower is fake. What I am saying is that I wouldn't bet my time - my life - on it. Instead I am slowly and steadily arranging my life so as to avoid needing will in the first place - that way when I really do have to rely on it, I haven't exhausted my supply. This is how.
 
 
 ## Avoiding Will Exhaustion: Building an ecosystem of self-administered nudges
+
+Avoid using will, instead shape your environment using nudges
+- What is a nudge/choice architecture
+- example of how it worked on the public
+- example of how I apply it
+- example of how famous productivity people do it.
 
  To reduce the *need* to rely on willpower, I use what are called Nudges - minimally invasive interventions that make use of known biases in decision making to *nudge* you in the direction of a better choice [Thaler et al.]. Essentially, instead of trying to force myself through brute strength or punishment to choose to read a book instead of scrolling reddit I try to increase the odds that I'll choose to read the book with what's called Choice Architecture. For example I can make it easier to choose reading (architecting my choice) by:
  
@@ -44,17 +46,30 @@ Now, I'm not saying willpower is fake. What I am saying is that I wouldn't bet m
 
 What's amazing is the scales at which this type of intervention can work. Researchers in behavioural-economics, psychology, and Human-Computer Interaction, have deployed tons of these choice architecture or nudge interventions to increase the amount of vegetables grocery shoppers buy, help students decide to start their homework earlier, and decrease screentime [#CITE G something, JJW, One-sec app guy's thesis]. Nudges seem to be a consistently effective way to change behaviour for the better.
 
-Beyond the science, productivity experts have started leaning on Choice Architecture and nudges as an alternative to Grit and Raw Discipline (TM). The immensely successful self-help book *Atomic Habits* by James Clear is founded on the idea of building up habits by making the choices you want to make easier, and the choices you don't want to make harder over time. But don't take my word for it, Clear says it himself:
+Beyond the science, productivity experts have gravitated toward Choice Architecture and nudges too. The immensely successful self-help book *Atomic Habits* by James Clear is founded on the idea of building up habits by making the choices you want to make easier, and the choices you don't want to make harder over time. But don't take my word for it, Clear says it best himself *Four Laws of Behaviour Change* are:
 
-> "The 1st Law (Cue) Make it obvious. The 2nd Law (Craving) Make it attractive. The 3rd Law (Response) Make it easy. The 4th Law (Reward) Make it satisfying."
+> Make it Obvious, Make it Attractive, Make it Easy, and Make it Satisfying. 
 
-It's not just him either, Ali Abdaal's recent book *Feel Good Productivity*, Make Time by Jake Knapp (Author), John Zeratsky (Author), and more all leverage - if not make core - the idea that you can make the choices you want to make, easier to make.
 
-Look, the point is, if the science AND the productivity gurus say it, I'm at least gonna give it a shot.
+ 
 
-So begins my journey to nudge myself out of my phone and into my own life.
 
-### Increase Friction: Dumbing Down the Phone I already have
+
+
+
+
+The approach I've been using is building an ecosystem self-administered nudges to help me be more intentional and make the choices I actually want to make about how to spend my time.
+
+The idea is based on Thaler et al's book, Nudge. where they introduce the concept of minimally invasive interventions that make choosing one option 
+
+
+This whole idea is Put plainly, Choice Architecture or Nudges are minimally invasive ways that you can shape your environment to increase the odds you make one choice over another [Thaler]. For exa
+
+This is based on the thesis of Nudge by Thaler and the core practice of [my supervisor's lab at UofT](https://www.josephjaywilliams.com/home). The idea is 
+
+
+
+### Dumbing Down the Phone I already have
 
 Okay, so you may have seen the "dumbphone" trend. A lot of folks buying new phones that CANT install the apps that drain our attention. While I respect the goal, I'm wary of two things:
 
@@ -63,12 +78,7 @@ Okay, so you may have seen the "dumbphone" trend. A lot of folks buying new phon
 
 To avoid these two things, I decided to dumb down the phone I do have (iphone 12 mini) to make it as untempting as possible while stil allowing me to authenticate with MFA wihtout buying anything new. So far, it's working.
 
-#### Turn off Notifications by Default - Pull vs Push
-
-
-My view of notifications is that they're essentially interventions designed to make activities on your phone salient to you so you'll be more likely to engage with them. Screw. That.
-
-
+#### Turn off Notifications by Default
 The single best thing I did for myself was turning off notifications by default and setting my phone to silent at all times of the day. I was worried at first that I'd miss things. I did ... and it was glorious.
 
 I missed conversations on discord with my friends, then caught back up on my own time. I missed emails by the hundreds so I scheduled in two daily time blocks to go through emails - on my own terms. I missed calls from my girlfriend ... so I set iOS to make it so that her calls specifically gave me notifications and weren't silent.
@@ -83,7 +93,7 @@ Reclaiming your attention is not all or nothing. You can claw back your moments 
 
 #TODO: insert screenshots
 
-#### Uninstall 
+#### Uninstall
 Some things don't need to be on your phone. As a computer science student, I have a lot of devices. This affords me some separation of responsibility between devices.
 
 I made the decision that, on the rare occasion I need to be on social media, I can do that from my laptop. Same with discord, whatsapp, and other messaging platforms except for the basic call and text.
@@ -99,15 +109,14 @@ In the accessibility settings, you can add a colour filter - I chose gray-scale.
 
 
 
-### Activate System 2: Intervening when Will Fails: One sec
+### Intervening when Will Fails: One sec
 
 One Sec is FANTASTIC.
 
 
 
 
-### Creating Good Alternatives
-You need Good choices available to you to be able to choose them. I started out without that.
+### Replacing
 
 Embracing boredom sucks. It's one of those things that takes willpower which. 
 
