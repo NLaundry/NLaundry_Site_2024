@@ -1,6 +1,5 @@
 +++
-title = 'Building Online Gaming Communities: From Features to Emergent Behaviours
-to Online Communities'
+title = 'Building Online Gaming Communities: From Features to Emergent Behaviours to Online Communities'
 date = 2021-02-23T20:09:26-05:00
 draft = false
 +++

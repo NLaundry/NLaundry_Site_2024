@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Time-Management on Nathan Laundry&#39;s Blog</title>
+    <title>Time Management on Nathan Laundry&#39;s Blog</title>
     <link>https://nathanlaundry.com/tags/time-management/</link>
-    <description>Recent content in Time-Management on Nathan Laundry&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Time Management on Nathan Laundry&#39;s Blog</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 22 Feb 2024 20:09:26 -0500</lastBuildDate>
     <atom:link href="https://nathanlaundry.com/tags/time-management/index.xml" rel="self" type="application/rss+xml" />

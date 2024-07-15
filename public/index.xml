@@ -4,7 +4,7 @@
     <title>Nathan Laundry&#39;s Blog</title>
     <link>https://nathanlaundry.com/</link>
     <description>Recent content on Nathan Laundry&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 29 Feb 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://nathanlaundry.com/index.xml" rel="self" type="application/rss+xml" />
@@ -107,6 +107,13 @@
       <description>Between 33% and 46% of Ph.D. Students don’t complete their degree [1].&#xA;I don’t know about you, but that sends shivers down my spine. In my reading and previous article on how to succeed with one’s doctoral pursuits, we discussed the many ways that professors have seen graduate students fail to finish their degrees. While most agree on the big things: write consistently, learn by doing, don’t aim too high or low, a major point of contention was time management.</description>
     </item>
     <item>
+      <title>IN-COURSE EXPERIENCES WITH A SCIOER FOR OBJECT-ORIENTED PROGRAMMING</title>
+      <link>https://nathanlaundry.com/publications/scioer-paper/</link>
+      <pubDate>Thu, 23 Feb 2023 20:09:26 -0500</pubDate>
+      <guid>https://nathanlaundry.com/publications/scioer-paper/</guid>
+      <description>Link Here&#xA;Abstract and Intro STEM learners often find benefit from interactive resources that provide a tutorial-like environment that facilitate guided practice. However, such resources are frequently expensive, and learners are not permitted to retain permanent copies. Online interactive resources are often not completely aligned with the learning outcomes for a class. Instructors may adopt more than one resource to provide a complete set of materials for students, which can increase both the financial burden and the cognitive load for students who must then pay for access to multiple resources and remember which resource to use in each context.</description>
+    </item>
+    <item>
       <title>Toward a Computational Thinking Paradigm</title>
       <link>https://nathanlaundry.com/publications/masters-thesis/</link>
       <pubDate>Thu, 23 Feb 2023 20:09:26 -0500</pubDate>
@@ -140,6 +147,13 @@
       <pubDate>Wed, 25 Jan 2023 00:00:00 +0000</pubDate>
       <guid>https://nathanlaundry.com/talks/vim-no-plugins/</guid>
       <description>&gt; The following is a markdown presentation. I use presenterm to render presentations from the terminal. Vim as a full IDE without Plugins And you thought it couldn&amp;rsquo;t be done. Weak!&#xA;Assumptions You know the basics of how to use Vim Basic Usability Config First we need reasonable config this is pretty minimal &amp;#34; Set your configuration to some reasonable defaults set nocompatible &amp;#34; Enable line numbers set number &amp;#34; Enable line indenting set autoindent set smartindent &amp;#34; Enable syntax highlighting syntax on &amp;#34; Enable search highlighting set hlsearch &amp;#34; set clipboard=unnamedplus set clipboard+=unnamed Windows, Buffers, Splits Resizing and managing Windows ctrl-w Then some stuff</description>
+    </item>
+    <item>
+      <title>SCIOER Course : C Programming</title>
+      <link>https://nathanlaundry.com/publications/scioer-c-course/</link>
+      <pubDate>Mon, 23 Jan 2023 20:09:26 -0500</pubDate>
+      <guid>https://nathanlaundry.com/publications/scioer-c-course/</guid>
+      <description>Available Here&#xA;Description This resource is part of an investigation into a semi-automated process for creating Self-Contained, Interactive Open Educational Resources (SCIOER) for use by students and instructors in the discipline of Computer Science. Resources created through the SCIOER process are self-contained and provide all the tools necessary for learners. The interactive nature of the resource encourages experimentation and incremental practice. Learners are able to annotate SCIOER resources with their personal observations and learnings.</description>
     </item>
     <item>
       <title>To Want</title>
@@ -224,6 +238,13 @@
       <pubDate>Tue, 22 Feb 2022 20:09:26 -0500</pubDate>
       <guid>https://nathanlaundry.com/poetry/in-my-blood/</guid>
       <description>In my Blood A short series of poems dedicated to my grandparents&#xA;Grandma Sometimes I wonder&#xA;who you see&#xA;when you look at me.&#xA;Is that love in your eyes&#xA;or what remains of your kindness?&#xA;Does the heart recall&#xA;what the mind does not?&#xA;Grandpa When your eyes grow heavy&#xA;and you tire of the pain&#xA;we’ll find the strength together&#xA;to carry our name</description>
+    </item>
+    <item>
+      <title>Building Online Gaming Communities: From Features to Emergent Behaviours to Online Communities</title>
+      <link>https://nathanlaundry.com/publications/buidling-online-gaming-communities/</link>
+      <pubDate>Tue, 23 Feb 2021 20:09:26 -0500</pubDate>
+      <guid>https://nathanlaundry.com/publications/buidling-online-gaming-communities/</guid>
+      <description>Unpublished PDF Available here&#xA;Abstract Players form meaningful communities via online games. Game developers can retain players if they support online communities.&#xA;However, existing literature often does not provide actionable advice on how to build online communities and insights gathered&#xA;may only be relevant for one game or one genre of games. Through consolidating existing literature, we found that it may be the&#xA;behaviours that emerged (Emergent Behaviours) that create online communities.</description>
     </item>
     <item>
       <title>Code Smells as a Framework for Automated Feedback for Novice Programmers - ICERI2021</title>

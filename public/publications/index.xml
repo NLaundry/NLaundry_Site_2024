@@ -4,7 +4,7 @@
     <title>Publications on Nathan Laundry&#39;s Blog</title>
     <link>https://nathanlaundry.com/publications/</link>
     <description>Recent content in Publications on Nathan Laundry&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 23 Feb 2024 20:09:26 -0500</lastBuildDate>
     <atom:link href="https://nathanlaundry.com/publications/index.xml" rel="self" type="application/rss+xml" />
@@ -16,6 +16,13 @@
       <description>Accepted at CHI 2024&#xA;Pre-Print&#xA;Github: ABScribe&#xA;Abstract Exploring alternative ideas by rewriting text is integral to the writing process. State-of-the-art large language models (LLMs) can simplify writing variation generation. However, current interfaces pose challenges for simultaneous consideration of multiple variations: creating new versions without overwriting text can be difficult, and pasting them sequentially can clutter documents, increasing workload and disrupting writers&amp;rsquo; flow. To tackle this, we present ABScribe, an interface that supports rapid, yet visually structured, exploration of writing variations in human-AI co-writing tasks.</description>
     </item>
     <item>
+      <title>IN-COURSE EXPERIENCES WITH A SCIOER FOR OBJECT-ORIENTED PROGRAMMING</title>
+      <link>https://nathanlaundry.com/publications/scioer-paper/</link>
+      <pubDate>Thu, 23 Feb 2023 20:09:26 -0500</pubDate>
+      <guid>https://nathanlaundry.com/publications/scioer-paper/</guid>
+      <description>Link Here&#xA;Abstract and Intro STEM learners often find benefit from interactive resources that provide a tutorial-like environment that facilitate guided practice. However, such resources are frequently expensive, and learners are not permitted to retain permanent copies. Online interactive resources are often not completely aligned with the learning outcomes for a class. Instructors may adopt more than one resource to provide a complete set of materials for students, which can increase both the financial burden and the cognitive load for students who must then pay for access to multiple resources and remember which resource to use in each context.</description>
+    </item>
+    <item>
       <title>Toward a Computational Thinking Paradigm</title>
       <link>https://nathanlaundry.com/publications/masters-thesis/</link>
       <pubDate>Thu, 23 Feb 2023 20:09:26 -0500</pubDate>
@@ -23,11 +30,25 @@
       <description>Master&amp;rsquo;s Thesis&#xA;PDF: [Toward a Computational Thinking Paradigm](Designing, Deploying, and Analyzing Adaptive Educational Field Experiments)&#xA;Abstract Computational Thinking (CT) is crucial in today’s world, but the lack of a shared paradigm poses challenges for researchers addressing key issues like effective teaching. Diverse stakeholder motivations further complicate consensus on definitions, methods, and metrics. This research proposes a CT meta-framework, integrating cognitive science and stakeholder hypotheses, to disambiguate definitions and clarify experimental methods for a CT transfer experiment.</description>
     </item>
     <item>
+      <title>SCIOER Course : C Programming</title>
+      <link>https://nathanlaundry.com/publications/scioer-c-course/</link>
+      <pubDate>Mon, 23 Jan 2023 20:09:26 -0500</pubDate>
+      <guid>https://nathanlaundry.com/publications/scioer-c-course/</guid>
+      <description>Available Here&#xA;Description This resource is part of an investigation into a semi-automated process for creating Self-Contained, Interactive Open Educational Resources (SCIOER) for use by students and instructors in the discipline of Computer Science. Resources created through the SCIOER process are self-contained and provide all the tools necessary for learners. The interactive nature of the resource encourages experimentation and incremental practice. Learners are able to annotate SCIOER resources with their personal observations and learnings.</description>
+    </item>
+    <item>
       <title>Using A/B Testing as a Pedagogical Tool for Iterative Design in HCI Classrooms</title>
       <link>https://nathanlaundry.com/publications/abtesting-as-a-pedagogical-tool/</link>
       <pubDate>Wed, 23 Feb 2022 20:09:26 -0500</pubDate>
       <guid>https://nathanlaundry.com/publications/abtesting-as-a-pedagogical-tool/</guid>
       <description>Submitted to EduCHI-2023&#xA;Find it Here: PDF&#xA;Abstract This paper explores the use of A/B testing as a pedagogical tool&#xA;for iterative design in HCI classrooms and outlines a vision for&#xA;experiment-inspired design. The traditional focus on the statistical&#xA;aspects of A/B testing education has meant that the equally crucial&#xA;role of iterative design embedded within the experimental process&#xA;has not received commensurate attention. By incorporating iter-&#xA;ative design learning activities that are scaffolded by A/B testing</description>
+    </item>
+    <item>
+      <title>Building Online Gaming Communities: From Features to Emergent Behaviours to Online Communities</title>
+      <link>https://nathanlaundry.com/publications/buidling-online-gaming-communities/</link>
+      <pubDate>Tue, 23 Feb 2021 20:09:26 -0500</pubDate>
+      <guid>https://nathanlaundry.com/publications/buidling-online-gaming-communities/</guid>
+      <description>Unpublished PDF Available here&#xA;Abstract Players form meaningful communities via online games. Game developers can retain players if they support online communities.&#xA;However, existing literature often does not provide actionable advice on how to build online communities and insights gathered&#xA;may only be relevant for one game or one genre of games. Through consolidating existing literature, we found that it may be the&#xA;behaviours that emerged (Emergent Behaviours) that create online communities.</description>
     </item>
     <item>
       <title>Code Smells as a Framework for Automated Feedback for Novice Programmers - ICERI2021</title>
