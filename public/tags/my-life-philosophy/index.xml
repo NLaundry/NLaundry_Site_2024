@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>My-Life-Philosophy on Nathan Laundry&#39;s Blog</title>
-    <link>http://localhost:1313/tags/my-life-philosophy/</link>
+    <link>https://nathanlaundry.com/tags/my-life-philosophy/</link>
     <description>Recent content in My-Life-Philosophy on Nathan Laundry&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 22 Feb 2024 20:09:26 -0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/my-life-philosophy/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://nathanlaundry.com/tags/my-life-philosophy/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>It&#39;s the Comforts That Make us Feel Numb.</title>
-      <link>http://localhost:1313/shower-thoughts/its-the-comforts-that-make-us-feel-numb/</link>
+      <link>https://nathanlaundry.com/shower-thoughts/its-the-comforts-that-make-us-feel-numb/</link>
       <pubDate>Thu, 22 Feb 2024 20:09:26 -0500</pubDate>
-      <guid>http://localhost:1313/shower-thoughts/its-the-comforts-that-make-us-feel-numb/</guid>
+      <guid>https://nathanlaundry.com/shower-thoughts/its-the-comforts-that-make-us-feel-numb/</guid>
       <description>&lt;hr&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;I heard once, &amp;ldquo;It&amp;rsquo;s the comforts that make us feel numb&amp;rdquo; - Hozier&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;And you know what? I think he&amp;rsquo;s right.&lt;/p&gt;&#xA;&lt;p&gt;I think the ways in which we save time, the little eases and comforts, the ergonomics of our lives numb us and erode our sense of meaning. Now, does that mean I churn my own butter and sew my own clothes? Of course not, but it does make me think about the little moments that make up my life and how they make up my sense of meaning.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Prime then Immerse: How I Learn Difficult Things Quickly</title>
-      <link>http://localhost:1313/shower-thoughts/prime-then-immerse/</link>
+      <link>https://nathanlaundry.com/shower-thoughts/prime-then-immerse/</link>
       <pubDate>Sat, 25 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/shower-thoughts/prime-then-immerse/</guid>
+      <guid>https://nathanlaundry.com/shower-thoughts/prime-then-immerse/</guid>
       <description>&lt;blockquote&gt;&#xA;&lt;p&gt;💡If you want to learn French, move to France.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;-how-i-learned-terminal-driven-linux&#34;&gt;🧑‍💻 How I Learned Terminal Driven Linux&lt;/h2&gt;&#xA;&lt;p&gt;This is my mantra and it all started in 2016, my first year as a Computer Science Undergrad at the University of Guelph. I had been looped in by SOCIS — the Society of Computing and Information Sciences — which sounds a lot more official than it really was. At the time, it was a small community of fellow geeks, nerds, and tech enthusiasts (it’s grown to be much larger than that these days) and the cool thing was Linux. For the uninitiated, Linux is an operating system like Windows or MacOS, but what makes it stand out is it’s completely free, and it’s developed, and used primarily by programmers. In 2016 I decided I was going to learn Linux.&lt;/p&gt;</description>
     </item>
     <item>
       <title>My Journey Through Reductionism and Determinism</title>
-      <link>http://localhost:1313/shower-thoughts/reductionism/</link>
+      <link>https://nathanlaundry.com/shower-thoughts/reductionism/</link>
       <pubDate>Tue, 21 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/shower-thoughts/reductionism/</guid>
+      <guid>https://nathanlaundry.com/shower-thoughts/reductionism/</guid>
       <description>&lt;h2 id=&#34;-hey-friends&#34;&gt;👋 Hey Friends,&lt;/h2&gt;&#xA;&lt;p&gt;Some kids grow up wanting to be firefighters, astronauts, or teachers … I wanted to be Laplace’s Demon. Let me explain.&lt;/p&gt;&#xA;&lt;p&gt;Pierre Simon Laplace hypothesized:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;if we knew both the laws of physics and the location of every particle in the universe, we would be able to predict everything that would happen in the future. — Paraphrasing Pierre Simon Laplace on Laplace’s demon&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;Laplace attributed these powers to an imagined demon with almost infinite intellect. That’s what I wanted to be. Oh the ego on that kid.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to Overcome a Fear of Writing: A Programmer&#39;s Perspective</title>
-      <link>http://localhost:1313/shower-thoughts/fear-of-writing/</link>
+      <link>https://nathanlaundry.com/shower-thoughts/fear-of-writing/</link>
       <pubDate>Sat, 18 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/shower-thoughts/fear-of-writing/</guid>
+      <guid>https://nathanlaundry.com/shower-thoughts/fear-of-writing/</guid>
       <description>&lt;blockquote&gt;&#xA;&lt;p&gt;🔥 “I hate writing and I never want to do it again.” — Nathan Laundry 2013 to 2020&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;And I’m not alone. In Computer Science a lot of us wear our disdain for writing as a badge of honour. Honestly, there’s a sense of comradery in our shared hate for writing. I’d go so far as to say, in the undergrad’s natural habitat — the lecture hall — you can identify Computer Science students by the distinct groan they emit when an essay is assigned.&lt;/p&gt;</description>
     </item>
   </channel>

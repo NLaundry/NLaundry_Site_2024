@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Community on Nathan Laundry&#39;s Blog</title>
-    <link>http://localhost:1313/tags/community/</link>
+    <link>https://nathanlaundry.com/tags/community/</link>
     <description>Recent content in Community on Nathan Laundry&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 04 Mar 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/community/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://nathanlaundry.com/tags/community/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Reconnecting a New Graduate Student Community Post-Covid</title>
-      <link>http://localhost:1313/shower-thoughts/gradstudent-community/</link>
+      <link>https://nathanlaundry.com/shower-thoughts/gradstudent-community/</link>
       <pubDate>Sat, 04 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/shower-thoughts/gradstudent-community/</guid>
+      <guid>https://nathanlaundry.com/shower-thoughts/gradstudent-community/</guid>
       <description>&lt;h2 id=&#34;tldr&#34;&gt;Tldr;&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;📧 What Canadian Computer Science Lost in the COVID Years&lt;br&gt;&#xA;📣 How the Loss of Pillar Events will be Felt by our Communities&lt;br&gt;&#xA;📶 Connection for Graduate Computer Science Students&lt;br&gt;&#xA;🦋 Emergent research ideas: how connectivity leads to inspiration&lt;br&gt;&#xA;💔 The Splintering of Research Communities&lt;br&gt;&#xA;🔗 How do we Un-Splinter The COVID Generation of Researchers?&lt;br&gt;&#xA;📲 Concluding: a Call to Action&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;-what-canadian-computer-science-lost-in-the-covid-years&#34;&gt;📧 What Canadian Computer Science Lost in the COVID Years&lt;/h2&gt;&#xA;&lt;p&gt;We’ve all read enough “Covid sucks and here’s why” articles. So for both your and my sanity, I’m going to keep that discussion to a minimum. Instead, I’m going to focus on the Canadian Computer Science community and the broader new graduate student research community. Two events near and dear to my heart have either not been run since the start of COVID or have gone completely virtual and lost major attendance: CUSEC and CSGames.&lt;/p&gt;</description>
     </item>
   </channel>
