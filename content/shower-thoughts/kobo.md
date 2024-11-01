@@ -4,12 +4,9 @@ date = 2024-11-01T12:02:42-04:00
 draft = false
 +++
 
-Growing up, I was much more into Call of Duty than reading which I've heard is equally valid and useful to you later in life so shut up.
-Luckily for me, at some point Call of Duty began to suck and I started a masters degree that forced me to read. Naturally, as a 22/23 year old who was vaguely into tech and productivity, when prompted with the query "how read book tech?" the brilliance of the youtube algorithm recommended me an Ali Abdaal video on Amazon's Kindle. 
+Growing up, I was much more into Call of Duty than reading which I've heard is equally valid and useful to you later in life so shut up. Luckily for me, at some point Call of Duty began to suck and I started a masters degree that forced me to read. Naturally, as a 22/23 year old who was vaguely into tech and productivity, when prompted with the query *"how read book tech?"* the wisdom of the youtube algorithm delivered unto me an Ali Abdaal video on Amazon's Kindle. 
 
-Gone was my fear of musty old books! Paper? You mean out of trees? Not for me baby! 
-Bezos and I struck a pact. 
-I would read books from his online store and he would make it easy. 
+Gone was my fear of musty old books! Paper? You mean out of trees? Not for me baby! Bezos and I struck a pact. I would read books from his online store and he would make it easy. 
 
 In a turn of events as shocking as lawn mowers on Saturday mornings, I broke that pact the instant I saw the exorbitant prices of textbooks on the amazon store. I was, and am, a broke a\*\* grad student.
 
@@ -44,7 +41,7 @@ It's just files all the way down, dog! Why the hell are we so shook??
 Have you looked at the price of sh\*t on the Amazon store lately? No? Me neither. Screw that. It was high last time and it's probably higher now. 
 But hey, authors gotta get paid (not satire. Please, authors have to get paid. They're people. Except when they're replaced by LLMs. Wtf is happening?? Anyone know?) and Amazon has to take whatever land tax sized cut off the top it takes for letting you ~~rent its digital land~~ use its e-commerce platform.
 
-Okay, so we're in agreement that paying authors is good and a ~~little land tax~~ e-commerce service charge (or whatever) is one of those necessary evils. 
+Okay, so we're in agreement that paying authors is good and a ~~little land tax~~ e-commerce service charge is one of those necessary evils. 
 What's, like, Orwellian or whatever, is that Amazon reserves the right to remove books you've paid for from your library if it somehow loses the rights or realizes it never had the rights in the first place, to sell you that book. Seriously, go watch this guy, who's way smarter than me, talk about it [Jared Henderson's coherent eloquent Amazon BS explanation](https://www.youtube.com/watch?v=xwU5xkXj7Kw&t=65s)
 
 The Kobo, on the other hand, has an online store you can use .. but you can also serve your own calibre instance, if you're homelabby like that, and point the Kobo's store to that. You can host your own store!
