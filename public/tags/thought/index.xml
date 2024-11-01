@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Thought on Nathan Laundry&#39;s Blog</title>
-    <link>https://nathanlaundry.com/tags/thought/</link>
+    <link>http://localhost:1313/tags/thought/</link>
     <description>Recent content in Thought on Nathan Laundry&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 21 Mar 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://nathanlaundry.com/tags/thought/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/thought/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My Journey Through Reductionism and Determinism</title>
-      <link>https://nathanlaundry.com/shower-thoughts/reductionism/</link>
+      <link>http://localhost:1313/shower-thoughts/reductionism/</link>
       <pubDate>Tue, 21 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>https://nathanlaundry.com/shower-thoughts/reductionism/</guid>
-      <description>👋 Hey Friends, Some kids grow up wanting to be firefighters, astronauts, or teachers … I wanted to be Laplace’s Demon. Let me explain.&#xA;Pierre Simon Laplace hypothesized:&#xA;if we knew both the laws of physics and the location of every particle in the universe, we would be able to predict everything that would happen in the future. — Paraphrasing Pierre Simon Laplace on Laplace’s demon&#xA;Laplace attributed these powers to an imagined demon with almost infinite intellect.</description>
+      <guid>http://localhost:1313/shower-thoughts/reductionism/</guid>
+      <description>&lt;h2 id=&#34;-hey-friends&#34;&gt;👋 Hey Friends,&lt;/h2&gt;&#xA;&lt;p&gt;Some kids grow up wanting to be firefighters, astronauts, or teachers … I wanted to be Laplace’s Demon. Let me explain.&lt;/p&gt;&#xA;&lt;p&gt;Pierre Simon Laplace hypothesized:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;if we knew both the laws of physics and the location of every particle in the universe, we would be able to predict everything that would happen in the future. — Paraphrasing Pierre Simon Laplace on Laplace’s demon&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;Laplace attributed these powers to an imagined demon with almost infinite intellect. That’s what I wanted to be. Oh the ego on that kid.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

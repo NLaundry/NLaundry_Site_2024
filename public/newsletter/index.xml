@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Newsletter on Nathan Laundry&#39;s Blog</title>
+    <link>http://localhost:1313/newsletter/</link>
+    <description>Recent content in Newsletter on Nathan Laundry&#39;s Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 23 Feb 2022 20:09:26 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/newsletter/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Burning</title>
+      <link>http://localhost:1313/newsletter/test/</link>
+      <pubDate>Wed, 23 Feb 2022 20:09:26 -0500</pubDate>
+      <guid>http://localhost:1313/newsletter/test/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
