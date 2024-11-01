@@ -49,7 +49,7 @@ What's, like, Orwellian or whatever, is that Amazon reserves the right to remove
 
 The Kobo, on the other hand, has an online store you can use .. but you can also serve your own calibre instance, if you're homelabby like that, and point the Kobo's store to that. You can host your own store!
 
-Why is that useful? I present two scenarios:
+Why is that useful? I present three scenarios:
 1. if you lose your kobo and it was the only place you had your books stored, that would suck. With a calibre instance your books are backed up elsewhere.
 2. if you have more books than your kobo has storage (that's a weird flex but I'm kinda diggin it), just download what you're reading at the time.
 3. if you have a family of readers and you want to manage all their digital libraries from one place.
