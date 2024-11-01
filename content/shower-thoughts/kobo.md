@@ -5,13 +5,15 @@ draft = false
 +++
 
 Growing up, I was much more into Call of Duty than reading which I've heard is equally valid and useful to you later in life so shut up.
-Luckily for me, at some point Call of Duty began to suck and I started a masters degree that forced me to read. Naturally, as a 22/23 year old who was vaguely 
-into tech and productivity, when prompted with the query "how read book tech?" the brilliance of the youtube algorithm recommended me an Ali Abdaal video on Amazon's Kindle. 
+Luckily for me, at some point Call of Duty began to suck and I started a masters degree that forced me to read. Naturally, as a 22/23 year old who was vaguely into tech and productivity, when prompted with the query "how read book tech?" the brilliance of the youtube algorithm recommended me an Ali Abdaal video on Amazon's Kindle. 
 
-Gone was my fear of musty old books! Paper? You mean out of trees? Not for me baby! Bezos and I struck a pact. I would read books from his online store and he would make 
-it easy. I promptly broke that pact when I saw the exorbitant prices of textbooks on the amazon store. 
+Gone was my fear of musty old books! Paper? You mean out of trees? Not for me baby! 
+Bezos and I struck a pact. 
+I would read books from his online store and he would make it easy. 
 
-It's been 3 years or so since that fateful day. I've come to love reading both on my ereader and in paper but man have I come to hate Bezos and this pact.
+In a turn of events as shocking as lawn mowers on Saturday mornings, I broke that pact the instant I saw the exorbitant prices of textbooks on the amazon store. I was, and am, a broke a\*\* grad student.
+
+It's been 3 years or so since that fateful day. I've come to love reading both on my ereader and in paper. And as that love for reading has grown, so too has my firy hatred for a bald man named Jeff and the pact I struck with him in the EULA of the Kindle paperwhite.
 
 That pact, in fact, is why the Kobo rocks - it doesn't f\*ckin have one!
 
