@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-	<meta name="generator" content="Hugo 0.123.7"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta name="generator" content="Hugo 0.136.5"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -47,52 +47,58 @@
     <div>
         <p>Hi, I'm Nathan. I write on:</p>
         <ul>
-            <li><a href="lifeandlab">Life and Lab:</a>  My weekly newsletter. A mix of Unixy things I learned that week and personal insights on self-improvement.</li>
-            <li><a href="shower-thoughts">Shower Thoughts:</a>  This is where I jam anything I'm thinking about. Often slow productivity and trying to find some meaning in the 21st century.</li>
-            <li><a href="tech">Tech:</a>    Detailed homelab project writeups ... or at least I hope</li>
-            <li><a href="talks">Talks:</a>  Slides and possible videos for talks I've done.</li>
-            <li><a href="poetry">Poetry:</a>    Look man, I know I'm cringe. I don't care.</li>
-            <li><a href="publications">Publications:</a>    I publish papers and stuff as an academic. Find them here.</li>
+            <li><a href="lifeandlab">Life and Lab:</a> My weekly newsletter. A mix of Unixy things I learned that week
+                and personal insights on self-improvement.</li>
+            <li><a href="shower-thoughts">Shower Thoughts:</a> This is where I jam anything I'm thinking about. Often
+                slow productivity and trying to find some meaning in the 21st century.</li>
+            <li><a href="tech">Tech:</a> Detailed homelab project writeups ... or at least I hope</li>
+            <li><a href="talks">Talks:</a> Slides and possible videos for talks I've done.</li>
+            <li><a href="poetry">Poetry:</a> Look man, I know I'm cringe. I don't care.</li>
+            <li><a href="publications">Publications:</a> I publish papers and stuff as an academic. Find them here.</li>
         </ul>
 
-        <br/>
-        <h3>Why is your website so plain???</h3>
-        <p>I'm glad you asked.</p>
-        <p>I tried making it pretty before. I think I even succeeded. But, I spent so much time messing with CSS and making this fragile mess of code that I never actually wrote anything. So, I'm going to keep it ugly and actually write stuff this time ... I Hope.</p>
+        <br />
+
+        <h3>Subscribe to my Newsletter - Life and Lab</h3>
+        <iframe src="https://nathanlaundry.substack.com/embed" width="480" height="320"
+            style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+        <p>One part self-improvement, one part homelab musings</p>
 
     </div>
-		
-		
-			<article>
+    
+    
+    <article>
 	<h1><a href="http://localhost:1313/shower-thoughts/kobo/">Why the Kobo Rocks</a></h1>
 	<b><time>01.11.2024 12:02</time></b>
 	
 	<div>
-		Growing up, I was much more into Call of Duty than reading which I&rsquo;ve heard is equally valid and useful to you later in life so shut up. Luckily for me, at some point Call of Duty began to suck and I started a masters degree that forced me to read. Naturally, as a 22/23 year old who was vaguely into tech and productivity, when prompted with the query &ldquo;how read book tech?
+		<p>Growing up, I was much more into Call of Duty than reading which I&rsquo;ve heard is equally valid and useful to you later in life so shut up. Luckily for me, at some point Call of Duty began to suck and I started a masters degree that forced me to read. Naturally, as a 22/23 year old who was vaguely into tech and productivity, when prompted with the query <em>&ldquo;how read book tech?&rdquo;</em> the wisdom of the youtube algorithm delivered unto me an Ali Abdaal video on Amazon&rsquo;s Kindle.</p>
 		
 			<a href="http://localhost:1313/shower-thoughts/kobo/">Read more...</a>
 		
 	</div>
 </article>
 
-		
-			<article>
+    
+    <article>
 	<h1><a href="http://localhost:1313/shower-thoughts/the-point-of-dance/">The Point of Dance</a></h1>
 	<b><time>29.02.2024 00:00</time></b>
 	
 	<div>
-		I can dance if I want to
-I don’t dance. Never have. And i’m adamant that I can’t.
-To no fault of my loving and accepting parents, I grew up a little repressed.
-Some people refer to it as “Gifted Kid” syndrome. Personally, I was never given the title but I over-achieved and felt that paralyzing need to be correct - more than any authority figure could ever place on me.
+		<blockquote>
+<p>I can dance if I want to</p>
+</blockquote>
+<p>I don’t dance. Never have. And i’m adamant that I can’t.</p>
+<p>To no fault of my loving and accepting parents, I grew up a little repressed.</p>
+<p>Some people refer to it as “Gifted Kid” syndrome. Personally, I was never given the title but I over-achieved and felt that paralyzing need to be correct - more than any authority figure could ever place on me. Even at that young age the need to be perfect had settled deep in my bones. And what does one do when their need to be perfect cannot be assuaged? They simply do not act at all.</p>
 		
 			<a href="http://localhost:1313/shower-thoughts/the-point-of-dance/">Read more...</a>
 		
 	</div>
 </article>
 
-		
-			<article>
+    
+    <article>
 	<h1><a href="http://localhost:1313/tech/execute_sh_commands_from_vim/">Execute shell commands from inside Vim</a></h1>
 	<b><time>25.02.2024 20:09</time></b>
 	
@@ -101,49 +107,57 @@ Some people refer to it as “Gifted Kid” syndrome. Personally, I was never gi
 	<a href="/tags/vim">Vim</a>
 	
 	<div>
-		Vim has some really useful but lesser known features that can be really useful when creating temporary shell scripts. In this tech quickie post, I use Vim :'&lt;,'&gt;! syntax to help me quickly define an entire project in Taskwarrior - a CLI for task and project management.
-Visually Select a Set of Lines In my case, I was setting a series of tasks to port my docker server from Ubuntu to Debian - a subset of the task are listed below.
+		<p>Vim has some really useful but lesser known features that can be really useful when creating temporary shell scripts. In this tech quickie post, I use Vim <code>:'&lt;,'&gt;!</code> syntax to help me quickly define an entire project in <a href="https://taskwarrior.org/">Taskwarrior - a CLI for task and project management</a>.</p>
+<h3 id="visually-select-a-set-of-lines">Visually Select a Set of Lines</h3>
+<p>In my case, I was setting a series of tasks to port my docker server from Ubuntu to Debian - a subset of the task are listed below.</p>
 		
 			<a href="http://localhost:1313/tech/execute_sh_commands_from_vim/">Read more...</a>
 		
 	</div>
 </article>
 
-		
-			<article>
+    
+    <article>
 	<h1><a href="http://localhost:1313/publications/abscribe/">ABScribe: Rapid Exploration of Multiple Writing Variations in Human-AI Co-Writing Tasks using Large Language Models</a></h1>
 	<b><time>23.02.2024 20:09</time></b>
 	
 	<div>
-		Accepted at CHI 2024
-Pre-Print
-Github: ABScribe
-Abstract Exploring alternative ideas by rewriting text is integral to the writing process. State-of-the-art large language models (LLMs) can simplify writing variation generation. However, current interfaces pose challenges for simultaneous consideration of multiple variations: creating new versions without overwriting text can be difficult, and pasting them sequentially can clutter documents, increasing workload and disrupting writers&rsquo; flow. To tackle this, we present ABScribe, an interface that supports rapid, yet visually structured, exploration of writing variations in human-AI co-writing tasks.
+		<hr>
+<br/>
+<p>Accepted at CHI 2024<br>
+<a href="https://arxiv.org/abs/2310.00117">Pre-Print</a><br>
+Github: <a href="">ABScribe</a></p>
+<h2 id="abstract">Abstract</h2>
+<p>Exploring alternative ideas by rewriting text is integral to the writing process. State-of-the-art large language models (LLMs) can simplify writing variation generation. However, current interfaces pose challenges for simultaneous consideration of multiple variations: creating new versions without overwriting text can be difficult, and pasting them sequentially can clutter documents, increasing workload and disrupting writers&rsquo; flow. To tackle this, we present ABScribe, an interface that supports rapid, yet visually structured, exploration of writing variations in human-AI co-writing tasks. With ABScribe, users can swiftly produce multiple variations using LLM prompts, which are auto-converted into reusable buttons. Variations are stored adjacently within text segments for rapid in-place comparisons using mouse-over interactions on a context toolbar. Our user study with 12 writers shows that ABScribe significantly reduces task workload (d = 1.20, p &lt; 0.001), enhances user perceptions of the revision process (d = 2.41, p &lt; 0.001) compared to a popular baseline workflow, and provides insights into how writers explore variations using LLMs.</p>
 		
 			<a href="http://localhost:1313/publications/abscribe/">Read more...</a>
 		
 	</div>
 </article>
 
-		
-			<article>
+    
+    <article>
 	<h1><a href="http://localhost:1313/poetry/clockwork-and_clay/">Clockwork and Clay</a></h1>
 	<b><time>22.02.2024 20:09</time></b>
 	
 	<div>
-		Clockwork and Clay THRONE We sired life in bronze and steam and lured in our clockwork Eve
-When this the child of man claims its patricidal throne we&rsquo;ll wonder how we failed to learn from the Gods that came before us
-ORCHARDS Who of us will learn to breathe the smoke and steam that rises form the orchards of Turing&rsquo;s Eden
-OLYMPUS the flame for us
-the bolt for you
+		<h1 id="clockwork-and-clay">Clockwork and Clay</h1>
+<h2 id="throne">THRONE</h2>
+<p>We sired life in bronze and steam and lured in our clockwork Eve</p>
+<p>When this the child of man claims its patricidal throne we&rsquo;ll wonder how we failed to learn from the Gods that came before us</p>
+<h2 id="orchards">ORCHARDS</h2>
+<p>Who of us will learn to breathe the smoke and steam that rises form the orchards of Turing&rsquo;s Eden</p>
+<h2 id="olympus">OLYMPUS</h2>
+<p>the flame for us</p>
+<p>the bolt for you</p>
 		
 			<a href="http://localhost:1313/poetry/clockwork-and_clay/">Read more...</a>
 		
 	</div>
 </article>
 
-		
-			<article>
+    
+    <article>
 	<h1><a href="http://localhost:1313/shower-thoughts/its-the-comforts-that-make-us-feel-numb/">It&#39;s the Comforts That Make us Feel Numb.</a></h1>
 	<b><time>22.02.2024 20:09</time></b>
 	
@@ -152,30 +166,35 @@ the bolt for you
 	<a href="/tags/my-life-philosophy">My Life Philosophy</a>
 	
 	<div>
-		I heard once, &ldquo;It&rsquo;s the comforts that make us feel numb&rdquo; - Hozier
-And you know what? I think he&rsquo;s right.
-I think the ways in which we save time, the little eases and comforts, the ergonomics of our lives numb us and erode our sense of meaning. Now, does that mean I churn my own butter and sew my own clothes? Of course not, but it does make me think about the little moments that make up my life and how they make up my sense of meaning.
+		<hr>
+<blockquote>
+<p>I heard once, &ldquo;It&rsquo;s the comforts that make us feel numb&rdquo; - Hozier</p>
+</blockquote>
+<p>And you know what? I think he&rsquo;s right.</p>
+<p>I think the ways in which we save time, the little eases and comforts, the ergonomics of our lives numb us and erode our sense of meaning. Now, does that mean I churn my own butter and sew my own clothes? Of course not, but it does make me think about the little moments that make up my life and how they make up my sense of meaning.</p>
 		
 			<a href="http://localhost:1313/shower-thoughts/its-the-comforts-that-make-us-feel-numb/">Read more...</a>
 		
 	</div>
 </article>
 
-		
-			<article>
+    
+    <article>
 	<h1><a href="http://localhost:1313/shower-thoughts/stop-trying-to-remember-everything-you-read/">Stop Trying to Remember Everything you Read.</a></h1>
 	<b><time>22.02.2024 20:09</time></b>
 	
 	<div>
-		Stop Trying to Remember Everything you Read. The Having vs Being fallacy of digital second brains and remembering everything you read I was seduced by the Capture Everything, Remember Everything you read, Digital Brain, trend for 2 years. You know what it got me? A Notion AND Roam Research so full I&rsquo;m terrified of looking through them and a long list of books I&rsquo;ve speed read but can barely recall.
+		<h1 id="stop-trying-to-remember-everything-you-read">Stop Trying to Remember Everything you Read.</h1>
+<h2 id="the-having-vs-being-fallacy-of-digital-second-brains-and-remembering-everything-youread">The Having vs Being fallacy of digital second brains and remembering everything you read</h2>
+<p>I was seduced by the Capture Everything, Remember Everything you read, Digital Brain, trend for 2 years. You know what it got me? A Notion AND Roam Research so full I&rsquo;m terrified of looking through them and a long list of books I&rsquo;ve speed read but can barely recall.</p>
 		
 			<a href="http://localhost:1313/shower-thoughts/stop-trying-to-remember-everything-you-read/">Read more...</a>
 		
 	</div>
 </article>
 
-		
-			<article>
+    
+    <article>
 	<h1><a href="http://localhost:1313/shower-thoughts/chatgpt-litreview/">Turn GPT-4 Into your Personal Literature Review Bot</a></h1>
 	<b><time>29.03.2023 00:00</time></b>
 	
@@ -186,16 +205,18 @@ I think the ways in which we save time, the little eases and comforts, the ergon
 	<a href="/tags/literature-review">Literature Review</a>
 	
 	<div>
-		👋 Hey Friends, Getting into a new field of research requires reading dozens of landmark and seminal papers to understand that field’s foundations. This usually involves the manual process of searching key-words on google scholar, finding papers, polling friends, advisors, colleagues, and other experts for the most important papers. It’s an ad-hoc process that can take months.
-Even more time intensive is conducting a proper, methodical, literature review. Establishing a method, identifying the correct keywords, finding the right databases - it’s difficult but vital work.
+		<hr>
+<h3 id="-hey-friends">👋 Hey Friends,</h3>
+<p>Getting into a new field of research requires reading dozens of landmark and seminal papers to understand that field’s foundations. This usually involves the manual process of searching key-words on google scholar, finding papers, polling friends, advisors, colleagues, and other experts for the most important papers. It’s an ad-hoc process that can take months.</p>
+<p>Even more time intensive is conducting a proper, methodical, literature review. Establishing a method, identifying the correct keywords, finding the right databases - it’s difficult but vital work.</p>
 		
 			<a href="http://localhost:1313/shower-thoughts/chatgpt-litreview/">Read more...</a>
 		
 	</div>
 </article>
 
-		
-			<article>
+    
+    <article>
 	<h1><a href="http://localhost:1313/tech/chatgpt-litreview/">Turn GPT-4 Into your Personal Literature Review Bot</a></h1>
 	<b><time>29.03.2023 00:00</time></b>
 	
@@ -206,16 +227,18 @@ Even more time intensive is conducting a proper, methodical, literature review. 
 	<a href="/tags/literature-review">Literature Review</a>
 	
 	<div>
-		👋 Hey Friends, Getting into a new field of research requires reading dozens of landmark and seminal papers to understand that field’s foundations. This usually involves the manual process of searching key-words on google scholar, finding papers, polling friends, advisors, colleagues, and other experts for the most important papers. It’s an ad-hoc process that can take months.
-Even more time intensive is conducting a proper, methodical, literature review. Establishing a method, identifying the correct keywords, finding the right databases - it’s difficult but vital work.
+		<hr>
+<h3 id="-hey-friends">👋 Hey Friends,</h3>
+<p>Getting into a new field of research requires reading dozens of landmark and seminal papers to understand that field’s foundations. This usually involves the manual process of searching key-words on google scholar, finding papers, polling friends, advisors, colleagues, and other experts for the most important papers. It’s an ad-hoc process that can take months.</p>
+<p>Even more time intensive is conducting a proper, methodical, literature review. Establishing a method, identifying the correct keywords, finding the right databases - it’s difficult but vital work.</p>
 		
 			<a href="http://localhost:1313/tech/chatgpt-litreview/">Read more...</a>
 		
 	</div>
 </article>
 
-		
-			<article>
+    
+    <article>
 	<h1><a href="http://localhost:1313/tech/chatgpt-writing-coach/">ChatGPT is my Writing Coach and Editor: Here&#39;s How</a></h1>
 	<b><time>25.03.2023 00:00</time></b>
 	
@@ -224,16 +247,18 @@ Even more time intensive is conducting a proper, methodical, literature review. 
 	<a href="/tags/generative-ai">Generative-AI</a>
 	
 	<div>
-		💡 Truly great writing, the kind that moves us, comes from lived human experiences. This will always be the domain of Sapiens. — A trust me bro statement by Nathan Laundry
-ChatGPT doesn’t have its own stories to share, but it excels at finding mistakes in the ways I write about mine! That’s why ChatGPT and I make a great team. I bring real stories and ChatGPT helps me convey them effectively.
+		<blockquote>
+<p>💡 Truly great writing, the kind that moves us, comes from lived human experiences. This will always be the domain of Sapiens. — A trust me bro statement by Nathan Laundry</p>
+</blockquote>
+<p>ChatGPT doesn’t have its own stories to share, but it excels at finding mistakes in the ways I write about mine! That’s why ChatGPT and I make a great team. I bring real stories and ChatGPT helps me convey them effectively.</p>
 		
 			<a href="http://localhost:1313/tech/chatgpt-writing-coach/">Read more...</a>
 		
 	</div>
 </article>
 
-		
-		<div>
+    
+    <div>
 
 1 of 4
 
@@ -241,7 +266,7 @@ ChatGPT doesn’t have its own stories to share, but it excels at finding mistak
 
 </div>
 
-	</main>
+</main>
 
 	<footer>
 	<p>&copy; 2024 <a href="http://localhost:1313/"><b>Nathan Laundry&#39;s Blog</b></a>.

@@ -4,7 +4,7 @@
     <title>Tech on Nathan Laundry&#39;s Blog</title>
     <link>http://localhost:1313/tech/</link>
     <description>Recent content in Tech on Nathan Laundry&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 25 Feb 2024 20:09:26 -0500</lastBuildDate>
     <atom:link href="http://localhost:1313/tech/index.xml" rel="self" type="application/rss+xml" />
@@ -13,28 +13,28 @@
       <link>http://localhost:1313/tech/execute_sh_commands_from_vim/</link>
       <pubDate>Sun, 25 Feb 2024 20:09:26 -0500</pubDate>
       <guid>http://localhost:1313/tech/execute_sh_commands_from_vim/</guid>
-      <description>Vim has some really useful but lesser known features that can be really useful when creating temporary shell scripts. In this tech quickie post, I use Vim :&#39;&amp;lt;,&#39;&amp;gt;! syntax to help me quickly define an entire project in Taskwarrior - a CLI for task and project management.&#xA;Visually Select a Set of Lines In my case, I was setting a series of tasks to port my docker server from Ubuntu to Debian - a subset of the task are listed below.</description>
+      <description>&lt;p&gt;Vim has some really useful but lesser known features that can be really useful when creating temporary shell scripts. In this tech quickie post, I use Vim &lt;code&gt;:&#39;&amp;lt;,&#39;&amp;gt;!&lt;/code&gt; syntax to help me quickly define an entire project in &lt;a href=&#34;https://taskwarrior.org/&#34;&gt;Taskwarrior - a CLI for task and project management&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h3 id=&#34;visually-select-a-set-of-lines&#34;&gt;Visually Select a Set of Lines&lt;/h3&gt;&#xA;&lt;p&gt;In my case, I was setting a series of tasks to port my docker server from Ubuntu to Debian - a subset of the task are listed below.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Turn GPT-4 Into your Personal Literature Review Bot</title>
       <link>http://localhost:1313/tech/chatgpt-litreview/</link>
       <pubDate>Wed, 29 Mar 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tech/chatgpt-litreview/</guid>
-      <description>👋 Hey Friends, Getting into a new field of research requires reading dozens of landmark and seminal papers to understand that field’s foundations. This usually involves the manual process of searching key-words on google scholar, finding papers, polling friends, advisors, colleagues, and other experts for the most important papers. It’s an ad-hoc process that can take months.&#xA;Even more time intensive is conducting a proper, methodical, literature review. Establishing a method, identifying the correct keywords, finding the right databases - it’s difficult but vital work.</description>
+      <description>&lt;hr&gt;&#xA;&lt;h3 id=&#34;-hey-friends&#34;&gt;👋 Hey Friends,&lt;/h3&gt;&#xA;&lt;p&gt;Getting into a new field of research requires reading dozens of landmark and seminal papers to understand that field’s foundations. This usually involves the manual process of searching key-words on google scholar, finding papers, polling friends, advisors, colleagues, and other experts for the most important papers. It’s an ad-hoc process that can take months.&lt;/p&gt;&#xA;&lt;p&gt;Even more time intensive is conducting a proper, methodical, literature review. Establishing a method, identifying the correct keywords, finding the right databases - it’s difficult but vital work.&lt;/p&gt;</description>
     </item>
     <item>
       <title>ChatGPT is my Writing Coach and Editor: Here&#39;s How</title>
       <link>http://localhost:1313/tech/chatgpt-writing-coach/</link>
       <pubDate>Sat, 25 Mar 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tech/chatgpt-writing-coach/</guid>
-      <description>💡 Truly great writing, the kind that moves us, comes from lived human experiences. This will always be the domain of Sapiens. — A trust me bro statement by Nathan Laundry&#xA;ChatGPT doesn’t have its own stories to share, but it excels at finding mistakes in the ways I write about mine! That’s why ChatGPT and I make a great team. I bring real stories and ChatGPT helps me convey them effectively.</description>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;💡 Truly great writing, the kind that moves us, comes from lived human experiences. This will always be the domain of Sapiens. — A trust me bro statement by Nathan Laundry&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;ChatGPT doesn’t have its own stories to share, but it excels at finding mistakes in the ways I write about mine! That’s why ChatGPT and I make a great team. I bring real stories and ChatGPT helps me convey them effectively.&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
       <link>http://localhost:1313/tech/hugo_site/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tech/hugo_site/</guid>
-      <description>#DRAFT&#xA;goldmark in hugo.toml&#xA;unsafe = true gives me html which is useful for newlines with </description>
+      <description>&lt;p&gt;#DRAFT&lt;br&gt;&#xA;goldmark in hugo.toml&lt;br&gt;&#xA;unsafe = true gives me html which is useful for newlines with &lt;br/&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

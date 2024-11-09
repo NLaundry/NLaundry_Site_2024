@@ -4,7 +4,7 @@
     <title>Vim on Nathan Laundry&#39;s Blog</title>
     <link>http://localhost:1313/tags/vim/</link>
     <description>Recent content in Vim on Nathan Laundry&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 25 Feb 2024 20:09:26 -0500</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/vim/index.xml" rel="self" type="application/rss+xml" />
@@ -13,14 +13,14 @@
       <link>http://localhost:1313/tech/execute_sh_commands_from_vim/</link>
       <pubDate>Sun, 25 Feb 2024 20:09:26 -0500</pubDate>
       <guid>http://localhost:1313/tech/execute_sh_commands_from_vim/</guid>
-      <description>Vim has some really useful but lesser known features that can be really useful when creating temporary shell scripts. In this tech quickie post, I use Vim :&#39;&amp;lt;,&#39;&amp;gt;! syntax to help me quickly define an entire project in Taskwarrior - a CLI for task and project management.&#xA;Visually Select a Set of Lines In my case, I was setting a series of tasks to port my docker server from Ubuntu to Debian - a subset of the task are listed below.</description>
+      <description>&lt;p&gt;Vim has some really useful but lesser known features that can be really useful when creating temporary shell scripts. In this tech quickie post, I use Vim &lt;code&gt;:&#39;&amp;lt;,&#39;&amp;gt;!&lt;/code&gt; syntax to help me quickly define an entire project in &lt;a href=&#34;https://taskwarrior.org/&#34;&gt;Taskwarrior - a CLI for task and project management&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h3 id=&#34;visually-select-a-set-of-lines&#34;&gt;Visually Select a Set of Lines&lt;/h3&gt;&#xA;&lt;p&gt;In my case, I was setting a series of tasks to port my docker server from Ubuntu to Debian - a subset of the task are listed below.&lt;/p&gt;</description>
     </item>
     <item>
       <title>We have IDE at Home -&gt; Vanilla Vim</title>
       <link>http://localhost:1313/talks/vim-no-plugins/</link>
       <pubDate>Wed, 25 Jan 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/talks/vim-no-plugins/</guid>
-      <description>&gt; The following is a markdown presentation. I use presenterm to render presentations from the terminal. Vim as a full IDE without Plugins And you thought it couldn&amp;rsquo;t be done. Weak!&#xA;Assumptions You know the basics of how to use Vim Basic Usability Config First we need reasonable config this is pretty minimal &amp;#34; Set your configuration to some reasonable defaults set nocompatible &amp;#34; Enable line numbers set number &amp;#34; Enable line indenting set autoindent set smartindent &amp;#34; Enable syntax highlighting syntax on &amp;#34; Enable search highlighting set hlsearch &amp;#34; set clipboard=unnamedplus set clipboard+=unnamed Windows, Buffers, Splits Resizing and managing Windows ctrl-w Then some stuff</description>
+      <description>&lt;hr&gt;&#xA;&lt;br/&gt;&#xA;&gt; The following is a markdown presentation. I use presenterm to render presentations from the terminal.&#xA;&lt;h1 id=&#34;vim-as-a-full-ide-without-plugins&#34;&gt;Vim as a full IDE without Plugins&lt;/h1&gt;&#xA;&lt;p&gt;And you thought it couldn&amp;rsquo;t be done. Weak!&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;assumptions&#34;&gt;Assumptions&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;You know the basics of how to use Vim&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;basic-usability-config&#34;&gt;Basic Usability Config&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;First we need reasonable config&lt;/li&gt;&#xA;&lt;li&gt;this is pretty minimal&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-vimscript&#34; data-lang=&#34;vimscript&#34;&gt; &amp;#34; Set your configuration to some reasonable defaults&#xA; set nocompatible              &#xA;&#xA; &amp;#34; Enable line numbers&#xA; set number&#xA;&#xA; &amp;#34; Enable line indenting&#xA; set autoindent&#xA; set smartindent&#xA;&#xA; &amp;#34; Enable syntax highlighting&#xA; syntax on&#xA;&#xA; &amp;#34; Enable search highlighting&#xA; set hlsearch&#xA;&#xA; &amp;#34; set clipboard=unnamedplus&#xA; set clipboard+=unnamed&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;&#xA;&lt;h2 id=&#34;windows-buffers-splits&#34;&gt;Windows, Buffers, Splits&lt;/h2&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;resizing-and-managing-windows&#34;&gt;Resizing and managing Windows&lt;/h2&gt;&#xA;&lt;p&gt;ctrl-w Then some stuff&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

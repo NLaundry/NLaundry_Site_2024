@@ -5,24 +5,27 @@
     <div>
         <p>Hi, I'm Nathan. I write on:</p>
         <ul>
-            <li><a href="lifeandlab">Life and Lab:</a>  My weekly newsletter. A mix of Unixy things I learned that week and personal insights on self-improvement.</li>
-            <li><a href="shower-thoughts">Shower Thoughts:</a>  This is where I jam anything I'm thinking about. Often slow productivity and trying to find some meaning in the 21st century.</li>
-            <li><a href="tech">Tech:</a>    Detailed homelab project writeups ... or at least I hope</li>
-            <li><a href="talks">Talks:</a>  Slides and possible videos for talks I've done.</li>
-            <li><a href="poetry">Poetry:</a>    Look man, I know I'm cringe. I don't care.</li>
-            <li><a href="publications">Publications:</a>    I publish papers and stuff as an academic. Find them here.</li>
+            <li><a href="lifeandlab">Life and Lab:</a> My weekly newsletter. A mix of Unixy things I learned that week
+                and personal insights on self-improvement.</li>
+            <li><a href="shower-thoughts">Shower Thoughts:</a> This is where I jam anything I'm thinking about. Often
+                slow productivity and trying to find some meaning in the 21st century.</li>
+            <li><a href="tech">Tech:</a> Detailed homelab project writeups ... or at least I hope</li>
+            <li><a href="talks">Talks:</a> Slides and possible videos for talks I've done.</li>
+            <li><a href="poetry">Poetry:</a> Look man, I know I'm cringe. I don't care.</li>
+            <li><a href="publications">Publications:</a> I publish papers and stuff as an academic. Find them here.</li>
         </ul>
 
-        <br/>
-        <h3>Why is your website so plain???</h3>
-        <p>I'm glad you asked.</p>
-        <p>I tried making it pretty before. I think I even succeeded. But, I spent so much time messing with CSS and making this fragile mess of code that I never actually wrote anything. So, I'm going to keep it ugly and actually write stuff this time ... I Hope.</p>
+        <br />
+
+        <h3>Subscribe to my Newsletter - Life and Lab</h3>
+        <iframe src="https://nathanlaundry.substack.com/embed" width="480" height="320"
+            style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
 
     </div>
-		{{ $paginator := .Paginate .Site.RegularPages }}
-		{{ range $paginator.Pages }}
-			{{ .Render "summary" }}
-		{{ end }}
-		{{ partial "pagination.html" . }}
-	</main>
+    {{ $paginator := .Paginate .Site.RegularPages }}
+    {{ range $paginator.Pages }}
+    {{ .Render "summary" }}
+    {{ end }}
+    {{ partial "pagination.html" . }}
+</main>
 {{ end }}
