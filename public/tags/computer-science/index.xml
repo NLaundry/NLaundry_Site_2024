@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Computer-Science on Nathan Laundry&#39;s Blog</title>
-    <link>http://localhost:1313/tags/computer-science/</link>
+    <link>https://nathanlaundry.com/tags/computer-science/</link>
     <description>Recent content in Computer-Science on Nathan Laundry&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 18 Mar 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/computer-science/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://nathanlaundry.com/tags/computer-science/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to Overcome a Fear of Writing: A Programmer&#39;s Perspective</title>
-      <link>http://localhost:1313/shower-thoughts/fear-of-writing/</link>
+      <link>https://nathanlaundry.com/shower-thoughts/fear-of-writing/</link>
       <pubDate>Sat, 18 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/shower-thoughts/fear-of-writing/</guid>
+      <guid>https://nathanlaundry.com/shower-thoughts/fear-of-writing/</guid>
       <description>&lt;blockquote&gt;&#xA;&lt;p&gt;🔥 “I hate writing and I never want to do it again.” — Nathan Laundry 2013 to 2020&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;And I’m not alone. In Computer Science a lot of us wear our disdain for writing as a badge of honour. Honestly, there’s a sense of comradery in our shared hate for writing. I’d go so far as to say, in the undergrad’s natural habitat — the lecture hall — you can identify Computer Science students by the distinct groan they emit when an essay is assigned.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Increasing Your Surface Area for Serendpity: Finding Opportunities as a Computer Science Undergrad</title>
-      <link>http://localhost:1313/shower-thoughts/csundergrad-opportunities/</link>
+      <link>https://nathanlaundry.com/shower-thoughts/csundergrad-opportunities/</link>
       <pubDate>Sat, 11 Feb 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/shower-thoughts/csundergrad-opportunities/</guid>
+      <guid>https://nathanlaundry.com/shower-thoughts/csundergrad-opportunities/</guid>
       <description>&lt;h2 id=&#34;-tldr--how-to-find-summer-research-opportunities-and-freelance-programming-jobs-for-undergraduates&#34;&gt;🏃🏽 TLDR — How to find summer research opportunities and freelance programming jobs for undergraduates&lt;/h2&gt;&#xA;&lt;p&gt;There is a huge unfulfilled need for programmers outside of the tech-sphere both in research and in industry&lt;br&gt;&#xA;How to find research and freelance opportunities outside of the usual places:&lt;br&gt;&#xA;Go to events and join clubs&lt;br&gt;&#xA;Teach, tutor, and be taught&lt;br&gt;&#xA;Say yes to opportunities wherever you find them&lt;br&gt;&#xA;Opportunities to look out for:&lt;br&gt;&#xA;Data is plentiful and in need of analysis. Improving data management and providing insights to companies is extremely valuable&lt;br&gt;&#xA;Interdisciplinary research — a lot of research requires a programming aspect these days, offer your services&lt;/p&gt;</description>
     </item>
     <item>
       <title>Increasing Your Surface Area for Serendipity - CUSEC 2023</title>
-      <link>http://localhost:1313/talks/increasing-your-surface-area-for-serendipity/</link>
+      <link>https://nathanlaundry.com/talks/increasing-your-surface-area-for-serendipity/</link>
       <pubDate>Wed, 25 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/talks/increasing-your-surface-area-for-serendipity/</guid>
+      <guid>https://nathanlaundry.com/talks/increasing-your-surface-area-for-serendipity/</guid>
       <description>&lt;hr&gt;&#xA;&lt;br/&gt;&#xA;&#xA;&#xA;    &#xA;    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;&#xA;      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/S7TgqNPUUY?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&#xA;      &gt;&lt;/iframe&gt;&#xA;    &lt;/div&gt;</description>
     </item>
   </channel>

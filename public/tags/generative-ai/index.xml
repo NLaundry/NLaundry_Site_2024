@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Generative-AI on Nathan Laundry&#39;s Blog</title>
-    <link>http://localhost:1313/tags/generative-ai/</link>
+    <link>https://nathanlaundry.com/tags/generative-ai/</link>
     <description>Recent content in Generative-AI on Nathan Laundry&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 25 Mar 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/generative-ai/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://nathanlaundry.com/tags/generative-ai/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ChatGPT is my Writing Coach and Editor: Here&#39;s How</title>
-      <link>http://localhost:1313/tech/chatgpt-writing-coach/</link>
+      <link>https://nathanlaundry.com/tech/chatgpt-writing-coach/</link>
       <pubDate>Sat, 25 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tech/chatgpt-writing-coach/</guid>
+      <guid>https://nathanlaundry.com/tech/chatgpt-writing-coach/</guid>
       <description>&lt;blockquote&gt;&#xA;&lt;p&gt;💡 Truly great writing, the kind that moves us, comes from lived human experiences. This will always be the domain of Sapiens. — A trust me bro statement by Nathan Laundry&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;ChatGPT doesn’t have its own stories to share, but it excels at finding mistakes in the ways I write about mine! That’s why ChatGPT and I make a great team. I bring real stories and ChatGPT helps me convey them effectively.&lt;/p&gt;</description>
     </item>
   </channel>
