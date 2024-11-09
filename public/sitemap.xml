@@ -2,191 +2,191 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://nathanlaundry.com/</loc>
+    <loc>http://localhost:1313/lifeandlab/</loc>
+    <lastmod>2024-11-08T11:55:51-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2024-11-08T11:55:51-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/shower-thoughts/</loc>
     <lastmod>2024-11-01T12:02:42-04:00</lastmod>
   </url><url>
-    <loc>https://nathanlaundry.com/shower-thoughts/</loc>
+    <loc>http://localhost:1313/shower-thoughts/kobo/</loc>
     <lastmod>2024-11-01T12:02:42-04:00</lastmod>
   </url><url>
-    <loc>https://nathanlaundry.com/shower-thoughts/kobo/</loc>
-    <lastmod>2024-11-01T12:02:42-04:00</lastmod>
-  </url><url>
-    <loc>https://nathanlaundry.com/lifeandlab/</loc>
-    <lastmod>2024-10-31T15:52:42-04:00</lastmod>
-  </url><url>
-    <loc>https://nathanlaundry.com/shower-thoughts/the-point-of-dance/</loc>
+    <loc>http://localhost:1313/shower-thoughts/the-point-of-dance/</loc>
     <lastmod>2024-02-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nathanlaundry.com/tags/cli/</loc>
+    <loc>http://localhost:1313/tags/cli/</loc>
     <lastmod>2024-02-25T20:09:26-05:00</lastmod>
   </url><url>
-    <loc>https://nathanlaundry.com/tech/execute_sh_commands_from_vim/</loc>
+    <loc>http://localhost:1313/tech/execute_sh_commands_from_vim/</loc>
     <lastmod>2024-02-25T20:09:26-05:00</lastmod>
   </url><url>
-    <loc>https://nathanlaundry.com/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2024-02-25T20:09:26-05:00</lastmod>
   </url><url>
-    <loc>https://nathanlaundry.com/tech/</loc>
+    <loc>http://localhost:1313/tech/</loc>
     <lastmod>2024-02-25T20:09:26-05:00</lastmod>
   </url><url>
-    <loc>https://nathanlaundry.com/tags/vim/</loc>
+    <loc>http://localhost:1313/tags/vim/</loc>
     <lastmod>2024-02-25T20:09:26-05:00</lastmod>
   </url><url>
-    <loc>https://nathanlaundry.com/publications/abscribe/</loc>
+    <loc>http://localhost:1313/publications/abscribe/</loc>
     <lastmod>2024-02-23T20:09:26-05:00</lastmod>
   </url><url>
-    <loc>https://nathanlaundry.com/publications/</loc>
+    <loc>http://localhost:1313/publications/</loc>
     <lastmod>2024-02-23T20:09:26-05:00</lastmod>
   </url><url>
-    <loc>https://nathanlaundry.com/poetry/clockwork-and_clay/</loc>
+    <loc>http://localhost:1313/poetry/clockwork-and_clay/</loc>
     <lastmod>2024-02-22T20:09:26-05:00</lastmod>
   </url><url>
-    <loc>https://nathanlaundry.com/shower-thoughts/its-the-comforts-that-make-us-feel-numb/</loc>
+    <loc>http://localhost:1313/shower-thoughts/its-the-comforts-that-make-us-feel-numb/</loc>
     <lastmod>2024-02-22T20:09:26-05:00</lastmod>
   </url><url>
-    <loc>https://nathanlaundry.com/tags/my-life-philosophy/</loc>
+    <loc>http://localhost:1313/tags/my-life-philosophy/</loc>
     <lastmod>2024-02-22T20:09:26-05:00</lastmod>
   </url><url>
-    <loc>https://nathanlaundry.com/poetry/</loc>
+    <loc>http://localhost:1313/poetry/</loc>
     <lastmod>2024-02-22T20:09:26-05:00</lastmod>
   </url><url>
-    <loc>https://nathanlaundry.com/shower-thoughts/stop-trying-to-remember-everything-you-read/</loc>
+    <loc>http://localhost:1313/shower-thoughts/stop-trying-to-remember-everything-you-read/</loc>
     <lastmod>2024-02-22T20:09:26-05:00</lastmod>
   </url><url>
-    <loc>https://nathanlaundry.com/tags/time-management/</loc>
+    <loc>http://localhost:1313/tags/time-management/</loc>
     <lastmod>2024-02-22T20:09:26-05:00</lastmod>
   </url><url>
-    <loc>https://nathanlaundry.com/tags/academia/</loc>
+    <loc>http://localhost:1313/tags/academia/</loc>
     <lastmod>2023-03-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nathanlaundry.com/tags/genai/</loc>
+    <loc>http://localhost:1313/tags/genai/</loc>
     <lastmod>2023-03-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nathanlaundry.com/tags/literature-review/</loc>
+    <loc>http://localhost:1313/tags/literature-review/</loc>
     <lastmod>2023-03-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nathanlaundry.com/shower-thoughts/chatgpt-litreview/</loc>
+    <loc>http://localhost:1313/shower-thoughts/chatgpt-litreview/</loc>
     <lastmod>2023-03-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nathanlaundry.com/tech/chatgpt-litreview/</loc>
+    <loc>http://localhost:1313/tech/chatgpt-litreview/</loc>
     <lastmod>2023-03-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nathanlaundry.com/tech/chatgpt-writing-coach/</loc>
+    <loc>http://localhost:1313/tech/chatgpt-writing-coach/</loc>
     <lastmod>2023-03-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nathanlaundry.com/tags/generative-ai/</loc>
+    <loc>http://localhost:1313/tags/generative-ai/</loc>
     <lastmod>2023-03-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nathanlaundry.com/tags/learning/</loc>
+    <loc>http://localhost:1313/tags/learning/</loc>
     <lastmod>2023-03-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nathanlaundry.com/shower-thoughts/prime-then-immerse/</loc>
+    <loc>http://localhost:1313/shower-thoughts/prime-then-immerse/</loc>
     <lastmod>2023-03-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nathanlaundry.com/tags/writing/</loc>
+    <loc>http://localhost:1313/tags/writing/</loc>
     <lastmod>2023-03-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nathanlaundry.com/shower-thoughts/reductionism/</loc>
+    <loc>http://localhost:1313/shower-thoughts/reductionism/</loc>
     <lastmod>2023-03-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nathanlaundry.com/tags/thought/</loc>
+    <loc>http://localhost:1313/tags/thought/</loc>
     <lastmod>2023-03-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nathanlaundry.com/tags/computer-science/</loc>
+    <loc>http://localhost:1313/tags/computer-science/</loc>
     <lastmod>2023-03-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nathanlaundry.com/shower-thoughts/fear-of-writing/</loc>
+    <loc>http://localhost:1313/shower-thoughts/fear-of-writing/</loc>
     <lastmod>2023-03-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nathanlaundry.com/tags/community/</loc>
+    <loc>http://localhost:1313/tags/community/</loc>
     <lastmod>2023-03-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nathanlaundry.com/shower-thoughts/gradstudent-community/</loc>
+    <loc>http://localhost:1313/shower-thoughts/gradstudent-community/</loc>
     <lastmod>2023-03-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nathanlaundry.com/tags/productivity/</loc>
+    <loc>http://localhost:1313/tags/productivity/</loc>
     <lastmod>2023-02-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nathanlaundry.com/shower-thoughts/9-5gradschool/</loc>
+    <loc>http://localhost:1313/shower-thoughts/9-5gradschool/</loc>
     <lastmod>2023-02-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nathanlaundry.com/publications/scioer-paper/</loc>
+    <loc>http://localhost:1313/publications/scioer-paper/</loc>
     <lastmod>2023-02-23T20:09:26-05:00</lastmod>
   </url><url>
-    <loc>https://nathanlaundry.com/publications/masters-thesis/</loc>
+    <loc>http://localhost:1313/publications/masters-thesis/</loc>
     <lastmod>2023-02-23T20:09:26-05:00</lastmod>
   </url><url>
-    <loc>https://nathanlaundry.com/shower-thoughts/csundergrad-opportunities/</loc>
+    <loc>http://localhost:1313/shower-thoughts/csundergrad-opportunities/</loc>
     <lastmod>2023-02-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nathanlaundry.com/tags/networking/</loc>
+    <loc>http://localhost:1313/tags/networking/</loc>
     <lastmod>2023-02-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nathanlaundry.com/tags/undergraduate/</loc>
+    <loc>http://localhost:1313/tags/undergraduate/</loc>
     <lastmod>2023-02-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nathanlaundry.com/shower-thoughts/surving-grad-school/</loc>
+    <loc>http://localhost:1313/shower-thoughts/surving-grad-school/</loc>
     <lastmod>2023-01-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nathanlaundry.com/talks/increasing-your-surface-area-for-serendipity/</loc>
+    <loc>http://localhost:1313/talks/increasing-your-surface-area-for-serendipity/</loc>
     <lastmod>2023-01-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nathanlaundry.com/talks/</loc>
+    <loc>http://localhost:1313/talks/</loc>
     <lastmod>2023-01-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nathanlaundry.com/talks/vim-no-plugins/</loc>
+    <loc>http://localhost:1313/talks/vim-no-plugins/</loc>
     <lastmod>2023-01-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nathanlaundry.com/publications/scioer-c-course/</loc>
+    <loc>http://localhost:1313/publications/scioer-c-course/</loc>
     <lastmod>2023-01-23T20:09:26-05:00</lastmod>
   </url><url>
-    <loc>https://nathanlaundry.com/poetry/to-want/</loc>
+    <loc>http://localhost:1313/poetry/to-want/</loc>
     <lastmod>2022-03-02T20:09:26-05:00</lastmod>
   </url><url>
-    <loc>https://nathanlaundry.com/poetry/old-friend/</loc>
+    <loc>http://localhost:1313/poetry/old-friend/</loc>
     <lastmod>2022-03-01T20:09:26-05:00</lastmod>
   </url><url>
-    <loc>https://nathanlaundry.com/poetry/to-fall-like-rome_burning-and-proud/</loc>
+    <loc>http://localhost:1313/poetry/to-fall-like-rome_burning-and-proud/</loc>
     <lastmod>2022-02-28T20:09:26-05:00</lastmod>
   </url><url>
-    <loc>https://nathanlaundry.com/poetry/the-terminal-velocity-quintet/</loc>
+    <loc>http://localhost:1313/poetry/the-terminal-velocity-quintet/</loc>
     <lastmod>2022-02-27T20:09:26-05:00</lastmod>
   </url><url>
-    <loc>https://nathanlaundry.com/poetry/losing-you-for-the-last/</loc>
+    <loc>http://localhost:1313/poetry/losing-you-for-the-last/</loc>
     <lastmod>2022-02-26T20:09:26-05:00</lastmod>
   </url><url>
-    <loc>https://nathanlaundry.com/poetry/on-the-edge-of-yearning/</loc>
+    <loc>http://localhost:1313/poetry/on-the-edge-of-yearning/</loc>
     <lastmod>2022-02-25T20:09:26-05:00</lastmod>
   </url><url>
-    <loc>https://nathanlaundry.com/poetry/duty-of-care/</loc>
+    <loc>http://localhost:1313/poetry/duty-of-care/</loc>
     <lastmod>2022-02-24T20:09:26-05:00</lastmod>
   </url><url>
-    <loc>https://nathanlaundry.com/poetry/burning/</loc>
+    <loc>http://localhost:1313/poetry/burning/</loc>
     <lastmod>2022-02-23T20:09:26-05:00</lastmod>
   </url><url>
-    <loc>https://nathanlaundry.com/publications/abtesting-as-a-pedagogical-tool/</loc>
+    <loc>http://localhost:1313/publications/abtesting-as-a-pedagogical-tool/</loc>
     <lastmod>2022-02-23T20:09:26-05:00</lastmod>
   </url><url>
-    <loc>https://nathanlaundry.com/shower-thoughts/how-to-write-your-own-lit-review-template/</loc>
+    <loc>http://localhost:1313/shower-thoughts/how-to-write-your-own-lit-review-template/</loc>
     <lastmod>2022-02-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nathanlaundry.com/shower-thoughts/ponder-and-wander-walks/</loc>
+    <loc>http://localhost:1313/shower-thoughts/ponder-and-wander-walks/</loc>
     <lastmod>2022-02-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nathanlaundry.com/poetry/in-my-blood/</loc>
+    <loc>http://localhost:1313/poetry/in-my-blood/</loc>
     <lastmod>2022-02-22T20:09:26-05:00</lastmod>
   </url><url>
-    <loc>https://nathanlaundry.com/publications/buidling-online-gaming-communities/</loc>
+    <loc>http://localhost:1313/publications/buidling-online-gaming-communities/</loc>
     <lastmod>2021-02-23T20:09:26-05:00</lastmod>
   </url><url>
-    <loc>https://nathanlaundry.com/publications/code-smells-as-a-framework/</loc>
+    <loc>http://localhost:1313/publications/code-smells-as-a-framework/</loc>
     <lastmod>2020-02-23T20:09:26-05:00</lastmod>
   </url><url>
-    <loc>https://nathanlaundry.com/publications/designing-deploying-analyzing-educational-field-experiments-workshop/</loc>
+    <loc>http://localhost:1313/publications/designing-deploying-analyzing-educational-field-experiments-workshop/</loc>
     <lastmod>2020-02-23T20:09:26-05:00</lastmod>
   </url><url>
-    <loc>https://nathanlaundry.com/tech/hugo_site/</loc>
+    <loc>http://localhost:1313/tech/hugo_site/</loc>
   </url><url>
-    <loc>https://nathanlaundry.com/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url>
 </urlset>
