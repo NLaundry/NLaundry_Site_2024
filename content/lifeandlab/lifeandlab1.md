@@ -46,6 +46,12 @@ I've also completely gotten out of the gym, which I've never liked, and committe
 
 I think by not tracking progress, I've opened myself up to two things. First, I can just be proud of myself for doing exercise regardless of how it goes which makes it more fun and helps me stay consistent. Second, I listen to my body more. There's no external data like the number of reps or length/speed of a run, so I pay attention to how I'm feeling and push myself to the extent that I can. It makes my exercise a sort of mindfulness that I've really come to enjoy!
 
+### Guiding Questions and Actionable Steps
+
+1. Are you turning anything into a project that you don't actually want to? If so, Is it causing you pointless stress?
+2. Is there something you'd like to try de-optimizing and switching to a process-orientation?
+
+I think a lot of people, like me, might benefit from expanding what they consider exercise and removing the pressure of "making progress"
 
 
 
@@ -53,9 +59,95 @@ I think by not tracking progress, I've opened myself up to two things. First, I 
 
 ---
 
+Whenever I'm setting up new machines two thoughts always cross my mind: "where did I put that usb with the live installer?" and "I wonder if I could write a bash script to do this for me." This time around I decided to try to solve both problems ... it was an ambitious weekend. 
+
+### Ventoy - One Drive to Rule Them All
+
+Usually, in the search for "the right" USB drive, I stumble across a dozen other USBs all with different distros I might want to keep around. Ventoy solves this problem. Instead of having to format each drive with a single ISO, Ventoy turns a single drive into a boot loader that can have any number of ISOs or EFI executables. Drag and drop a few favourites, even windows (more on that when I release my microwin setup tutorial), and next time you boot from it, you'll have your pick of the litter.
+
+If you're not distro hopping on bare metal very often, this may sound less exciting. But, it's always a great idea to keep a few utility distros laying around for recovery. I'll be keeping an LTS Ubuntu ISO, ZFSBootMenu EFI executable, SystemRescue, Windows Live ISO, and Debian handy at the very least. 
+
+Save yourself some time flashing drives. Give Ventoy a try! 
+
+#### Links:
+
+[Ventoy Website](https://www.ventoy.net/en/index.html)
+[System Rescue bootable linux environment](https://www.system-rescue.org/manual/Overview/)
+[ZFS Boot Menu with Recover Image](https://docs.zfsbootmenu.org/en/v2.3.x/index.html)
 
 
-The documentation has definitely been written by someone way more knowledgeable than myself which means it has a number of spots that a noobie like myself, can get tripped up on. So, after my many attempts and bug fixes, I wrote an install script which you can check out on my github #TODO insert github. 
+### Here Documents in Bash Scripts
 
-Since
+The ZFS Boot Menu install process requires a chroot into a newly bootstrapped linux environment. This means that at some point, you're shifting into a new shell environment which poses the question "how do I keep executing things in the chroot from this script?". Luckily, there's a trick for this. We can use here-documents ... and in a few cases, as ugly as it is, nested here-documents.
+
+**Here-documents** in bash (`<<EOF`) allow you to create multi-line strings within a script, often used for injecting configuration or command sequences in a single, readable block. They’re especially helpful when scripting setups or creating configuration files dynamically. The syntax looks like this:
+
+```bash
+command <<EOF
+# Lines of text or commands
+EOF
+```
+
+Anything between `<<EOF` and `EOF` will be interpreted as input to the specified command. The delimiter `EOF` can be any word, but it’s conventionally `EOF` or `EOL`.
+
+#### ZFS Boot Menu Install Script Example
+
+In my ZFSBootMenu setup, I needed to use a here-document to pass and execute an entire shell script within a `chroot` environment. This let me run multiple commands and set up configurations in a clean, organized way. However, some parts required **nesting here-documents** to dynamically generate configuration files within the chroot, which introduced some syntactic quirks.
+
+```sh
+enter_chroot() {
+	echo "Entering chroot environment to configure system..."
+	chroot $MOUNT_POINT /bin/bash <<-EOF
+	# Set hostname
+	echo "$HOSTNAME" > /etc/hostname
+	echo "127.0.1.1    $HOSTNAME" >> /etc/hosts
+	
+	# Configure apt sources
+		cat > /etc/apt/sources.list <<-EOF_APT
+		deb http://deb.debian.org/debian bookworm main contrib non-free-firmware
+		deb-src http://deb.debian.org/debian bookworm main contrib non-free-firmware
+		
+		deb http://deb.debian.org/debian-security bookworm-security main contrib non-free-firmware
+		deb-src http://deb.debian.org/debian-security/ bookworm-security main contrib non-free-firmware
+		
+		deb http://deb.debian.org/debian bookworm-updates main contrib non-free-firmware
+		deb-src http://deb.debian.org/debian bookworm-updates main contrib non-free-firmware
+		
+		deb http://deb.debian.org/debian bookworm-backports main contrib non-free-firmware
+		deb-src http://deb.debian.org/debian bookworm-backports main contrib non-free-firmware
+		EOF_APT
+    # ...
+    EOF
+
+```
+
+
+Here’s a closer look at what’s happening:
+
+1. **Main Here-Document**: The outer `<<-EOF` here-document is used to feed multiple commands into `chroot`, allowing the script to execute these commands as though they’re running directly in the chroot environment. The dash `-` after `<<` (`<<-EOF`) is important here—it lets us indent commands using tabs without affecting execution.
+
+2. **Nested Here-Document**: Inside the outer here-document, I used another here-document (`<<-EOF_APT`) to create the `sources.list` file dynamically. By nesting this here-document, I could inject all the required apt sources at once, without needing multiple `echo` commands, which would be messier and harder to read.
+
+3. **Indentation with Tabs**: For this setup to work correctly, **tabs must be used for indentation**. When using dash-prefixed here-documents (`<<-`), leading tabs are ignored, making it possible to align code blocks nicely. Using spaces, however, breaks this behavior, causing bash to interpret the indentation as part of the content, which can lead to syntax errors or formatting issues.
+
+
+In a complex setup like this, where we’re passing nested content to a chroot environment, using tabs for indentation and `<<-` for dash-prefixed here-documents helps keep the structure readable and ensures bash interprets the content correctly. This approach reduces clutter and makes it easier to manage the overall setup by keeping related commands and configurations together. 
+
+So, when working with nested here-documents — especially when passing commands into chroot environments — **using tabs for indentation** and `<<-` to enable this flexibility is essential to avoid tricky syntax issues.
+
+
+#### Links:
+
+[ZFSBootMenu Install script Git Repo](https://github.com/NLaundry/zfsbootmenu-autoinstaller)
+[ZFS Boot Menu Docs](
+[OpenZFS Docs](
+[Bash Here Docs documentation](https://www.gnu.org/software/bash/manual/html_node/Redirections.html#Here-Documents)
+
+
+## Wrap up
+
+Any way, that's all I've got this week. I think the next issue will be shorter than this. I got on a bit of a ramble there. Have a great week!
+
+Cheers,
+Nathan Laundry
 
