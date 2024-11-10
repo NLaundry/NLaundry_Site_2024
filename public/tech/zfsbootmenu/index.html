@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<style type=text/css>body{font-family:monospace;}</style>
+	<title>ZFS Boot Menu - I put that sh\*t on everything (and how I do it)</title>
+	
+	
+	<link rel="stylesheet" href="/css/style.css">
+	
+	
+</head>
+<body>
+	<header>
+    <h1>Nathan Laundry&#39;s Blog</h1>
+
+    <nav>
+        <a href="/"><b>Home</b></a>.
+        
+        
+        <a href="/lifeandlab/"><b>Life and Lab</b></a>.
+        
+        <a href="/shower-thoughts/"><b>Shower Thoughts</b></a>.
+        
+        <a href="/tech/"><b>Tech</b></a>.
+        
+        <a href="/poetry/"><b>Poetry</b></a>.
+        
+        <a href="/talks/"><b>Talks</b></a>.
+        
+        <a href="/publications/"><b>Publications</b></a>.
+        
+    </nav>
+
+    <br/>
+
+	
+</header>
+
+	
+	<main>
+		<article>
+			<h1>ZFS Boot Menu - I put that sh\*t on everything (and how I do it)</h1>
+			<b><time>10.11.2024 17:19</time></b>
+		       
+
+			<div>
+				<h1 id="zfs-boot-menu---i-put-that-sht-on-everything-and-how">ZFS Boot Menu - I put that sh*t on everything (and how)</h1>
+<p>#BasedOn: <a href="https://docs.zfsbootmenu.org/en/v2.3.x/guides/debian/bookworm-uefi.html">https://docs.zfsbootmenu.org/en/v2.3.x/guides/debian/bookworm-uefi.html</a><br>
+#BasedOn: <a href="https://openzfs.github.io/openzfs-docs/Getting%20Started/Debian/Debian%20Bookworm%20Root%20on%20ZFS.html">https://openzfs.github.io/openzfs-docs/Getting%20Started/Debian/Debian%20Bookworm%20Root%20on%20ZFS.html</a></p>
+<h3 id="1-create-debian-live-install-media">1. create debian live install media</h3>
+<p>#MediaSource: <a href="https://www.debian.org/CD/live/">https://www.debian.org/CD/live/</a> - choose the &ldquo;default&rdquo; don&rsquo;t need a DE<br>
+#Installer: <a href="https://etcher.balena.io/">https://etcher.balena.io/</a> (works on linux, mac, and windows)<br>
+#Requirements: install media (from debian), and an 8gb or larger USB</p>
+<p>Once these are both installed:</p>
+<ol>
+<li>Flash from file</li>
+<li>Select target -&gt; your USB stick</li>
+<li>Flash!</li>
+<li>wait for validation you speed fiend. Do not skip!</li>
+</ol>
+<h3 id="2-boot-from-live-media">2. Boot from live media</h3>
+<ol>
+<li>plug that sucker in</li>
+<li>it&rsquo;ll bring you to a screen like: #TODO add screenshot</li>
+</ol>
+<h3 id="3-prepare-packages">3. Prepare packages</h3>
+<p>We&rsquo;re adding extra sources to apt&rsquo;s packages.<br>
+To do so, we edit a file at /etc/apt/sources.list<br>
+I&rsquo;m going to use vi for this, you can use nano or cat it in idc.</p>
+<ol>
+<li>switch into super user <code>sudo su</code></li>
+<li><code>vi /etc/apt/sources.list</code></li>
+<li>add contrib and non-free-firmware</li>
+</ol>
+<p><code>deb http://deb.debian.org/debian/ bookworm main contrib non-free-firmware</code><br>
+leave the rest as is.</p>
+<p>#Note: if yours doesn&rsquo;t say &ldquo;bookworm&rdquo; (maybe it&rsquo;s trixie),<br>
+you&rsquo;re probably reading this tutorial past 2024, when bookworm was the<br>
+current debian version. I can&rsquo;t guarantee that this tutorial will work<br>
+anymore but it likely isn&rsquo;t too different. Use at your own risk.</p>
+<ol start="4">
+<li>update <code>apt update</code></li>
+</ol>
+<h3 id="4-install-ssh-optional-but-highly-recommended">4. Install SSH (Optional but highly recommended)</h3>
+<p>You don&rsquo;t want to have to type a bunch of zfs commands yourself</p>
+<ul>
+<li>they&rsquo;re error prone</li>
+<li>they&rsquo;re lengthy</li>
+<li>save yourself the hassle. SSH in with another machine.</li>
+</ul>
+<ol>
+<li>Install SSH  <code>apt install --yes openssh-server</code></li>
+<li>Restart the SSH service <code>systemctl restart ssh</code></li>
+<li>Find your ip address for SSH: <code>ip addr</code></li>
+</ol>
+<p>you&rsquo;ll get something like #TODO add screenshot<br>
+it&rsquo;s probably enp<NUMBER>s0 - where number is likely the lowest one<br>
+you can tell which is active because it won&rsquo;t say &ldquo;NO-CARRIER&rdquo;<br>
+and you&rsquo;ll likely have inet6 values too</p>
+<ol start="4">
+<li>ssh in with <code>ssh user@&lt;IP ADDRESS&gt;</code></li>
+<li>password is: live</li>
+<li>switch back into root: <code>sudo su</code></li>
+</ol>
+<h3 id="5-create-the-id-var-for-later-use">5. Create the ID var for later use</h3>
+<p>#DirectlyFrom ZFSBootMenu tutorial<br>
+Source /etc/os-release</p>
+<p>The file /etc/os-release defines variables that describe the running distribution. In particular, the $ID variable defined within can be used as a short name for the filesystem that will hold this installation.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>source /etc/os-release
+</span></span><span style="display:flex;"><span>export ID
+</span></span></code></pre></div><h3 id="6-install-necessary-packages">6. Install Necessary Packages</h3>
+<p>we&rsquo;re installing:</p>
+<ol>
+<li>deboostrap - installs a minimal debian system later</li>
+<li>gdisk - manages disks</li>
+<li>dkms - dynamic kernel module support (need this to add zfs stuff I think)</li>
+<li>linux-headers - .h files for linux kernel kind of like linux APIs #LearnMore below</li>
+<li>zfsutils-linux - for configuring zfs on linux</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>apt install debootstrap gdisk dkms linux-headers-<span style="color:#66d9ef">$(</span>uname -r<span style="color:#66d9ef">)</span>
+</span></span><span style="display:flex;"><span>apt install zfsutils-linux
+</span></span></code></pre></div><p>#LearnMore: linux headers: <a href="https://thelinuxcode.com/install-kernel-headers-linux/">https://thelinuxcode.com/install-kernel-headers-linux/</a></p>
+<h3 id="7-generate-hostid">7. generate hostid</h3>
+<p>&ldquo;Creates /etc/hostid file and stores the host ID in it. If hostid was provided, validate and store that value. Otherwise, randomly generate an ID.&rdquo;</p>
+<p><code>zgenhostid -f 0x00bab10c</code></p>
+<p>#LearnMore: <a href="https://openzfs.github.io/openzfs-docs/man/master/8/zgenhostid.8.html">https://openzfs.github.io/openzfs-docs/man/master/8/zgenhostid.8.html</a></p>
+<h3 id="8-set-environment-vars-for-devices">8. Set environment vars for devices</h3>
+<p>&ldquo;Verify your target disk devices with lsblk. /dev/sda, /dev/sdb and /dev/nvme0n1 used below are examples.&rdquo;</p>
+<p><code>lsblk</code><br>
+#TODO: add screenshot</p>
+<p>For Boot</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>export BOOT_DISK<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/dev/nvme0n1&#34;</span>
+</span></span><span style="display:flex;"><span>export BOOT_PART<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;1&#34;</span>
+</span></span><span style="display:flex;"><span>export BOOT_DEVICE<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>BOOT_DISK<span style="color:#e6db74">}</span><span style="color:#e6db74">p</span><span style="color:#e6db74">${</span>BOOT_PART<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+</span></span></code></pre></div><p>For Boot</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>export POOL_DISK<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/dev/nvme0n1&#34;</span>
+</span></span><span style="display:flex;"><span>export POOL_PART<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;2&#34;</span>
+</span></span><span style="display:flex;"><span>export POOL_DEVICE<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>POOL_DISK<span style="color:#e6db74">}</span><span style="color:#e6db74">p</span><span style="color:#e6db74">${</span>POOL_PART<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+</span></span></code></pre></div><h3 id="9-prepare-disks">9. Prepare Disks</h3>
+<ol>
+<li>Wipe Partitions</li>
+</ol>
+<p>In case the drive was used for anything before. Do this anyway just in case.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>zpool labelclear -f <span style="color:#e6db74">&#34;</span>$POOL_DISK<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>wipefs -a <span style="color:#e6db74">&#34;</span>$POOL_DISK<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>wipefs -a <span style="color:#e6db74">&#34;</span>$BOOT_DISK<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>sgdisk --zap-all <span style="color:#e6db74">&#34;</span>$POOL_DISK<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>sgdisk --zap-all <span style="color:#e6db74">&#34;</span>$BOOT_DISK<span style="color:#e6db74">&#34;</span>
+</span></span></code></pre></div><ol start="2">
+<li>Create EFI boot partition</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>sgdisk -n <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>BOOT_PART<span style="color:#e6db74">}</span><span style="color:#e6db74">:1m:+512m&#34;</span> -t <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>BOOT_PART<span style="color:#e6db74">}</span><span style="color:#e6db74">:ef00&#34;</span> <span style="color:#e6db74">&#34;</span>$BOOT_DISK<span style="color:#e6db74">&#34;</span>
+</span></span></code></pre></div><ol start="3">
+<li>Create zpool partition</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>sgdisk -n <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>POOL_PART<span style="color:#e6db74">}</span><span style="color:#e6db74">:0:-10m&#34;</span> -t <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>POOL_PART<span style="color:#e6db74">}</span><span style="color:#e6db74">:bf00&#34;</span> <span style="color:#e6db74">&#34;</span>$POOL_DISK<span style="color:#e6db74">&#34;</span>
+</span></span></code></pre></div><p>At this point, our disk has two partitions:<br>
+one for booting, and one for storing the zpool which will house the system<br>
+Note how little of the disk the boot partition takes up.</p>
+<p>#LearnMore: <code>man sgdisk</code></p>
+<h3 id="10-create-zpool">10. Create Zpool</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>zpool create -f -o ashift<span style="color:#f92672">=</span><span style="color:#ae81ff">12</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span> -O compression<span style="color:#f92672">=</span>lz4 <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span> -O acltype<span style="color:#f92672">=</span>posixacl <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span> -O xattr<span style="color:#f92672">=</span>sa <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span> -O relatime<span style="color:#f92672">=</span>on <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span> -o autotrim<span style="color:#f92672">=</span>on <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span> -o compatibility<span style="color:#f92672">=</span>openzfs-2.1-linux <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span> -m none zroot <span style="color:#e6db74">&#34;</span>$POOL_DEVICE<span style="color:#e6db74">&#34;</span>
+</span></span></code></pre></div><p>Note how we use the $POOL_DEVICE environment var from earlier<br>
+#LearnMore: <code>man zpool create</code></p>
+<p>Here’s what each flag does in the <code>zpool create</code> command:</p>
+<ul>
+<li><code>-f</code>: Forces the creation of the pool, even if the device appears in use.</li>
+<li><code>-o ashift=12</code>: Sets the pool&rsquo;s sector size to 4K (2^12 bytes), optimizing for modern disks.</li>
+<li><code>-O compression=lz4</code>: Enables LZ4 compression for better space efficiency.</li>
+<li><code>-O acltype=posixacl</code>: Uses POSIX ACLs for fine-grained file permissions.</li>
+<li><code>-O xattr=sa</code>: Stores extended attributes in a more efficient system attribute space.</li>
+<li><code>-O relatime=on</code>: Updates file access times only if they are newer than the modification time.</li>
+<li><code>-o autotrim=on</code>: Enables automatic trimming of free space for SSDs.</li>
+<li><code>-o compatibility=openzfs-2.1-linux</code>: Ensures compatibility with OpenZFS 2.1 on Linux systems.</li>
+<li><code>-m none</code>: Disables automatic mounting of the pool&rsquo;s root dataset.</li>
+<li><code>zroot</code>: Names the new ZFS pool as &ldquo;zroot&rdquo;.</li>
+<li><code>&quot;$POOL_DEVICE&quot;</code>: Specifies the device to use for the pool creation.</li>
+</ul>
+<p>Why this matters</p>
+<ul>
+<li><strong><code>ashift=12</code></strong>: Aligns with modern disk sectors, enhancing performance.</li>
+<li><strong><code>compression=lz4</code></strong>: Reduces disk space usage with minimal CPU overhead.</li>
+<li><strong><code>acltype=posixacl</code> &amp; <code>xattr=sa</code></strong>: Ensures compatibility with Linux file permissions and efficient storage of extended attributes.</li>
+<li><strong><code>relatime=on</code></strong>: Minimizes disk writes by updating access times only when necessary.</li>
+<li><strong><code>autotrim=on</code></strong>: Maintains SSD performance by automatically freeing unused space.</li>
+<li><strong><code>compatibility=openzfs-2.1-linux</code></strong>: Ensures the pool is compatible with the specified OpenZFS version on Linux.</li>
+<li><strong><code>-m none</code></strong>: Prevents conflicts with the root filesystem&rsquo;s mount points during installation.</li>
+</ul>
+<h3 id="11-create-zfs-datasets-for-home--root">11. Create ZFS Datasets for Home + Root</h3>
+<p>ZFS refers to datasets and filesystems as synonyms</p>
+<ol>
+<li>Create datasets for home and root - ROOT is a container,</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>zfs create -o mountpoint<span style="color:#f92672">=</span>none zroot/ROOT
+</span></span><span style="display:flex;"><span>zfs create -o mountpoint<span style="color:#f92672">=</span>/ -o canmount<span style="color:#f92672">=</span>noauto zroot/ROOT/<span style="color:#e6db74">${</span>ID<span style="color:#e6db74">}</span>
+</span></span><span style="display:flex;"><span>zfs create -o mountpoint<span style="color:#f92672">=</span>/home zroot/home
+</span></span></code></pre></div><ol start="2">
+<li>Set Boot Dataset/filesystem</li>
+</ol>
+<p><code>zpool set bootfs=zroot/ROOT/${ID} zroot</code></p>
+<p>#LearnMore:<br>
+These commands create a ZFS dataset structure for a root filesystem and a separate <code>/home</code> directory, typically used when setting up a system with ZFS as the root filesystem. Here&rsquo;s a detailed explanation of each command:</p>
+<ol>
+<li>
+<p><strong><code>zfs create -o mountpoint=none zroot/ROOT</code></strong>:</p>
+<ul>
+<li>Creates a ZFS dataset named <code>zroot/ROOT</code>.</li>
+<li>The <code>-o mountpoint=none</code> option specifies that this dataset should not be directly mounted. This is usually done because <code>zroot/ROOT</code> acts as a container for other datasets that will be used as root filesystems (e.g., different system versions or installations).</li>
+</ul>
+</li>
+<li>
+<p><strong><code>zfs create -o mountpoint=/ -o canmount=noauto zroot/ROOT/${ID}</code></strong>:</p>
+<ul>
+<li>Creates a ZFS dataset under <code>zroot/ROOT</code> with the name <code>${ID}</code> ID = debian in our case</li>
+<li><code>-o mountpoint=/</code> sets this dataset to be mounted at the root (<code>/</code>) of the filesystem.</li>
+<li><code>-o canmount=noauto</code> means this dataset will not be automatically mounted at boot but can be mounted manually. This is typically used to manage boot environments, allowing control over which dataset is mounted as the root filesystem.</li>
+</ul>
+</li>
+<li>
+<p><strong><code>zfs create -o mountpoint=/home zroot/home</code></strong>:</p>
+<ul>
+<li>Creates a ZFS dataset named <code>zroot/home</code>.</li>
+<li><code>-o mountpoint=/home</code> sets this dataset to be mounted at <code>/home</code>, providing a separate filesystem for user home directories. This allows flexibility and easier management, such as snapshotting, for user data independently from the root filesystem.</li>
+</ul>
+</li>
+</ol>
+<p>Overall, these commands set up a ZFS pool (<code>zroot</code>) structure where you can manage multiple boot environments (under <code>zroot/ROOT</code>) and a separate <code>/home</code> dataset for user data.</p>
+<h3 id="12-export-then-reimport-the-pool">12. Export then Reimport the pool</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>zpool export zroot
+</span></span><span style="display:flex;"><span>zpool import -N -R /mnt zroot
+</span></span><span style="display:flex;"><span>zfs mount zroot/ROOT/<span style="color:#e6db74">${</span>ID<span style="color:#e6db74">}</span>
+</span></span><span style="display:flex;"><span>zfs mount zroot/home
+</span></span></code></pre></div><p>Got a weird error here:</p>
+<ol>
+<li>when I export zroot, the machine forgets about the pool</li>
+<li>the pool was still there but I had to update the line to go fetch it directly from the device<br>
+<code>zpool import -N -R /mnt -d /dev/nvme0n1p1 zroot</code></li>
+</ol>
+<p>Verify everything mounted correctly:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>mount | grep mnt
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#Output</span>
+</span></span><span style="display:flex;"><span>zroot/ROOT/debian on /mnt type zfs <span style="color:#f92672">(</span>rw,relatime,xattr,posixacl<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>zroot/home on /mnt/home type zfs <span style="color:#f92672">(</span>rw,relatime,xattr,posixacl<span style="color:#f92672">)</span>
+</span></span></code></pre></div><h3 id="13-update-device-symlinks">13. Update device symlinks</h3>
+<p><code>udevadm trigger</code></p>
+<p>The udevadm trigger command is used to instruct the Linux udev system to re-process device events, which can help update the system&rsquo;s view of hardware devices. Specifically, it scans for hardware changes and generates events as if the devices were newly connected or detected.</p>
+<h3 id="14-install-an-extremely-minimal-debian-on-mnt">14. Install an EXTREMELY MINIMAL Debian on mnt</h3>
+<p><code>debootstrap bookworm /mnt</code></p>
+<h3 id="15-copy-config-files">15. Copy config files</h3>
+<p>cp /etc/hostid /mnt/etc<br>
+cp /etc/resolv.conf /mnt/etc</p>
+<h3 id="16-chroot-into-the-new-debian-install">16. Chroot into the new Debian Install</h3>
+<p>After this step, we&rsquo;re running on the actual system disk with the<br>
+debian install we just set up.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>mount -t proc proc /mnt/proc
+</span></span><span style="display:flex;"><span>mount -t sysfs sys /mnt/sys
+</span></span><span style="display:flex;"><span>mount -B /dev /mnt/dev
+</span></span><span style="display:flex;"><span>mount -t devpts pts /mnt/dev/pts
+</span></span><span style="display:flex;"><span>chroot /mnt /bin/bash
+</span></span></code></pre></div><h3 id="17-basic-configuration-of-debian">17. Basic Configuration of Debian</h3>
+<ol>
+<li>
+<p>hostname<br>
+echo &lsquo;YOURHOSTNAME&rsquo; &gt; /etc/hostname<br>
+echo -e &lsquo;127.0.1.1\tYOURHOSTNAME&rsquo; &raquo; /etc/hosts</p>
+</li>
+<li>
+<p>set password<br>
+passwd</p>
+</li>
+<li>
+<p>Apt Sources</p>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>deb http://deb.debian.org/debian bookworm main contrib non-free-firmware
+</span></span><span style="display:flex;"><span>deb-src http://deb.debian.org/debian bookworm main contrib non-free-firmware
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>deb http://deb.debian.org/debian-security bookworm-security main contrib non-free-firmware
+</span></span><span style="display:flex;"><span>deb-src http://deb.debian.org/debian-security/ bookworm-security main contrib non-free-firmware
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>deb http://deb.debian.org/debian bookworm-updates main contrib non-free-firmware
+</span></span><span style="display:flex;"><span>deb-src http://deb.debian.org/debian bookworm-updates main contrib non-free-firmware
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>deb http://deb.debian.org/debian bookworm-backports main contrib non-free-firmware
+</span></span><span style="display:flex;"><span>deb-src http://deb.debian.org/debian bookworm-backports main contrib non-free-firmware
+</span></span></code></pre></div><ol start="4">
+<li>Additional base packages<br>
+apt install locales keyboard-configuration console-setup<br>
+dpkg-reconfigure locales tzdata keyboard-configuration console-setup</li>
+</ol>
+<h3 id="18-zfs-setup">18. ZFS setup</h3>
+<ol>
+<li>
+<p>install necessary packages<br>
+<code>apt install linux-headers-amd64 linux-image-amd64 zfs-initramfs dosfstools</code></p>
+</li>
+<li>
+<p>Force something<br>
+echo &ldquo;REMAKE_INITRD=yes&rdquo; &gt; /etc/dkms/zfs.conf</p>
+</li>
+</ol>
+<p>#LearnMore:<br>
+Here’s a one-line description of each package and the <code>echo</code> command:</p>
+<ol>
+<li><strong><code>linux-headers-amd64</code></strong>: Provides the header files for building kernel modules on AMD64 systems.</li>
+<li><strong><code>linux-image-amd64</code></strong>: Installs the latest Linux kernel image for AMD64 systems.</li>
+<li><strong><code>zfs-initramfs</code></strong>: Adds ZFS support to the initial RAM filesystem (initramfs) for booting from ZFS pools.</li>
+<li><strong><code>dosfstools</code></strong>: Contains tools for creating and managing FAT filesystems (commonly used for EFI partitions).</li>
+<li><strong><code>echo &quot;REMAKE_INITRD=yes&quot; &gt; /etc/dkms/zfs.conf</code></strong>: Configures DKMS to rebuild the initramfs automatically when ZFS kernel modules are updated.</li>
+</ol>
+<p>The line <code>echo &quot;REMAKE_INITRD=yes&quot; &gt; /etc/dkms/zfs.conf</code> is necessary to ensure that the <code>initramfs</code> (initial RAM filesystem) is automatically rebuilt whenever ZFS kernel modules are updated or recompiled by DKMS (Dynamic Kernel Module Support).</p>
+<ul>
+<li><strong>Booting from ZFS</strong>: If you&rsquo;re using ZFS for your root filesystem, the <code>initramfs</code> must include the ZFS kernel modules so that the system can mount the root filesystem during boot.</li>
+<li><strong>Kernel Updates</strong>: When the kernel is updated, DKMS automatically rebuilds kernel modules (including ZFS). However, without the <code>REMAKE_INITRD=yes</code> setting, the <code>initramfs</code> might not be updated to include the newly built ZFS modules, potentially leading to boot failures.</li>
+<li><strong>Ensures Consistency</strong>: By setting <code>REMAKE_INITRD=yes</code>, the system ensures that any changes to the ZFS modules are properly included in the <code>initramfs</code>, maintaining a consistent environment for booting from a ZFS pool.</li>
+</ul>
+<h3 id="19-enable-systemd-zfs-services">19. Enable Systemd ZFS Services</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>systemctl enable zfs.target
+</span></span><span style="display:flex;"><span>systemctl enable zfs-import-cache
+</span></span><span style="display:flex;"><span>systemctl enable zfs-mount
+</span></span><span style="display:flex;"><span>systemctl enable zfs-import.target
+</span></span></code></pre></div><p>#LearnMore:</p>
+<ol>
+<li><strong><code>systemctl enable zfs.target</code></strong>: Enables the main ZFS target, coordinating the activation of ZFS-related services during boot.</li>
+<li><strong><code>systemctl enable zfs-import-cache</code></strong>: Enables the service to import ZFS pools based on a cache file (<code>/etc/zfs/zpool.cache</code>) during boot.</li>
+<li><strong><code>systemctl enable zfs-mount</code></strong>: Enables the service to mount ZFS datasets automatically at boot.</li>
+<li><strong><code>systemctl enable zfs-import.target</code></strong>: Enables the target that depends on importing ZFS pools, ensuring they are imported before other ZFS services start.</li>
+</ol>
+<h3 id="20-rebuild-initramfs">20. Rebuild initramfs</h3>
+<p>update-initramfs -c -k all</p>
+<h3 id="21-setup-and-install-zfsbootmenu">21. Setup and Install ZFSBootMenu</h3>
+<h4 id="211-assign-command-line-arguments-to-be-used-when-booting-the-final-kernel">21.1. Assign command-line arguments to be used when booting the final kernel.</h4>
+<p>Because ZFS properties are inherited, assign the common properties to the ROOT dataset so all children will inherit common arguments by default.</p>
+<p><code>zfs set org.zfsbootmenu:commandline=&quot;quiet&quot; zroot/ROOT</code></p>
+<h4 id="212-create-vfat-filesystem-for-booting">21.2. Create VFat filesystem for booting</h4>
+<p><code>mkfs.vfat -F32 &quot;$BOOT_DEVICE&quot;</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>cat <span style="color:#e6db74">&lt;&lt; EOF &gt;&gt; /etc/fstab
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">$( blkid | grep &#34;$BOOT_DEVICE&#34; | cut -d &#39; &#39; -f 2 ) /boot/efi vfat defaults 0 0
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">EOF</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>mkdir -p /boot/efi
+</span></span><span style="display:flex;"><span>mount /boot/efi
+</span></span></code></pre></div><p>#LearnMore</p>
+<ol>
+<li><strong><code>mkfs.vfat -F32 &quot;$BOOT_DEVICE&quot;</code></strong>: Formats the specified device as a FAT32 filesystem, suitable for an EFI system partition.</li>
+<li><strong><code>cat &lt;&lt; EOF &gt;&gt; /etc/fstab ... EOF</code></strong>: Appends an entry to <code>/etc/fstab</code> to mount the EFI partition automatically at boot.</li>
+<li><strong><code>mkdir -p /boot/efi</code></strong>: Creates the mount point directory for the EFI partition if it doesn&rsquo;t already exist.</li>
+<li><strong><code>mount /boot/efi</code></strong>: Mounts the EFI partition at <code>/boot/efi</code> to make it accessible.</li>
+</ol>
+<h4 id="213-install-zfsbootmenu">21.3. Install ZFSBootMenu</h4>
+<p><code>apt install curl</code> - we use CURL to go fetch the zfsbootmenu online</p>
+<p>Fetch a prebuilt ZFSBootMenu EFI executable, saving it to the EFI system partition:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>mkdir -p /boot/efi/EFI/ZBM
+</span></span><span style="display:flex;"><span>curl -o /boot/efi/EFI/ZBM/VMLINUZ.EFI -L https://get.zfsbootmenu.org/efi
+</span></span><span style="display:flex;"><span>cp /boot/efi/EFI/ZBM/VMLINUZ.EFI /boot/efi/EFI/ZBM/VMLINUZ-BACKUP.EFI
+</span></span></code></pre></div><p>IF YOUR SYSTEM NEEDS DEFAULT PATH for BOOT<br>
+sudo cp /boot/efi/EFI/ZBM/VMLINUZ.EFI /boot/efi/EFI/BOOT/bootx64.efi</p>
+<h4 id="214-confgiure-boot-entries">21.4. Confgiure Boot Entries</h4>
+<p>mount -t efivarfs efivarfs /sys/firmware/efi/efivars</p>
+<ol>
+<li><strong><code>mount -t efivarfs efivarfs /sys/firmware/efi/efivars</code></strong>: Mounts the EFI variable filesystem (<code>efivarfs</code>), allowing access to UEFI firmware variables under <code>/sys/firmware/efi/efivars</code>, which is necessary for managing UEFI boot entries.</li>
+</ol>
+<h4 id="215-install-and-configure-efi-boot-manager">21.5. install and configure efi boot manager</h4>
+<ol>
+<li>
+<p>apt install efibootmgr</p>
+</li>
+<li></li>
+</ol>
+<p>efibootmgr -c -d &ldquo;$BOOT_DISK&rdquo; -p &ldquo;$BOOT_PART&rdquo; <br>
+-L &ldquo;ZFSBootMenu (Backup)&rdquo; <br>
+-l &lsquo;\EFI\ZBM\VMLINUZ-BACKUP.EFI&rsquo;</p>
+<p>efibootmgr -c -d &ldquo;$BOOT_DISK&rdquo; -p &ldquo;$BOOT_PART&rdquo; <br>
+-L &ldquo;ZFSBootMenu&rdquo; <br>
+-l &lsquo;\EFI\ZBM\VMLINUZ.EFI&rsquo;</p>
+<p>YOU MAY NEED TO ADD a default path</p>
+<p>sudo cp /mnt/boot/efi/EFI/ZBM/VMLINUZ.EFI /mnt/boot/efi/EFI/BOOT/bootx64.efi</p>
+<p>efibootmgr -c -d &ldquo;$BOOT_DISK&rdquo; -p &ldquo;$BOOT_PART&rdquo; <br>
+-L &ldquo;ZFSBootMenu&rdquo; <br>
+-l &lsquo;\EFI\BOOT\bootx64.efi&rsquo;</p>
+<p>#LearnMore:</p>
+<p><strong><code>apt install efibootmgr</code></strong>: Installs <code>efibootmgr</code>, a tool used to create, modify, and manage UEFI boot entries in the system&rsquo;s firmware.<br>
+Here’s a breakdown of each <code>efibootmgr</code> command:</p>
+<ol>
+<li>
+<p><strong>First <code>efibootmgr</code> Command:</strong></p>
+<ul>
+<li><strong><code>efibootmgr -c -d &quot;$BOOT_DISK&quot; -p &quot;$BOOT_PART&quot;</code></strong>: Creates a new UEFI boot entry (<code>-c</code>) on the specified boot disk (<code>-d</code>) and partition (<code>-p</code>).</li>
+<li><strong><code>-L &quot;ZFSBootMenu (Backup)&quot;</code></strong>: Sets the label of this boot entry as &ldquo;ZFSBootMenu (Backup)&rdquo; for identification in the UEFI boot menu.</li>
+<li><strong><code>-l '\EFI\ZBM\VMLINUZ-BACKUP.EFI'</code></strong>: Specifies the path to the EFI executable to be used for booting, in this case, a backup kernel located on the EFI partition.</li>
+</ul>
+</li>
+<li>
+<p><strong>Second <code>efibootmgr</code> Command:</strong></p>
+<ul>
+<li><strong><code>efibootmgr -c -d &quot;$BOOT_DISK&quot; -p &quot;$BOOT_PART&quot;</code></strong>: Similar to the first command, creates another UEFI boot entry on the same boot disk and partition.</li>
+<li><strong><code>-L &quot;ZFSBootMenu&quot;</code></strong>: Sets the label of this boot entry as &ldquo;ZFSBootMenu.&rdquo;</li>
+<li><strong><code>-l '\EFI\ZBM\VMLINUZ.EFI'</code></strong>: Specifies the path to the main EFI executable for booting.</li>
+</ul>
+</li>
+</ol>
+<p>These commands add boot entries to the UEFI firmware to allow selection between the main and backup boot options provided by ZFSBootMenu.</p>
+<h4 id="216-sign-the-boot-manager-for-secureboot">21.6. Sign the boot manager for SecureBoot</h4>
+<p>shim sign ?? need to figure this out<br>
+No, your chatgpt history doesn&rsquo;t have the right answer for this. I&rsquo;m not sure how shimsign works. Look into it??</p>
+<p>You can turn off secureboot from an ubunut live install media</p>
+<ul>
+<li>this might work</li>
+</ul>
+<h3 id="22-installing-full-debian-systems">22. Installing Full Debian Systems</h3>
+<p>apt install systemd-timesyncd<br>
+apt dist-upgrade &ndash;yes<br>
+tasksel &ndash;new-install<br>
+apt install net-tools</p>
+<p>Creat User<br>
+username=YOUR_USERNAME<br>
+adduser $username</p>
+<p>cp -a /etc/skel/. /home/$username<br>
+chown -R $username:$username /home/$username<br>
+usermod -a -G audio,cdrom,dip,floppy,netdev,plugdev,sudo,video $username</p>
+<h4 id="222-additional-networking-diagnostic-tools">22.2 Additional networking diagnostic tools</h4>
+<p>install all: apt install iproute2 isc-dhcp-client iputils-ping traceroute curl wget dnsutils ethtool ifupdown tcpdump nmap nano vim</p>
+<ol>
+<li>
+<p><strong><code>iproute2</code></strong>: Provides tools like <code>ip</code> and <code>ss</code> for more advanced network configuration and diagnostics.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>apt install iproute2
+</span></span></code></pre></div></li>
+<li>
+<p><strong><code>dhclient</code></strong>: Installs the DHCP client to automatically obtain an IP address if not already present.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>apt install isc-dhcp-client
+</span></span></code></pre></div></li>
+<li>
+<p><strong><code>ping</code> &amp; <code>traceroute</code></strong>: Essential for testing connectivity to other network devices and diagnosing network paths.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>apt install iputils-ping traceroute
+</span></span></code></pre></div></li>
+<li>
+<p><strong><code>curl</code> and <code>wget</code></strong>: Useful for testing HTTP/S connectivity and downloading files directly from the command line.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>apt install curl wget
+</span></span></code></pre></div></li>
+<li>
+<p><strong><code>dnsutils</code></strong>: Contains <code>dig</code> and <code>nslookup</code> for diagnosing DNS issues.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>apt install dnsutils
+</span></span></code></pre></div></li>
+<li>
+<p><strong><code>ethtool</code></strong>: Allows you to view and change Ethernet device settings, useful for checking link status and speed.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>apt install ethtool
+</span></span></code></pre></div></li>
+<li>
+<p><strong><code>ifupdown</code></strong>: Provides commands like <code>ifup</code> and <code>ifdown</code> for manually managing network interfaces.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>apt install ifupdown
+</span></span></code></pre></div></li>
+<li>
+<p><strong><code>tcpdump</code></strong>: A powerful tool for capturing network packets to analyze traffic and troubleshoot network problems.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>apt install tcpdump
+</span></span></code></pre></div></li>
+<li>
+<p><strong><code>nmap</code></strong>: Useful for network scanning to check for open ports and connectivity to other devices.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>apt install nmap
+</span></span></code></pre></div></li>
+</ol>
+<h4 id="223-other-stuff">22.3. other stuff</h4>
+<p>apt install htop vim openssh-server git tmux</p>
+<h3 id="23-exit-and-reboot">23. Exit and reboot</h3>
+<p>exit</p>
+<p>Now we&rsquo;re back in the live install machine</p>
+<p>mount | grep -v zfs | tac | awk &lsquo;//mnt/ {print $3}&rsquo; | <br>
+xargs -i{} umount -lf {}<br>
+zpool export -a</p>
+
+			</div>
+		</article>
+	</main>
+<aside>
+	<div>
+		<div>
+			<h3>LATEST POSTS</h3>
+		</div>
+		<div>
+			<ul>
+				
+				<li><a href="/tech/zfsbootmenu/">ZFS Boot Menu - I put that sh\*t on everything (and how I do it)</a></li>
+				
+				<li><a href="/shower-thoughts/kobo/">Why the Kobo Rocks</a></li>
+				
+				<li><a href="/shower-thoughts/the-point-of-dance/">The Point of Dance</a></li>
+				
+				<li><a href="/tech/execute_sh_commands_from_vim/">Execute shell commands from inside Vim</a></li>
+				
+				<li><a href="/publications/abscribe/">ABScribe: Rapid Exploration of Multiple Writing Variations in Human-AI Co-Writing Tasks using Large Language Models</a></li>
+				
+			</ul>
+		</div>
+	</div>
+</aside>
+
+
+	<footer>
+	<p>&copy; 2024 <a href="https://nathanlaundry.com/"><b>Nathan Laundry&#39;s Blog</b></a>.
+	<a href="https://github.com/NLaundry"><b>Github</b></a>.
+	<a href="https://example.com/@user"><b>Mastodon</b></a>.
+	<a href="https://example.substack.com"><b>Substack</b></a>.
+	</p>
+</footer>
+
+</body>
+</html>

@@ -67,6 +67,41 @@
     
     
     <article>
+	<h1><a href="https://nathanlaundry.com/tech/zfsbootmenu/">ZFS Boot Menu - I put that sh\*t on everything (and how I do it)</a></h1>
+	<b><time>10.11.2024 17:19</time></b>
+	
+	<div>
+		<h1 id="zfs-boot-menu---i-put-that-sht-on-everything-and-how">ZFS Boot Menu - I put that sh*t on everything (and how)</h1>
+<p>#BasedOn: <a href="https://docs.zfsbootmenu.org/en/v2.3.x/guides/debian/bookworm-uefi.html">https://docs.zfsbootmenu.org/en/v2.3.x/guides/debian/bookworm-uefi.html</a><br>
+#BasedOn: <a href="https://openzfs.github.io/openzfs-docs/Getting%20Started/Debian/Debian%20Bookworm%20Root%20on%20ZFS.html">https://openzfs.github.io/openzfs-docs/Getting%20Started/Debian/Debian%20Bookworm%20Root%20on%20ZFS.html</a></p>
+<h3 id="1-create-debian-live-install-media">1. create debian live install media</h3>
+<p>#MediaSource: <a href="https://www.debian.org/CD/live/">https://www.debian.org/CD/live/</a> - choose the &ldquo;default&rdquo; don&rsquo;t need a DE<br>
+#Installer: <a href="https://etcher.balena.io/">https://etcher.balena.io/</a> (works on linux, mac, and windows)<br>
+#Requirements: install media (from debian), and an 8gb or larger USB</p>
+<p>Once these are both installed:</p>
+<ol>
+<li>Flash from file</li>
+<li>Select target -&gt; your USB stick</li>
+<li>Flash!</li>
+<li>wait for validation you speed fiend. Do not skip!</li>
+</ol>
+<h3 id="2-boot-from-live-media">2. Boot from live media</h3>
+<ol>
+<li>plug that sucker in</li>
+<li>it&rsquo;ll bring you to a screen like: #TODO add screenshot</li>
+</ol>
+<h3 id="3-prepare-packages">3. Prepare packages</h3>
+<p>We&rsquo;re adding extra sources to apt&rsquo;s packages.<br>
+To do so, we edit a file at /etc/apt/sources.list<br>
+I&rsquo;m going to use vi for this, you can use nano or cat it in idc.</p>
+		
+			<a href="https://nathanlaundry.com/tech/zfsbootmenu/">Read more...</a>
+		
+	</div>
+</article>
+
+    
+    <article>
 	<h1><a href="https://nathanlaundry.com/shower-thoughts/kobo/">Why the Kobo Rocks</a></h1>
 	<b><time>01.11.2024 12:02</time></b>
 	
@@ -232,26 +267,6 @@ Github: <a href="">ABScribe</a></p>
 <p>Even more time intensive is conducting a proper, methodical, literature review. Establishing a method, identifying the correct keywords, finding the right databases - it’s difficult but vital work.</p>
 		
 			<a href="https://nathanlaundry.com/tech/chatgpt-litreview/">Read more...</a>
-		
-	</div>
-</article>
-
-    
-    <article>
-	<h1><a href="https://nathanlaundry.com/tech/chatgpt-writing-coach/">ChatGPT is my Writing Coach and Editor: Here&#39;s How</a></h1>
-	<b><time>25.03.2023 00:00</time></b>
-	
-	<a href="/tags/writing">Writing</a>
-	
-	<a href="/tags/generative-ai">Generative-AI</a>
-	
-	<div>
-		<blockquote>
-<p>💡 Truly great writing, the kind that moves us, comes from lived human experiences. This will always be the domain of Sapiens. — A trust me bro statement by Nathan Laundry</p>
-</blockquote>
-<p>ChatGPT doesn’t have its own stories to share, but it excels at finding mistakes in the ways I write about mine! That’s why ChatGPT and I make a great team. I bring real stories and ChatGPT helps me convey them effectively.</p>
-		
-			<a href="https://nathanlaundry.com/tech/chatgpt-writing-coach/">Read more...</a>
 		
 	</div>
 </article>

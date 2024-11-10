@@ -2,10 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://nathanlaundry.com/lifeandlab/</loc>
-    <lastmod>2024-11-08T11:55:51-05:00</lastmod>
-  </url><url>
     <loc>https://nathanlaundry.com/</loc>
+    <lastmod>2024-11-10T17:19:54-05:00</lastmod>
+  </url><url>
+    <loc>https://nathanlaundry.com/tech/</loc>
+    <lastmod>2024-11-10T17:19:54-05:00</lastmod>
+  </url><url>
+    <loc>https://nathanlaundry.com/tech/zfsbootmenu/</loc>
+    <lastmod>2024-11-10T17:19:54-05:00</lastmod>
+  </url><url>
+    <loc>https://nathanlaundry.com/lifeandlab/</loc>
     <lastmod>2024-11-08T11:55:51-05:00</lastmod>
   </url><url>
     <loc>https://nathanlaundry.com/shower-thoughts/</loc>
@@ -24,9 +30,6 @@
     <lastmod>2024-02-25T20:09:26-05:00</lastmod>
   </url><url>
     <loc>https://nathanlaundry.com/tags/</loc>
-    <lastmod>2024-02-25T20:09:26-05:00</lastmod>
-  </url><url>
-    <loc>https://nathanlaundry.com/tech/</loc>
     <lastmod>2024-02-25T20:09:26-05:00</lastmod>
   </url><url>
     <loc>https://nathanlaundry.com/tags/vim/</loc>
