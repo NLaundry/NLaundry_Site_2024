@@ -4,8 +4,6 @@ date = 2024-11-10T17:19:54-05:00
 draft = false
 +++
 
-# ZFS Boot Menu - I put that sh\*t on everything (and how)
-
 #BasedOn: https://docs.zfsbootmenu.org/en/v2.3.x/guides/debian/bookworm-uefi.html
 #BasedOn: https://openzfs.github.io/openzfs-docs/Getting%20Started/Debian/Debian%20Bookworm%20Root%20on%20ZFS.html
 
