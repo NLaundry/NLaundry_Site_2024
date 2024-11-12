@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Writing on Nathan Laundry&#39;s Blog</title>
-    <link>https://nathanlaundry.com/tags/writing/</link>
+    <link>http://localhost:1313/tags/writing/</link>
     <description>Recent content in Writing on Nathan Laundry&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 25 Mar 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://nathanlaundry.com/tags/writing/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/writing/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ChatGPT is my Writing Coach and Editor: Here&#39;s How</title>
-      <link>https://nathanlaundry.com/tech/chatgpt-writing-coach/</link>
+      <link>http://localhost:1313/tech/chatgpt-writing-coach/</link>
       <pubDate>Sat, 25 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>https://nathanlaundry.com/tech/chatgpt-writing-coach/</guid>
+      <guid>http://localhost:1313/tech/chatgpt-writing-coach/</guid>
       <description>&lt;blockquote&gt;&#xA;&lt;p&gt;💡 Truly great writing, the kind that moves us, comes from lived human experiences. This will always be the domain of Sapiens. — A trust me bro statement by Nathan Laundry&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;ChatGPT doesn’t have its own stories to share, but it excels at finding mistakes in the ways I write about mine! That’s why ChatGPT and I make a great team. I bring real stories and ChatGPT helps me convey them effectively.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to Overcome a Fear of Writing: A Programmer&#39;s Perspective</title>
-      <link>https://nathanlaundry.com/shower-thoughts/fear-of-writing/</link>
+      <link>http://localhost:1313/shower-thoughts/fear-of-writing/</link>
       <pubDate>Sat, 18 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>https://nathanlaundry.com/shower-thoughts/fear-of-writing/</guid>
+      <guid>http://localhost:1313/shower-thoughts/fear-of-writing/</guid>
       <description>&lt;blockquote&gt;&#xA;&lt;p&gt;🔥 “I hate writing and I never want to do it again.” — Nathan Laundry 2013 to 2020&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;And I’m not alone. In Computer Science a lot of us wear our disdain for writing as a badge of honour. Honestly, there’s a sense of comradery in our shared hate for writing. I’d go so far as to say, in the undergrad’s natural habitat — the lecture hall — you can identify Computer Science students by the distinct groan they emit when an essay is assigned.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Surviving Grad School: What they don&#39;t tell you in Undergrad</title>
-      <link>https://nathanlaundry.com/shower-thoughts/surving-grad-school/</link>
+      <link>http://localhost:1313/shower-thoughts/surving-grad-school/</link>
       <pubDate>Sat, 28 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>https://nathanlaundry.com/shower-thoughts/surving-grad-school/</guid>
+      <guid>http://localhost:1313/shower-thoughts/surving-grad-school/</guid>
       <description>&lt;p&gt;Hi! I’m Nathan. Hope this little Grad School Survival guide helps :)&lt;/p&gt;&#xA;&lt;p&gt;Check out my other work at Nathanlaundry.com&lt;br&gt;&#xA;The TLDR on how to survive your master’s/phd&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;Priortize your research, not your grades&#xA;Listen to your advisors but know when to take the lead&#xA;Don’t read too much (there is a sweet spot)&#xA;Learn by problem-solving&#xA;Don’t leave all your writing to the end&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;As I approach the end of my first year as a graduate student, I’ve begun to look forward; crafting a path towards a successful thesis and setting up for my PhD. The thing about this kind of reflection is it brings about some alarming realizations. Some of those realizations include: “oh dear lord, I don’t know what I’m doing”, “what the heck do I do next?”, and “I don’t even know, what I don’t know.” To remedy this situation, I’ve done what any good academic would do — research.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to Write your own HCI Related Works Section Template</title>
-      <link>https://nathanlaundry.com/shower-thoughts/how-to-write-your-own-lit-review-template/</link>
+      <link>http://localhost:1313/shower-thoughts/how-to-write-your-own-lit-review-template/</link>
       <pubDate>Thu, 24 Feb 2022 00:00:00 +0000</pubDate>
-      <guid>https://nathanlaundry.com/shower-thoughts/how-to-write-your-own-lit-review-template/</guid>
+      <guid>http://localhost:1313/shower-thoughts/how-to-write-your-own-lit-review-template/</guid>
       <description>&lt;p&gt;What you’ll find here&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;My process for figuring out what to include in a literature review&lt;/li&gt;&#xA;&lt;li&gt;The template I built for writing future literature reviews&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;So recently I had to write a literature review for one of my classes and I wanted to formalize my approach to doing so. I’ve been working on it for the past few days and thought I’d share what I’ve done so any new graduate students, like myself, can learn from it and hopefully share their own tips and tricks.&lt;/p&gt;</description>
     </item>
   </channel>

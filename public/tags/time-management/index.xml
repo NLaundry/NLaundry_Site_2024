@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Time Management on Nathan Laundry&#39;s Blog</title>
-    <link>https://nathanlaundry.com/tags/time-management/</link>
+    <link>http://localhost:1313/tags/time-management/</link>
     <description>Recent content in Time Management on Nathan Laundry&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 22 Feb 2024 20:09:26 -0500</lastBuildDate>
-    <atom:link href="https://nathanlaundry.com/tags/time-management/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/time-management/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>It&#39;s the Comforts That Make us Feel Numb.</title>
-      <link>https://nathanlaundry.com/shower-thoughts/its-the-comforts-that-make-us-feel-numb/</link>
+      <link>http://localhost:1313/shower-thoughts/its-the-comforts-that-make-us-feel-numb/</link>
       <pubDate>Thu, 22 Feb 2024 20:09:26 -0500</pubDate>
-      <guid>https://nathanlaundry.com/shower-thoughts/its-the-comforts-that-make-us-feel-numb/</guid>
+      <guid>http://localhost:1313/shower-thoughts/its-the-comforts-that-make-us-feel-numb/</guid>
       <description>&lt;hr&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;I heard once, &amp;ldquo;It&amp;rsquo;s the comforts that make us feel numb&amp;rdquo; - Hozier&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;And you know what? I think he&amp;rsquo;s right.&lt;/p&gt;&#xA;&lt;p&gt;I think the ways in which we save time, the little eases and comforts, the ergonomics of our lives numb us and erode our sense of meaning. Now, does that mean I churn my own butter and sew my own clothes? Of course not, but it does make me think about the little moments that make up my life and how they make up my sense of meaning.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The 9–5 Graduate Student Schedule: Why I Treat Research Like any Other Job</title>
-      <link>https://nathanlaundry.com/shower-thoughts/9-5gradschool/</link>
+      <link>http://localhost:1313/shower-thoughts/9-5gradschool/</link>
       <pubDate>Sat, 25 Feb 2023 00:00:00 +0000</pubDate>
-      <guid>https://nathanlaundry.com/shower-thoughts/9-5gradschool/</guid>
+      <guid>http://localhost:1313/shower-thoughts/9-5gradschool/</guid>
       <description>&lt;hr&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Between 33% and 46% of Ph.D. Students don’t complete their degree [1].&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;I don’t know about you, but that sends shivers down my spine. In my reading and previous article on how to succeed with one’s doctoral pursuits, we discussed the many ways that professors have seen graduate students fail to finish their degrees. While most agree on the big things: write consistently, learn by doing, don’t aim too high or low, a major point of contention was time management. The cornerstone argument: does a 9–5 schedule work for a Ph.D. Some claim the doctoral pursuit requires zealous around-the-clock devotion, while others assert that the 9–5 gives you the rigour and structure you’ll need to succeed.&lt;/p&gt;</description>
     </item>
   </channel>

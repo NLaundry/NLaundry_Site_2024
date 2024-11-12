@@ -1,7 +1,12 @@
 <footer>
-	<p>&copy; {{ now.Year }} <a href="{{ .Site.BaseURL }}"><b>{{ if .Site.Copyright }}{{ .Site.Copyright }}{{ else }}{{ .Site.Title }}{{ end }}</b></a>.
-	{{- range .Site.Menus.footer }}
-	<a href="{{ .URL }}"><b>{{ .Name }}</b></a>.
+    <h3>Subscribe to my Newsletter - Life and Lab</h3>
+    <iframe src="https://nathanlaundry.substack.com/embed" width="480" height="320"
+        style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+
+    <p>&copy; {{ now.Year }} <a href="{{ .Site.BaseURL }}"><b>{{ if .Site.Copyright }}{{ .Site.Copyright }}{{ else }}{{
+                .Site.Title }}{{ end }}</b></a>.
+        {{- range .Site.Menus.footer }}
+        <a href="{{ .URL }}"><b>{{ .Name }}</b></a>.
         {{- end }}
-	</p>
+    </p>
 </footer>
