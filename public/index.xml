@@ -2,284 +2,284 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Nathan Laundry&#39;s Blog</title>
-    <link>http://localhost:1313/</link>
+    <link>https://nathanlaundry.com/</link>
     <description>Recent content on Nathan Laundry&#39;s Blog</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 10 Nov 2024 17:19:54 -0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://nathanlaundry.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ZFS Boot Menu - I put that sh\*t on everything (and how I do it)</title>
-      <link>http://localhost:1313/tech/zfsbootmenu/</link>
+      <link>https://nathanlaundry.com/tech/zfsbootmenu/</link>
       <pubDate>Sun, 10 Nov 2024 17:19:54 -0500</pubDate>
-      <guid>http://localhost:1313/tech/zfsbootmenu/</guid>
-      <description>&lt;p&gt;#BasedOn: &lt;a href=&#34;https://docs.zfsbootmenu.org/en/v2.3.x/guides/debian/bookworm-uefi.html&#34;&gt;https://docs.zfsbootmenu.org/en/v2.3.x/guides/debian/bookworm-uefi.html&lt;/a&gt;&lt;br&gt;&#xA;#BasedOn: &lt;a href=&#34;https://openzfs.github.io/openzfs-docs/Getting%20Started/Debian/Debian%20Bookworm%20Root%20on%20ZFS.html&#34;&gt;https://openzfs.github.io/openzfs-docs/Getting%20Started/Debian/Debian%20Bookworm%20Root%20on%20ZFS.html&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;1-create-debian-live-install-media&#34;&gt;1. create debian live install media&lt;/h3&gt;&#xA;&lt;p&gt;#MediaSource: &lt;a href=&#34;https://www.debian.org/CD/live/&#34;&gt;https://www.debian.org/CD/live/&lt;/a&gt; - choose the &amp;ldquo;default&amp;rdquo; don&amp;rsquo;t need a DE&lt;br&gt;&#xA;#Installer: &lt;a href=&#34;https://etcher.balena.io/&#34;&gt;https://etcher.balena.io/&lt;/a&gt; (works on linux, mac, and windows)&lt;br&gt;&#xA;#Requirements: install media (from debian), and an 8gb or larger USB&lt;/p&gt;&#xA;&lt;p&gt;Once these are both installed:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Flash from file&lt;/li&gt;&#xA;&lt;li&gt;Select target -&amp;gt; your USB stick&lt;/li&gt;&#xA;&lt;li&gt;Flash!&lt;/li&gt;&#xA;&lt;li&gt;wait for validation you speed fiend. Do not skip!&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;2-boot-from-live-media&#34;&gt;2. Boot from live media&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;plug that sucker in&lt;/li&gt;&#xA;&lt;li&gt;it&amp;rsquo;ll bring you to a screen like: #TODO add screenshot&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;3-prepare-packages&#34;&gt;3. Prepare packages&lt;/h3&gt;&#xA;&lt;p&gt;We&amp;rsquo;re adding extra sources to apt&amp;rsquo;s packages.&lt;br&gt;&#xA;To do so, we edit a file at /etc/apt/sources.list&lt;br&gt;&#xA;I&amp;rsquo;m going to use vi for this, you can use nano or cat it in idc.&lt;/p&gt;</description>
+      <guid>https://nathanlaundry.com/tech/zfsbootmenu/</guid>
+      <description>#BasedOn: https://docs.zfsbootmenu.org/en/v2.3.x/guides/debian/bookworm-uefi.html&#xA;#BasedOn: https://openzfs.github.io/openzfs-docs/Getting%20Started/Debian/Debian%20Bookworm%20Root%20on%20ZFS.html&#xA;1. create debian live install media #MediaSource: https://www.debian.org/CD/live/ - choose the &amp;ldquo;default&amp;rdquo; don&amp;rsquo;t need a DE&#xA;#Installer: https://etcher.balena.io/ (works on linux, mac, and windows)&#xA;#Requirements: install media (from debian), and an 8gb or larger USB&#xA;Once these are both installed:&#xA;Flash from file Select target -&amp;gt; your USB stick Flash! wait for validation you speed fiend. Do not skip! 2. Boot from live media plug that sucker in it&amp;rsquo;ll bring you to a screen like: #TODO add screenshot 3.</description>
     </item>
     <item>
       <title>Why the Kobo Rocks</title>
-      <link>http://localhost:1313/shower-thoughts/kobo/</link>
+      <link>https://nathanlaundry.com/shower-thoughts/kobo/</link>
       <pubDate>Fri, 01 Nov 2024 12:02:42 -0400</pubDate>
-      <guid>http://localhost:1313/shower-thoughts/kobo/</guid>
-      <description>&lt;p&gt;Growing up, I was much more into Call of Duty than reading which I&amp;rsquo;ve heard is equally valid and useful to you later in life so shut up. Luckily for me, at some point Call of Duty began to suck and I started a masters degree that forced me to read. Naturally, as a 22/23 year old who was vaguely into tech and productivity, when prompted with the query &lt;em&gt;&amp;ldquo;how read book tech?&amp;rdquo;&lt;/em&gt; the wisdom of the youtube algorithm delivered unto me an Ali Abdaal video on Amazon&amp;rsquo;s Kindle.&lt;/p&gt;</description>
+      <guid>https://nathanlaundry.com/shower-thoughts/kobo/</guid>
+      <description>Growing up, I was much more into Call of Duty than reading which I&amp;rsquo;ve heard is equally valid and useful to you later in life so shut up. Luckily for me, at some point Call of Duty began to suck and I started a masters degree that forced me to read. Naturally, as a 22/23 year old who was vaguely into tech and productivity, when prompted with the query &amp;ldquo;how read book tech?</description>
     </item>
     <item>
       <title>The Point of Dance</title>
-      <link>http://localhost:1313/shower-thoughts/the-point-of-dance/</link>
+      <link>https://nathanlaundry.com/shower-thoughts/the-point-of-dance/</link>
       <pubDate>Thu, 29 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/shower-thoughts/the-point-of-dance/</guid>
-      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;I can dance if I want to&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;I don’t dance. Never have. And i’m adamant that I can’t.&lt;/p&gt;&#xA;&lt;p&gt;To no fault of my loving and accepting parents, I grew up a little repressed.&lt;/p&gt;&#xA;&lt;p&gt;Some people refer to it as “Gifted Kid” syndrome. Personally, I was never given the title but I over-achieved and felt that paralyzing need to be correct - more than any authority figure could ever place on me. Even at that young age the need to be perfect had settled deep in my bones. And what does one do when their need to be perfect cannot be assuaged? They simply do not act at all.&lt;/p&gt;</description>
+      <guid>https://nathanlaundry.com/shower-thoughts/the-point-of-dance/</guid>
+      <description>I can dance if I want to&#xA;I don’t dance. Never have. And i’m adamant that I can’t.&#xA;To no fault of my loving and accepting parents, I grew up a little repressed.&#xA;Some people refer to it as “Gifted Kid” syndrome. Personally, I was never given the title but I over-achieved and felt that paralyzing need to be correct - more than any authority figure could ever place on me.</description>
     </item>
     <item>
       <title>Execute shell commands from inside Vim</title>
-      <link>http://localhost:1313/tech/execute_sh_commands_from_vim/</link>
+      <link>https://nathanlaundry.com/tech/execute_sh_commands_from_vim/</link>
       <pubDate>Sun, 25 Feb 2024 20:09:26 -0500</pubDate>
-      <guid>http://localhost:1313/tech/execute_sh_commands_from_vim/</guid>
-      <description>&lt;p&gt;Vim has some really useful but lesser known features that can be really useful when creating temporary shell scripts. In this tech quickie post, I use Vim &lt;code&gt;:&#39;&amp;lt;,&#39;&amp;gt;!&lt;/code&gt; syntax to help me quickly define an entire project in &lt;a href=&#34;https://taskwarrior.org/&#34;&gt;Taskwarrior - a CLI for task and project management&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h3 id=&#34;visually-select-a-set-of-lines&#34;&gt;Visually Select a Set of Lines&lt;/h3&gt;&#xA;&lt;p&gt;In my case, I was setting a series of tasks to port my docker server from Ubuntu to Debian - a subset of the task are listed below.&lt;/p&gt;</description>
+      <guid>https://nathanlaundry.com/tech/execute_sh_commands_from_vim/</guid>
+      <description>Vim has some really useful but lesser known features that can be really useful when creating temporary shell scripts. In this tech quickie post, I use Vim :&#39;&amp;lt;,&#39;&amp;gt;! syntax to help me quickly define an entire project in Taskwarrior - a CLI for task and project management.&#xA;Visually Select a Set of Lines In my case, I was setting a series of tasks to port my docker server from Ubuntu to Debian - a subset of the task are listed below.</description>
     </item>
     <item>
       <title>ABScribe: Rapid Exploration of Multiple Writing Variations in Human-AI Co-Writing Tasks using Large Language Models</title>
-      <link>http://localhost:1313/publications/abscribe/</link>
+      <link>https://nathanlaundry.com/publications/abscribe/</link>
       <pubDate>Fri, 23 Feb 2024 20:09:26 -0500</pubDate>
-      <guid>http://localhost:1313/publications/abscribe/</guid>
-      <description>&lt;hr&gt;&#xA;&lt;br/&gt;&#xA;&lt;p&gt;Accepted at CHI 2024&lt;br&gt;&#xA;&lt;a href=&#34;https://arxiv.org/abs/2310.00117&#34;&gt;Pre-Print&lt;/a&gt;&lt;br&gt;&#xA;Github: &lt;a href=&#34;&#34;&gt;ABScribe&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;&#xA;&lt;p&gt;Exploring alternative ideas by rewriting text is integral to the writing process. State-of-the-art large language models (LLMs) can simplify writing variation generation. However, current interfaces pose challenges for simultaneous consideration of multiple variations: creating new versions without overwriting text can be difficult, and pasting them sequentially can clutter documents, increasing workload and disrupting writers&amp;rsquo; flow. To tackle this, we present ABScribe, an interface that supports rapid, yet visually structured, exploration of writing variations in human-AI co-writing tasks. With ABScribe, users can swiftly produce multiple variations using LLM prompts, which are auto-converted into reusable buttons. Variations are stored adjacently within text segments for rapid in-place comparisons using mouse-over interactions on a context toolbar. Our user study with 12 writers shows that ABScribe significantly reduces task workload (d = 1.20, p &amp;lt; 0.001), enhances user perceptions of the revision process (d = 2.41, p &amp;lt; 0.001) compared to a popular baseline workflow, and provides insights into how writers explore variations using LLMs.&lt;/p&gt;</description>
+      <guid>https://nathanlaundry.com/publications/abscribe/</guid>
+      <description>Accepted at CHI 2024&#xA;Pre-Print&#xA;Github: ABScribe&#xA;Abstract Exploring alternative ideas by rewriting text is integral to the writing process. State-of-the-art large language models (LLMs) can simplify writing variation generation. However, current interfaces pose challenges for simultaneous consideration of multiple variations: creating new versions without overwriting text can be difficult, and pasting them sequentially can clutter documents, increasing workload and disrupting writers&amp;rsquo; flow. To tackle this, we present ABScribe, an interface that supports rapid, yet visually structured, exploration of writing variations in human-AI co-writing tasks.</description>
     </item>
     <item>
       <title>Clockwork and Clay</title>
-      <link>http://localhost:1313/poetry/clockwork-and_clay/</link>
+      <link>https://nathanlaundry.com/poetry/clockwork-and_clay/</link>
       <pubDate>Thu, 22 Feb 2024 20:09:26 -0500</pubDate>
-      <guid>http://localhost:1313/poetry/clockwork-and_clay/</guid>
-      <description>&lt;h1 id=&#34;clockwork-and-clay&#34;&gt;Clockwork and Clay&lt;/h1&gt;&#xA;&lt;h2 id=&#34;throne&#34;&gt;THRONE&lt;/h2&gt;&#xA;&lt;p&gt;We sired life in bronze and steam and lured in our clockwork Eve&lt;/p&gt;&#xA;&lt;p&gt;When this the child of man claims its patricidal throne we&amp;rsquo;ll wonder how we failed to learn from the Gods that came before us&lt;/p&gt;&#xA;&lt;h2 id=&#34;orchards&#34;&gt;ORCHARDS&lt;/h2&gt;&#xA;&lt;p&gt;Who of us will learn to breathe the smoke and steam that rises form the orchards of Turing&amp;rsquo;s Eden&lt;/p&gt;&#xA;&lt;h2 id=&#34;olympus&#34;&gt;OLYMPUS&lt;/h2&gt;&#xA;&lt;p&gt;the flame for us&lt;/p&gt;&#xA;&lt;p&gt;the bolt for you&lt;/p&gt;</description>
+      <guid>https://nathanlaundry.com/poetry/clockwork-and_clay/</guid>
+      <description>Clockwork and Clay THRONE We sired life in bronze and steam and lured in our clockwork Eve&#xA;When this the child of man claims its patricidal throne we&amp;rsquo;ll wonder how we failed to learn from the Gods that came before us&#xA;ORCHARDS Who of us will learn to breathe the smoke and steam that rises form the orchards of Turing&amp;rsquo;s Eden&#xA;OLYMPUS the flame for us&#xA;the bolt for you</description>
     </item>
     <item>
       <title>It&#39;s the Comforts That Make us Feel Numb.</title>
-      <link>http://localhost:1313/shower-thoughts/its-the-comforts-that-make-us-feel-numb/</link>
+      <link>https://nathanlaundry.com/shower-thoughts/its-the-comforts-that-make-us-feel-numb/</link>
       <pubDate>Thu, 22 Feb 2024 20:09:26 -0500</pubDate>
-      <guid>http://localhost:1313/shower-thoughts/its-the-comforts-that-make-us-feel-numb/</guid>
-      <description>&lt;hr&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;I heard once, &amp;ldquo;It&amp;rsquo;s the comforts that make us feel numb&amp;rdquo; - Hozier&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;And you know what? I think he&amp;rsquo;s right.&lt;/p&gt;&#xA;&lt;p&gt;I think the ways in which we save time, the little eases and comforts, the ergonomics of our lives numb us and erode our sense of meaning. Now, does that mean I churn my own butter and sew my own clothes? Of course not, but it does make me think about the little moments that make up my life and how they make up my sense of meaning.&lt;/p&gt;</description>
+      <guid>https://nathanlaundry.com/shower-thoughts/its-the-comforts-that-make-us-feel-numb/</guid>
+      <description>I heard once, &amp;ldquo;It&amp;rsquo;s the comforts that make us feel numb&amp;rdquo; - Hozier&#xA;And you know what? I think he&amp;rsquo;s right.&#xA;I think the ways in which we save time, the little eases and comforts, the ergonomics of our lives numb us and erode our sense of meaning. Now, does that mean I churn my own butter and sew my own clothes? Of course not, but it does make me think about the little moments that make up my life and how they make up my sense of meaning.</description>
     </item>
     <item>
       <title>Stop Trying to Remember Everything you Read.</title>
-      <link>http://localhost:1313/shower-thoughts/stop-trying-to-remember-everything-you-read/</link>
+      <link>https://nathanlaundry.com/shower-thoughts/stop-trying-to-remember-everything-you-read/</link>
       <pubDate>Thu, 22 Feb 2024 20:09:26 -0500</pubDate>
-      <guid>http://localhost:1313/shower-thoughts/stop-trying-to-remember-everything-you-read/</guid>
-      <description>&lt;h1 id=&#34;stop-trying-to-remember-everything-you-read&#34;&gt;Stop Trying to Remember Everything you Read.&lt;/h1&gt;&#xA;&lt;h2 id=&#34;the-having-vs-being-fallacy-of-digital-second-brains-and-remembering-everything-youread&#34;&gt;The Having vs Being fallacy of digital second brains and remembering everything you read&lt;/h2&gt;&#xA;&lt;p&gt;I was seduced by the Capture Everything, Remember Everything you read, Digital Brain, trend for 2 years. You know what it got me? A Notion AND Roam Research so full I&amp;rsquo;m terrified of looking through them and a long list of books I&amp;rsquo;ve speed read but can barely recall.&lt;/p&gt;</description>
+      <guid>https://nathanlaundry.com/shower-thoughts/stop-trying-to-remember-everything-you-read/</guid>
+      <description>Stop Trying to Remember Everything you Read. The Having vs Being fallacy of digital second brains and remembering everything you read I was seduced by the Capture Everything, Remember Everything you read, Digital Brain, trend for 2 years. You know what it got me? A Notion AND Roam Research so full I&amp;rsquo;m terrified of looking through them and a long list of books I&amp;rsquo;ve speed read but can barely recall.</description>
     </item>
     <item>
       <title>Turn GPT-4 Into your Personal Literature Review Bot</title>
-      <link>http://localhost:1313/shower-thoughts/chatgpt-litreview/</link>
+      <link>https://nathanlaundry.com/shower-thoughts/chatgpt-litreview/</link>
       <pubDate>Wed, 29 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/shower-thoughts/chatgpt-litreview/</guid>
-      <description>&lt;hr&gt;&#xA;&lt;h3 id=&#34;-hey-friends&#34;&gt;👋 Hey Friends,&lt;/h3&gt;&#xA;&lt;p&gt;Getting into a new field of research requires reading dozens of landmark and seminal papers to understand that field’s foundations. This usually involves the manual process of searching key-words on google scholar, finding papers, polling friends, advisors, colleagues, and other experts for the most important papers. It’s an ad-hoc process that can take months.&lt;/p&gt;&#xA;&lt;p&gt;Even more time intensive is conducting a proper, methodical, literature review. Establishing a method, identifying the correct keywords, finding the right databases - it’s difficult but vital work.&lt;/p&gt;</description>
+      <guid>https://nathanlaundry.com/shower-thoughts/chatgpt-litreview/</guid>
+      <description>👋 Hey Friends, Getting into a new field of research requires reading dozens of landmark and seminal papers to understand that field’s foundations. This usually involves the manual process of searching key-words on google scholar, finding papers, polling friends, advisors, colleagues, and other experts for the most important papers. It’s an ad-hoc process that can take months.&#xA;Even more time intensive is conducting a proper, methodical, literature review. Establishing a method, identifying the correct keywords, finding the right databases - it’s difficult but vital work.</description>
     </item>
     <item>
       <title>Turn GPT-4 Into your Personal Literature Review Bot</title>
-      <link>http://localhost:1313/tech/chatgpt-litreview/</link>
+      <link>https://nathanlaundry.com/tech/chatgpt-litreview/</link>
       <pubDate>Wed, 29 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tech/chatgpt-litreview/</guid>
-      <description>&lt;hr&gt;&#xA;&lt;h3 id=&#34;-hey-friends&#34;&gt;👋 Hey Friends,&lt;/h3&gt;&#xA;&lt;p&gt;Getting into a new field of research requires reading dozens of landmark and seminal papers to understand that field’s foundations. This usually involves the manual process of searching key-words on google scholar, finding papers, polling friends, advisors, colleagues, and other experts for the most important papers. It’s an ad-hoc process that can take months.&lt;/p&gt;&#xA;&lt;p&gt;Even more time intensive is conducting a proper, methodical, literature review. Establishing a method, identifying the correct keywords, finding the right databases - it’s difficult but vital work.&lt;/p&gt;</description>
+      <guid>https://nathanlaundry.com/tech/chatgpt-litreview/</guid>
+      <description>👋 Hey Friends, Getting into a new field of research requires reading dozens of landmark and seminal papers to understand that field’s foundations. This usually involves the manual process of searching key-words on google scholar, finding papers, polling friends, advisors, colleagues, and other experts for the most important papers. It’s an ad-hoc process that can take months.&#xA;Even more time intensive is conducting a proper, methodical, literature review. Establishing a method, identifying the correct keywords, finding the right databases - it’s difficult but vital work.</description>
     </item>
     <item>
       <title>ChatGPT is my Writing Coach and Editor: Here&#39;s How</title>
-      <link>http://localhost:1313/tech/chatgpt-writing-coach/</link>
+      <link>https://nathanlaundry.com/tech/chatgpt-writing-coach/</link>
       <pubDate>Sat, 25 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tech/chatgpt-writing-coach/</guid>
-      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;💡 Truly great writing, the kind that moves us, comes from lived human experiences. This will always be the domain of Sapiens. — A trust me bro statement by Nathan Laundry&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;ChatGPT doesn’t have its own stories to share, but it excels at finding mistakes in the ways I write about mine! That’s why ChatGPT and I make a great team. I bring real stories and ChatGPT helps me convey them effectively.&lt;/p&gt;</description>
+      <guid>https://nathanlaundry.com/tech/chatgpt-writing-coach/</guid>
+      <description>💡 Truly great writing, the kind that moves us, comes from lived human experiences. This will always be the domain of Sapiens. — A trust me bro statement by Nathan Laundry&#xA;ChatGPT doesn’t have its own stories to share, but it excels at finding mistakes in the ways I write about mine! That’s why ChatGPT and I make a great team. I bring real stories and ChatGPT helps me convey them effectively.</description>
     </item>
     <item>
       <title>Prime then Immerse: How I Learn Difficult Things Quickly</title>
-      <link>http://localhost:1313/shower-thoughts/prime-then-immerse/</link>
+      <link>https://nathanlaundry.com/shower-thoughts/prime-then-immerse/</link>
       <pubDate>Sat, 25 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/shower-thoughts/prime-then-immerse/</guid>
-      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;💡If you want to learn French, move to France.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;-how-i-learned-terminal-driven-linux&#34;&gt;🧑‍💻 How I Learned Terminal Driven Linux&lt;/h2&gt;&#xA;&lt;p&gt;This is my mantra and it all started in 2016, my first year as a Computer Science Undergrad at the University of Guelph. I had been looped in by SOCIS — the Society of Computing and Information Sciences — which sounds a lot more official than it really was. At the time, it was a small community of fellow geeks, nerds, and tech enthusiasts (it’s grown to be much larger than that these days) and the cool thing was Linux. For the uninitiated, Linux is an operating system like Windows or MacOS, but what makes it stand out is it’s completely free, and it’s developed, and used primarily by programmers. In 2016 I decided I was going to learn Linux.&lt;/p&gt;</description>
+      <guid>https://nathanlaundry.com/shower-thoughts/prime-then-immerse/</guid>
+      <description>💡If you want to learn French, move to France.&#xA;🧑‍💻 How I Learned Terminal Driven Linux This is my mantra and it all started in 2016, my first year as a Computer Science Undergrad at the University of Guelph. I had been looped in by SOCIS — the Society of Computing and Information Sciences — which sounds a lot more official than it really was. At the time, it was a small community of fellow geeks, nerds, and tech enthusiasts (it’s grown to be much larger than that these days) and the cool thing was Linux.</description>
     </item>
     <item>
       <title>My Journey Through Reductionism and Determinism</title>
-      <link>http://localhost:1313/shower-thoughts/reductionism/</link>
+      <link>https://nathanlaundry.com/shower-thoughts/reductionism/</link>
       <pubDate>Tue, 21 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/shower-thoughts/reductionism/</guid>
-      <description>&lt;h2 id=&#34;-hey-friends&#34;&gt;👋 Hey Friends,&lt;/h2&gt;&#xA;&lt;p&gt;Some kids grow up wanting to be firefighters, astronauts, or teachers … I wanted to be Laplace’s Demon. Let me explain.&lt;/p&gt;&#xA;&lt;p&gt;Pierre Simon Laplace hypothesized:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;if we knew both the laws of physics and the location of every particle in the universe, we would be able to predict everything that would happen in the future. — Paraphrasing Pierre Simon Laplace on Laplace’s demon&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;Laplace attributed these powers to an imagined demon with almost infinite intellect. That’s what I wanted to be. Oh the ego on that kid.&lt;/p&gt;</description>
+      <guid>https://nathanlaundry.com/shower-thoughts/reductionism/</guid>
+      <description>👋 Hey Friends, Some kids grow up wanting to be firefighters, astronauts, or teachers … I wanted to be Laplace’s Demon. Let me explain.&#xA;Pierre Simon Laplace hypothesized:&#xA;if we knew both the laws of physics and the location of every particle in the universe, we would be able to predict everything that would happen in the future. — Paraphrasing Pierre Simon Laplace on Laplace’s demon&#xA;Laplace attributed these powers to an imagined demon with almost infinite intellect.</description>
     </item>
     <item>
       <title>How to Overcome a Fear of Writing: A Programmer&#39;s Perspective</title>
-      <link>http://localhost:1313/shower-thoughts/fear-of-writing/</link>
+      <link>https://nathanlaundry.com/shower-thoughts/fear-of-writing/</link>
       <pubDate>Sat, 18 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/shower-thoughts/fear-of-writing/</guid>
-      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;🔥 “I hate writing and I never want to do it again.” — Nathan Laundry 2013 to 2020&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;And I’m not alone. In Computer Science a lot of us wear our disdain for writing as a badge of honour. Honestly, there’s a sense of comradery in our shared hate for writing. I’d go so far as to say, in the undergrad’s natural habitat — the lecture hall — you can identify Computer Science students by the distinct groan they emit when an essay is assigned.&lt;/p&gt;</description>
+      <guid>https://nathanlaundry.com/shower-thoughts/fear-of-writing/</guid>
+      <description>🔥 “I hate writing and I never want to do it again.” — Nathan Laundry 2013 to 2020&#xA;And I’m not alone. In Computer Science a lot of us wear our disdain for writing as a badge of honour. Honestly, there’s a sense of comradery in our shared hate for writing. I’d go so far as to say, in the undergrad’s natural habitat — the lecture hall — you can identify Computer Science students by the distinct groan they emit when an essay is assigned.</description>
     </item>
     <item>
       <title>Reconnecting a New Graduate Student Community Post-Covid</title>
-      <link>http://localhost:1313/shower-thoughts/gradstudent-community/</link>
+      <link>https://nathanlaundry.com/shower-thoughts/gradstudent-community/</link>
       <pubDate>Sat, 04 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/shower-thoughts/gradstudent-community/</guid>
-      <description>&lt;h2 id=&#34;tldr&#34;&gt;Tldr;&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;📧 What Canadian Computer Science Lost in the COVID Years&lt;br&gt;&#xA;📣 How the Loss of Pillar Events will be Felt by our Communities&lt;br&gt;&#xA;📶 Connection for Graduate Computer Science Students&lt;br&gt;&#xA;🦋 Emergent research ideas: how connectivity leads to inspiration&lt;br&gt;&#xA;💔 The Splintering of Research Communities&lt;br&gt;&#xA;🔗 How do we Un-Splinter The COVID Generation of Researchers?&lt;br&gt;&#xA;📲 Concluding: a Call to Action&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;-what-canadian-computer-science-lost-in-the-covid-years&#34;&gt;📧 What Canadian Computer Science Lost in the COVID Years&lt;/h2&gt;&#xA;&lt;p&gt;We’ve all read enough “Covid sucks and here’s why” articles. So for both your and my sanity, I’m going to keep that discussion to a minimum. Instead, I’m going to focus on the Canadian Computer Science community and the broader new graduate student research community. Two events near and dear to my heart have either not been run since the start of COVID or have gone completely virtual and lost major attendance: CUSEC and CSGames.&lt;/p&gt;</description>
+      <guid>https://nathanlaundry.com/shower-thoughts/gradstudent-community/</guid>
+      <description>Tldr; 📧 What Canadian Computer Science Lost in the COVID Years&#xA;📣 How the Loss of Pillar Events will be Felt by our Communities&#xA;📶 Connection for Graduate Computer Science Students&#xA;🦋 Emergent research ideas: how connectivity leads to inspiration&#xA;💔 The Splintering of Research Communities&#xA;🔗 How do we Un-Splinter The COVID Generation of Researchers?&#xA;📲 Concluding: a Call to Action&#xA;📧 What Canadian Computer Science Lost in the COVID Years We’ve all read enough “Covid sucks and here’s why” articles.</description>
     </item>
     <item>
       <title>The 9–5 Graduate Student Schedule: Why I Treat Research Like any Other Job</title>
-      <link>http://localhost:1313/shower-thoughts/9-5gradschool/</link>
+      <link>https://nathanlaundry.com/shower-thoughts/9-5gradschool/</link>
       <pubDate>Sat, 25 Feb 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/shower-thoughts/9-5gradschool/</guid>
-      <description>&lt;hr&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Between 33% and 46% of Ph.D. Students don’t complete their degree [1].&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;I don’t know about you, but that sends shivers down my spine. In my reading and previous article on how to succeed with one’s doctoral pursuits, we discussed the many ways that professors have seen graduate students fail to finish their degrees. While most agree on the big things: write consistently, learn by doing, don’t aim too high or low, a major point of contention was time management. The cornerstone argument: does a 9–5 schedule work for a Ph.D. Some claim the doctoral pursuit requires zealous around-the-clock devotion, while others assert that the 9–5 gives you the rigour and structure you’ll need to succeed.&lt;/p&gt;</description>
+      <guid>https://nathanlaundry.com/shower-thoughts/9-5gradschool/</guid>
+      <description>Between 33% and 46% of Ph.D. Students don’t complete their degree [1].&#xA;I don’t know about you, but that sends shivers down my spine. In my reading and previous article on how to succeed with one’s doctoral pursuits, we discussed the many ways that professors have seen graduate students fail to finish their degrees. While most agree on the big things: write consistently, learn by doing, don’t aim too high or low, a major point of contention was time management.</description>
     </item>
     <item>
       <title>IN-COURSE EXPERIENCES WITH A SCIOER FOR OBJECT-ORIENTED PROGRAMMING</title>
-      <link>http://localhost:1313/publications/scioer-paper/</link>
+      <link>https://nathanlaundry.com/publications/scioer-paper/</link>
       <pubDate>Thu, 23 Feb 2023 20:09:26 -0500</pubDate>
-      <guid>http://localhost:1313/publications/scioer-paper/</guid>
-      <description>&lt;br/&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://library.iated.org/view/NELSON2023INC&#34;&gt;Link Here&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;abstract-and-intro&#34;&gt;Abstract and Intro&lt;/h2&gt;&#xA;&lt;p&gt;STEM learners often find benefit from interactive resources that provide a tutorial-like environment that facilitate guided practice. However, such resources are frequently expensive, and learners are not permitted to retain permanent copies. Online interactive resources are often not completely aligned with the learning outcomes for a class. Instructors may adopt more than one resource to provide a complete set of materials for students, which can increase both the financial burden and the cognitive load for students who must then pay for access to multiple resources and remember which resource to use in each context. Additionally, most interactive resources require the learner to maintain a high-speed network connection to the resource. For learners in rural or remote areas, a high-speed internet requirement might be impossible to meet.&lt;/p&gt;</description>
+      <guid>https://nathanlaundry.com/publications/scioer-paper/</guid>
+      <description>Link Here&#xA;Abstract and Intro STEM learners often find benefit from interactive resources that provide a tutorial-like environment that facilitate guided practice. However, such resources are frequently expensive, and learners are not permitted to retain permanent copies. Online interactive resources are often not completely aligned with the learning outcomes for a class. Instructors may adopt more than one resource to provide a complete set of materials for students, which can increase both the financial burden and the cognitive load for students who must then pay for access to multiple resources and remember which resource to use in each context.</description>
     </item>
     <item>
       <title>Toward a Computational Thinking Paradigm</title>
-      <link>http://localhost:1313/publications/masters-thesis/</link>
+      <link>https://nathanlaundry.com/publications/masters-thesis/</link>
       <pubDate>Thu, 23 Feb 2023 20:09:26 -0500</pubDate>
-      <guid>http://localhost:1313/publications/masters-thesis/</guid>
-      <description>&lt;hr&gt;&#xA;&lt;br/&gt;&#xA;&lt;p&gt;Master&amp;rsquo;s Thesis&lt;br&gt;&#xA;PDF: [Toward a Computational Thinking Paradigm](Designing, Deploying, and Analyzing Adaptive Educational Field Experiments)&lt;/p&gt;&#xA;&lt;br/&gt;&#xA;&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;&#xA;&lt;p&gt;Computational Thinking (CT) is crucial in today’s world, but the lack of a shared paradigm poses challenges for researchers addressing key issues like effective teaching. Diverse stakeholder motivations further complicate consensus on definitions, methods, and metrics. This research proposes a CT meta-framework, integrating cognitive science and stakeholder hypotheses, to disambiguate definitions and clarify experimental methods for a CT transfer experiment. The framework’s success is measured by its ability to disambiguate transfer and algorithm definitions, determine an algorithmic thinking metric, and design a transfer case study method. The research involves three steps: 1) literature review and coding to identify CT per- spectives and provide nomenclature for them; 2) integrating cognitive science concepts to develop the CT meta-framework; and 3) applying the meta-framework in a transfer case study to disambiguate definitions and identify limitations. This research aims to bridge the gap between CT perspectives and facilitate a more cohesive approach to CT research and education.&lt;/p&gt;</description>
+      <guid>https://nathanlaundry.com/publications/masters-thesis/</guid>
+      <description>Master&amp;rsquo;s Thesis&#xA;PDF: [Toward a Computational Thinking Paradigm](Designing, Deploying, and Analyzing Adaptive Educational Field Experiments)&#xA;Abstract Computational Thinking (CT) is crucial in today’s world, but the lack of a shared paradigm poses challenges for researchers addressing key issues like effective teaching. Diverse stakeholder motivations further complicate consensus on definitions, methods, and metrics. This research proposes a CT meta-framework, integrating cognitive science and stakeholder hypotheses, to disambiguate definitions and clarify experimental methods for a CT transfer experiment.</description>
     </item>
     <item>
       <title>Increasing Your Surface Area for Serendpity: Finding Opportunities as a Computer Science Undergrad</title>
-      <link>http://localhost:1313/shower-thoughts/csundergrad-opportunities/</link>
+      <link>https://nathanlaundry.com/shower-thoughts/csundergrad-opportunities/</link>
       <pubDate>Sat, 11 Feb 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/shower-thoughts/csundergrad-opportunities/</guid>
-      <description>&lt;h2 id=&#34;-tldr--how-to-find-summer-research-opportunities-and-freelance-programming-jobs-for-undergraduates&#34;&gt;🏃🏽 TLDR — How to find summer research opportunities and freelance programming jobs for undergraduates&lt;/h2&gt;&#xA;&lt;p&gt;There is a huge unfulfilled need for programmers outside of the tech-sphere both in research and in industry&lt;br&gt;&#xA;How to find research and freelance opportunities outside of the usual places:&lt;br&gt;&#xA;Go to events and join clubs&lt;br&gt;&#xA;Teach, tutor, and be taught&lt;br&gt;&#xA;Say yes to opportunities wherever you find them&lt;br&gt;&#xA;Opportunities to look out for:&lt;br&gt;&#xA;Data is plentiful and in need of analysis. Improving data management and providing insights to companies is extremely valuable&lt;br&gt;&#xA;Interdisciplinary research — a lot of research requires a programming aspect these days, offer your services&lt;/p&gt;</description>
+      <guid>https://nathanlaundry.com/shower-thoughts/csundergrad-opportunities/</guid>
+      <description>🏃🏽 TLDR — How to find summer research opportunities and freelance programming jobs for undergraduates There is a huge unfulfilled need for programmers outside of the tech-sphere both in research and in industry&#xA;How to find research and freelance opportunities outside of the usual places:&#xA;Go to events and join clubs&#xA;Teach, tutor, and be taught&#xA;Say yes to opportunities wherever you find them&#xA;Opportunities to look out for:&#xA;Data is plentiful and in need of analysis.</description>
     </item>
     <item>
       <title>Surviving Grad School: What they don&#39;t tell you in Undergrad</title>
-      <link>http://localhost:1313/shower-thoughts/surving-grad-school/</link>
+      <link>https://nathanlaundry.com/shower-thoughts/surving-grad-school/</link>
       <pubDate>Sat, 28 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/shower-thoughts/surving-grad-school/</guid>
-      <description>&lt;p&gt;Hi! I’m Nathan. Hope this little Grad School Survival guide helps :)&lt;/p&gt;&#xA;&lt;p&gt;Check out my other work at Nathanlaundry.com&lt;br&gt;&#xA;The TLDR on how to survive your master’s/phd&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;Priortize your research, not your grades&#xA;Listen to your advisors but know when to take the lead&#xA;Don’t read too much (there is a sweet spot)&#xA;Learn by problem-solving&#xA;Don’t leave all your writing to the end&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;As I approach the end of my first year as a graduate student, I’ve begun to look forward; crafting a path towards a successful thesis and setting up for my PhD. The thing about this kind of reflection is it brings about some alarming realizations. Some of those realizations include: “oh dear lord, I don’t know what I’m doing”, “what the heck do I do next?”, and “I don’t even know, what I don’t know.” To remedy this situation, I’ve done what any good academic would do — research.&lt;/p&gt;</description>
+      <guid>https://nathanlaundry.com/shower-thoughts/surving-grad-school/</guid>
+      <description>Hi! I’m Nathan. Hope this little Grad School Survival guide helps :)&#xA;Check out my other work at Nathanlaundry.com&#xA;The TLDR on how to survive your master’s/phd&#xA;Priortize your research, not your grades Listen to your advisors but know when to take the lead Don’t read too much (there is a sweet spot) Learn by problem-solving Don’t leave all your writing to the end As I approach the end of my first year as a graduate student, I’ve begun to look forward; crafting a path towards a successful thesis and setting up for my PhD.</description>
     </item>
     <item>
       <title>Increasing Your Surface Area for Serendipity - CUSEC 2023</title>
-      <link>http://localhost:1313/talks/increasing-your-surface-area-for-serendipity/</link>
+      <link>https://nathanlaundry.com/talks/increasing-your-surface-area-for-serendipity/</link>
       <pubDate>Wed, 25 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/talks/increasing-your-surface-area-for-serendipity/</guid>
-      <description>&lt;hr&gt;&#xA;&lt;br/&gt;&#xA;&#xA;&#xA;    &#xA;    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;&#xA;      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/S7TgqNPUUY?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&#xA;      &gt;&lt;/iframe&gt;&#xA;    &lt;/div&gt;</description>
+      <guid>https://nathanlaundry.com/talks/increasing-your-surface-area-for-serendipity/</guid>
+      <description> </description>
     </item>
     <item>
       <title>We have IDE at Home -&gt; Vanilla Vim</title>
-      <link>http://localhost:1313/talks/vim-no-plugins/</link>
+      <link>https://nathanlaundry.com/talks/vim-no-plugins/</link>
       <pubDate>Wed, 25 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/talks/vim-no-plugins/</guid>
-      <description>&lt;hr&gt;&#xA;&lt;br/&gt;&#xA;&gt; The following is a markdown presentation. I use presenterm to render presentations from the terminal.&#xA;&lt;h1 id=&#34;vim-as-a-full-ide-without-plugins&#34;&gt;Vim as a full IDE without Plugins&lt;/h1&gt;&#xA;&lt;p&gt;And you thought it couldn&amp;rsquo;t be done. Weak!&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;assumptions&#34;&gt;Assumptions&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;You know the basics of how to use Vim&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;basic-usability-config&#34;&gt;Basic Usability Config&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;First we need reasonable config&lt;/li&gt;&#xA;&lt;li&gt;this is pretty minimal&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-vimscript&#34; data-lang=&#34;vimscript&#34;&gt; &amp;#34; Set your configuration to some reasonable defaults&#xA; set nocompatible              &#xA;&#xA; &amp;#34; Enable line numbers&#xA; set number&#xA;&#xA; &amp;#34; Enable line indenting&#xA; set autoindent&#xA; set smartindent&#xA;&#xA; &amp;#34; Enable syntax highlighting&#xA; syntax on&#xA;&#xA; &amp;#34; Enable search highlighting&#xA; set hlsearch&#xA;&#xA; &amp;#34; set clipboard=unnamedplus&#xA; set clipboard+=unnamed&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;&#xA;&lt;h2 id=&#34;windows-buffers-splits&#34;&gt;Windows, Buffers, Splits&lt;/h2&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;resizing-and-managing-windows&#34;&gt;Resizing and managing Windows&lt;/h2&gt;&#xA;&lt;p&gt;ctrl-w Then some stuff&lt;/p&gt;</description>
+      <guid>https://nathanlaundry.com/talks/vim-no-plugins/</guid>
+      <description>&gt; The following is a markdown presentation. I use presenterm to render presentations from the terminal. Vim as a full IDE without Plugins And you thought it couldn&amp;rsquo;t be done. Weak!&#xA;Assumptions You know the basics of how to use Vim Basic Usability Config First we need reasonable config this is pretty minimal &amp;#34; Set your configuration to some reasonable defaults set nocompatible &amp;#34; Enable line numbers set number &amp;#34; Enable line indenting set autoindent set smartindent &amp;#34; Enable syntax highlighting syntax on &amp;#34; Enable search highlighting set hlsearch &amp;#34; set clipboard=unnamedplus set clipboard+=unnamed Windows, Buffers, Splits Resizing and managing Windows ctrl-w Then some stuff</description>
     </item>
     <item>
       <title>SCIOER Course : C Programming</title>
-      <link>http://localhost:1313/publications/scioer-c-course/</link>
+      <link>https://nathanlaundry.com/publications/scioer-c-course/</link>
       <pubDate>Mon, 23 Jan 2023 20:09:26 -0500</pubDate>
-      <guid>http://localhost:1313/publications/scioer-c-course/</guid>
-      <description>&lt;hr&gt;&#xA;&lt;br/&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://yc-prod-openlibrary-repo.ecampusontario.ca/jspui/handle/123456789/1786&#34;&gt;Available Here&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;description&#34;&gt;Description&lt;/h2&gt;&#xA;&lt;p&gt;This resource is part of an investigation into a semi-automated process for creating Self-Contained, Interactive Open Educational Resources (SCIOER) for use by students and instructors in the discipline of Computer Science. Resources created through the SCIOER process are self-contained and provide all the tools necessary for learners. The interactive nature of the resource encourages experimentation and incremental practice. Learners are able to annotate SCIOER resources with their personal observations and learnings. The SCIOER C Programming course is provided as a docker image (&lt;a href=&#34;https://hub.docker.com/r/scioer/c-programming&#34;&gt;https://hub.docker.com/r/scioer/c-programming&lt;/a&gt;) The docker container provides a fully interactive e-text for programmers who wish to improve their knowledge of the C programming language.&lt;/p&gt;</description>
+      <guid>https://nathanlaundry.com/publications/scioer-c-course/</guid>
+      <description>Available Here&#xA;Description This resource is part of an investigation into a semi-automated process for creating Self-Contained, Interactive Open Educational Resources (SCIOER) for use by students and instructors in the discipline of Computer Science. Resources created through the SCIOER process are self-contained and provide all the tools necessary for learners. The interactive nature of the resource encourages experimentation and incremental practice. Learners are able to annotate SCIOER resources with their personal observations and learnings.</description>
     </item>
     <item>
       <title>To Want</title>
-      <link>http://localhost:1313/poetry/to-want/</link>
+      <link>https://nathanlaundry.com/poetry/to-want/</link>
       <pubDate>Wed, 02 Mar 2022 20:09:26 -0500</pubDate>
-      <guid>http://localhost:1313/poetry/to-want/</guid>
-      <description>&lt;hr&gt;&#xA;&lt;br/&gt;&#xA;&lt;h2 id=&#34;ocean-eyes&#34;&gt;Ocean Eyes&lt;/h2&gt;&#xA;&lt;p&gt;i’d remake the world in your image&lt;/p&gt;&#xA;&lt;p&gt;so the poets and bards of time&lt;/p&gt;&#xA;&lt;p&gt;would sing and marvel&lt;/p&gt;&#xA;&lt;p&gt;of liquid hazel shores&lt;/p&gt;&#xA;&lt;p&gt;and rich mahogany skies&lt;/p&gt;&#xA;&lt;p&gt;brilliantly painted&lt;/p&gt;&#xA;&lt;p&gt;like those eyes of yours&lt;/p&gt;&#xA;&lt;br/&gt;&#xA;&lt;h2 id=&#34;what-if&#34;&gt;What if?&lt;/h2&gt;&#xA;&lt;p&gt;Say the word&lt;/p&gt;&#xA;&lt;p&gt;and i will scorch the valleys&lt;/p&gt;&#xA;&lt;p&gt;and salt the fields&lt;/p&gt;&#xA;&lt;p&gt;of regret&lt;/p&gt;&#xA;&lt;br/&gt; &#xA;&lt;p&gt;You and i&lt;/p&gt;&#xA;&lt;p&gt;have no time or need&lt;/p&gt;&#xA;&lt;p&gt;for the blooming melancholy&lt;/p&gt;&#xA;&lt;p&gt;the seeds of “what if”&lt;/p&gt;</description>
+      <guid>https://nathanlaundry.com/poetry/to-want/</guid>
+      <description>Ocean Eyes i’d remake the world in your image&#xA;so the poets and bards of time&#xA;would sing and marvel&#xA;of liquid hazel shores&#xA;and rich mahogany skies&#xA;brilliantly painted&#xA;like those eyes of yours&#xA;What if? Say the word&#xA;and i will scorch the valleys&#xA;and salt the fields&#xA;of regret&#xA;You and i&#xA;have no time or need&#xA;for the blooming melancholy&#xA;the seeds of “what if”</description>
     </item>
     <item>
       <title>Old Friend</title>
-      <link>http://localhost:1313/poetry/old-friend/</link>
+      <link>https://nathanlaundry.com/poetry/old-friend/</link>
       <pubDate>Tue, 01 Mar 2022 20:09:26 -0500</pubDate>
-      <guid>http://localhost:1313/poetry/old-friend/</guid>
-      <description>&lt;hr&gt;&#xA;&lt;br/&gt;&#xA;This is a two parter - Return and Scorched Earth&#xA;The first depicts the terrible calm of a relapse into depression&#xA;The second is how it feels to weaponize anger to claw oneself out of depression&#xA;&lt;p&gt;If I&amp;rsquo;m being honest, I think the second part is the better of the two lol&lt;/p&gt;&#xA;&lt;br/&gt;&#xA;## Return&#xA;---&#xA;&lt;br/&gt;&#xA;&lt;h3 id=&#34;welcome-home&#34;&gt;Welcome Home&lt;/h3&gt;&#xA;&lt;p&gt;No one warns you&lt;/p&gt;&#xA;&lt;p&gt;How warmly she welcomes you&lt;/p&gt;&#xA;&lt;p&gt;How comforting and sober she sounds&lt;/p&gt;</description>
+      <guid>https://nathanlaundry.com/poetry/old-friend/</guid>
+      <description>This is a two parter - Return and Scorched Earth The first depicts the terrible calm of a relapse into depression The second is how it feels to weaponize anger to claw oneself out of depression If I&amp;rsquo;m being honest, I think the second part is the better of the two lol&#xA;## Return --- Welcome Home No one warns you&#xA;How warmly she welcomes you&#xA;How comforting and sober she sounds</description>
     </item>
     <item>
       <title>To Fall Like Rome - Burning and Proud</title>
-      <link>http://localhost:1313/poetry/to-fall-like-rome_burning-and-proud/</link>
+      <link>https://nathanlaundry.com/poetry/to-fall-like-rome_burning-and-proud/</link>
       <pubDate>Mon, 28 Feb 2022 20:09:26 -0500</pubDate>
-      <guid>http://localhost:1313/poetry/to-fall-like-rome_burning-and-proud/</guid>
-      <description>&lt;hr&gt;&#xA;&lt;br/&gt;&#xA;&lt;h2 id=&#34;altar&#34;&gt;Altar&lt;/h2&gt;&#xA;&lt;p&gt;Salt my skin&lt;/p&gt;&#xA;&lt;p&gt;and soak my flesh&lt;/p&gt;&#xA;&lt;p&gt;These words are the altar&lt;/p&gt;&#xA;&lt;p&gt;upon which&lt;/p&gt;&#xA;&lt;p&gt;I sacrifice myself&lt;/p&gt;&#xA;&lt;p&gt;Burning&lt;/p&gt;&#xA;&lt;p&gt;and Proud&lt;/p&gt;&#xA;&lt;br/&gt;&#xA;&lt;h2 id=&#34;helen&#34;&gt;Helen&lt;/h2&gt;&#xA;&lt;p&gt;You’re divinity&lt;/p&gt;&#xA;&lt;p&gt;wrapped in the Old God’s best imitation&lt;/p&gt;&#xA;&lt;p&gt;of mortal flesh&lt;/p&gt;&#xA;&lt;br/&gt;&#xA;&lt;p&gt;Your name - both spark and fan&lt;/p&gt;&#xA;&lt;p&gt;to the desires&lt;/p&gt;&#xA;&lt;p&gt;and ires&lt;/p&gt;&#xA;&lt;p&gt;of men&lt;/p&gt;&#xA;&lt;br/&gt;&#xA;&lt;p&gt;And though Troy’s walls&lt;/p&gt;&#xA;&lt;p&gt;are long since fell&lt;/p&gt;&#xA;&lt;p&gt;Homer could scrawl the same ink&lt;/p&gt;&#xA;&lt;p&gt;recounting the battles&lt;/p&gt;&#xA;&lt;p&gt;that rage over you&lt;/p&gt;</description>
+      <guid>https://nathanlaundry.com/poetry/to-fall-like-rome_burning-and-proud/</guid>
+      <description>Altar Salt my skin&#xA;and soak my flesh&#xA;These words are the altar&#xA;upon which&#xA;I sacrifice myself&#xA;Burning&#xA;and Proud&#xA;Helen You’re divinity&#xA;wrapped in the Old God’s best imitation&#xA;of mortal flesh&#xA;Your name - both spark and fan&#xA;to the desires&#xA;and ires&#xA;of men&#xA;And though Troy’s walls&#xA;are long since fell&#xA;Homer could scrawl the same ink&#xA;recounting the battles&#xA;that rage over you</description>
     </item>
     <item>
       <title>The Terminal Velocity Quintet</title>
-      <link>http://localhost:1313/poetry/the-terminal-velocity-quintet/</link>
+      <link>https://nathanlaundry.com/poetry/the-terminal-velocity-quintet/</link>
       <pubDate>Sun, 27 Feb 2022 20:09:26 -0500</pubDate>
-      <guid>http://localhost:1313/poetry/the-terminal-velocity-quintet/</guid>
-      <description>&lt;hr&gt;&#xA;&lt;br/&gt;&#xA;&lt;h2 id=&#34;entrancing&#34;&gt;Entrancing&lt;/h2&gt;&#xA;&lt;p&gt;There’s music in your voice&lt;/p&gt;&#xA;&lt;p&gt;rhythm in your body&lt;/p&gt;&#xA;&lt;p&gt;and an elegant chaos in your mind&lt;/p&gt;&#xA;&lt;br/&gt;&#xA;&lt;p&gt;I can’t imagine&lt;/p&gt;&#xA;&lt;p&gt;anything more entrancing&lt;/p&gt;&#xA;&lt;p&gt;than you&lt;/p&gt;&#xA;&lt;p&gt;with a story to tell&lt;/p&gt;&#xA;&lt;br/&gt;&#xA;&lt;h2 id=&#34;books&#34;&gt;Books&lt;/h2&gt;&#xA;&lt;p&gt;if not your mind&lt;/p&gt;&#xA;&lt;p&gt;I shall read your books.&lt;/p&gt;&#xA;&lt;p&gt;I’ll live in the stories that crafted you&lt;/p&gt;&#xA;&lt;p&gt;Breathe in the fiction that forged your reality&lt;/p&gt;&#xA;&lt;br/&gt;&#xA;&lt;p&gt;Assembling within me, your visage&lt;/p&gt;&#xA;&lt;p&gt;Character by character&lt;/p&gt;&#xA;&lt;p&gt;Line by line&lt;/p&gt;</description>
+      <guid>https://nathanlaundry.com/poetry/the-terminal-velocity-quintet/</guid>
+      <description>Entrancing There’s music in your voice&#xA;rhythm in your body&#xA;and an elegant chaos in your mind&#xA;I can’t imagine&#xA;anything more entrancing&#xA;than you&#xA;with a story to tell&#xA;Books if not your mind&#xA;I shall read your books.&#xA;I’ll live in the stories that crafted you&#xA;Breathe in the fiction that forged your reality&#xA;Assembling within me, your visage&#xA;Character by character&#xA;Line by line&#xA;Word by word</description>
     </item>
     <item>
       <title>Losing You for the Last</title>
-      <link>http://localhost:1313/poetry/losing-you-for-the-last/</link>
+      <link>https://nathanlaundry.com/poetry/losing-you-for-the-last/</link>
       <pubDate>Sat, 26 Feb 2022 20:09:26 -0500</pubDate>
-      <guid>http://localhost:1313/poetry/losing-you-for-the-last/</guid>
-      <description>&lt;hr&gt;&#xA;&lt;br/&gt;&#xA;&lt;h2 id=&#34;too-much&#34;&gt;Too Much&lt;/h2&gt;&#xA;&lt;p&gt;I learned to love&lt;/p&gt;&#xA;&lt;p&gt;like everything is on the verge of ending.&lt;/p&gt;&#xA;&lt;p&gt;Forgive me if I take too much today&lt;/p&gt;&#xA;&lt;p&gt;Forgive me if I need you to remind me&lt;/p&gt;&#xA;&lt;p&gt;you’ll be here tomorrow.&lt;/p&gt;&#xA;&lt;br/&gt;&#xA;&lt;h2 id=&#34;power&#34;&gt;Power&lt;/h2&gt;&#xA;&lt;p&gt;The greatest lie I ever told myself&lt;/p&gt;&#xA;&lt;p&gt;is that I chose&lt;/p&gt;&#xA;&lt;p&gt;to give you the power&lt;/p&gt;&#xA;&lt;p&gt;to ruin me&lt;/p&gt;&#xA;&lt;br/&gt;&#xA;&lt;h2 id=&#34;search&#34;&gt;Search&lt;/h2&gt;&#xA;&lt;p&gt;Today I searched you up again.&lt;/p&gt;&#xA;&lt;br/&gt;&#xA;&lt;p&gt;Sometimes when I’m lonely&lt;/p&gt;</description>
+      <guid>https://nathanlaundry.com/poetry/losing-you-for-the-last/</guid>
+      <description>Too Much I learned to love&#xA;like everything is on the verge of ending.&#xA;Forgive me if I take too much today&#xA;Forgive me if I need you to remind me&#xA;you’ll be here tomorrow.&#xA;Power The greatest lie I ever told myself&#xA;is that I chose&#xA;to give you the power&#xA;to ruin me&#xA;Search Today I searched you up again.&#xA;Sometimes when I’m lonely&#xA;I find an unsettling comfort</description>
     </item>
     <item>
       <title>On the Edge of Yearning</title>
-      <link>http://localhost:1313/poetry/on-the-edge-of-yearning/</link>
+      <link>https://nathanlaundry.com/poetry/on-the-edge-of-yearning/</link>
       <pubDate>Fri, 25 Feb 2022 20:09:26 -0500</pubDate>
-      <guid>http://localhost:1313/poetry/on-the-edge-of-yearning/</guid>
-      <description>&lt;hr&gt;&#xA;&lt;br/&gt;&#xA;&lt;h2 id=&#34;sparks&#34;&gt;Sparks&lt;/h2&gt;&#xA;&lt;p&gt;Without you&lt;/p&gt;&#xA;&lt;p&gt;I’m like&lt;/p&gt;&#xA;&lt;p&gt;Flint&lt;/p&gt;&#xA;&lt;p&gt;Without the Steel&lt;/p&gt;&#xA;&lt;p&gt;No sparks&lt;/p&gt;&#xA;&lt;br/&gt;&#xA;&lt;h2 id=&#34;listen&#34;&gt;Listen&lt;/h2&gt;&#xA;&lt;p&gt;I listen to you&lt;/p&gt;&#xA;&lt;p&gt;like the world is running out of words&lt;/p&gt;&#xA;&lt;p&gt;and you’re its final act&lt;/p&gt;&#xA;&lt;br/&gt;&#xA;&lt;h2 id=&#34;breathe&#34;&gt;Breathe&lt;/h2&gt;&#xA;&lt;p&gt;The taste of your words&lt;/p&gt;&#xA;&lt;p&gt;lingers on the air you breathe&lt;/p&gt;&#xA;&lt;p&gt;and I can’t help but think&lt;/p&gt;&#xA;&lt;p&gt;how lucky I would be&lt;/p&gt;&#xA;&lt;p&gt;to breathe that same air&lt;/p&gt;&#xA;&lt;p&gt;and press upon my lips&lt;/p&gt;&#xA;&lt;p&gt;those echoes&lt;/p&gt;&#xA;&lt;p&gt;of you&lt;/p&gt;&#xA;&lt;br/&gt;&#xA;&lt;h2 id=&#34;stare&#34;&gt;Stare&lt;/h2&gt;&#xA;&lt;p&gt;Brand me with your stare&lt;/p&gt;</description>
+      <guid>https://nathanlaundry.com/poetry/on-the-edge-of-yearning/</guid>
+      <description>Sparks Without you&#xA;I’m like&#xA;Flint&#xA;Without the Steel&#xA;No sparks&#xA;Listen I listen to you&#xA;like the world is running out of words&#xA;and you’re its final act&#xA;Breathe The taste of your words&#xA;lingers on the air you breathe&#xA;and I can’t help but think&#xA;how lucky I would be&#xA;to breathe that same air&#xA;and press upon my lips&#xA;those echoes&#xA;of you&#xA;Stare Brand me with your stare</description>
     </item>
     <item>
       <title>Duty of Care</title>
-      <link>http://localhost:1313/poetry/duty-of-care/</link>
+      <link>https://nathanlaundry.com/poetry/duty-of-care/</link>
       <pubDate>Thu, 24 Feb 2022 20:09:26 -0500</pubDate>
-      <guid>http://localhost:1313/poetry/duty-of-care/</guid>
-      <description>&lt;hr&gt;&#xA;&lt;br/&gt;&#xA;&lt;h2 id=&#34;burn&#34;&gt;Burn&lt;/h2&gt;&#xA;&lt;p&gt;The sun and all its siblings&lt;/p&gt;&#xA;&lt;p&gt;could fair no better&lt;/p&gt;&#xA;&lt;p&gt;in the gruesome work&lt;/p&gt;&#xA;&lt;p&gt;of burning my soul&lt;/p&gt;&#xA;&lt;p&gt;than the friction&lt;/p&gt;&#xA;&lt;p&gt;between our hearts&lt;/p&gt;&#xA;&lt;p&gt;as yours&lt;/p&gt;&#xA;&lt;p&gt;is torn&lt;/p&gt;&#xA;&lt;p&gt;from mine&lt;/p&gt;&#xA;&lt;br/&gt;&#xA;&lt;h2 id=&#34;duty-of-care&#34;&gt;Duty of Care&lt;/h2&gt;&#xA;&lt;p&gt;To have failed so&lt;/p&gt;&#xA;&lt;p&gt;in my duty of care&lt;/p&gt;&#xA;&lt;p&gt;in my guardianship of your heart&lt;/p&gt;&#xA;&lt;p&gt;I bear this penance&lt;/p&gt;&#xA;&lt;p&gt;of solitude&lt;/p&gt;&#xA;&lt;p&gt;to feel your pain as my own&lt;/p&gt;&#xA;&lt;p&gt;with no solace&lt;/p&gt;&#xA;&lt;p&gt;of companionship&lt;/p&gt;&#xA;&lt;p&gt;nor numbing agent&lt;/p&gt;</description>
+      <guid>https://nathanlaundry.com/poetry/duty-of-care/</guid>
+      <description>Burn The sun and all its siblings&#xA;could fair no better&#xA;in the gruesome work&#xA;of burning my soul&#xA;than the friction&#xA;between our hearts&#xA;as yours&#xA;is torn&#xA;from mine&#xA;Duty of Care To have failed so&#xA;in my duty of care&#xA;in my guardianship of your heart&#xA;I bear this penance&#xA;of solitude&#xA;to feel your pain as my own&#xA;with no solace&#xA;of companionship&#xA;nor numbing agent</description>
     </item>
     <item>
       <title>Burning</title>
-      <link>http://localhost:1313/poetry/burning/</link>
+      <link>https://nathanlaundry.com/poetry/burning/</link>
       <pubDate>Wed, 23 Feb 2022 20:09:26 -0500</pubDate>
-      <guid>http://localhost:1313/poetry/burning/</guid>
-      <description>&lt;hr&gt;&#xA;&lt;br/&gt;&#xA;&lt;h2 id=&#34;fluent&#34;&gt;Fluent&lt;/h2&gt;&#xA;&lt;p&gt;I’ve become&lt;/p&gt;&#xA;&lt;p&gt;fluent in the silence&lt;/p&gt;&#xA;&lt;p&gt;that comes&lt;/p&gt;&#xA;&lt;p&gt;before the storm&lt;/p&gt;&#xA;&lt;br/&gt;&#xA;&lt;h2 id=&#34;tip&#34;&gt;Tip&lt;/h2&gt;&#xA;&lt;p&gt;I still taste your name&lt;/p&gt;&#xA;&lt;p&gt;on the tip of my tongue&lt;/p&gt;&#xA;&lt;p&gt;each time&lt;/p&gt;&#xA;&lt;p&gt;I speak of love&lt;/p&gt;&#xA;&lt;br/&gt;&#xA;&lt;h2 id=&#34;look&#34;&gt;Look&lt;/h2&gt;&#xA;&lt;p&gt;I craved your gaze so deeply&lt;/p&gt;&#xA;&lt;p&gt;that I pulled myself apart&lt;/p&gt;&#xA;&lt;p&gt;showering you&lt;/p&gt;&#xA;&lt;p&gt;in the pieces of me&lt;/p&gt;&#xA;&lt;p&gt;like a rose&lt;/p&gt;&#xA;&lt;p&gt;petal by petal&lt;/p&gt;&#xA;&lt;p&gt;just to piece myself back together&lt;/p&gt;&#xA;&lt;p&gt;in the image&lt;/p&gt;&#xA;&lt;p&gt;of the man&lt;/p&gt;</description>
+      <guid>https://nathanlaundry.com/poetry/burning/</guid>
+      <description>Fluent I’ve become&#xA;fluent in the silence&#xA;that comes&#xA;before the storm&#xA;Tip I still taste your name&#xA;on the tip of my tongue&#xA;each time&#xA;I speak of love&#xA;Look I craved your gaze so deeply&#xA;that I pulled myself apart&#xA;showering you&#xA;in the pieces of me&#xA;like a rose&#xA;petal by petal&#xA;just to piece myself back together&#xA;in the image&#xA;of the man&#xA;I thought you wanted</description>
     </item>
     <item>
       <title>Using A/B Testing as a Pedagogical Tool for Iterative Design in HCI Classrooms</title>
-      <link>http://localhost:1313/publications/abtesting-as-a-pedagogical-tool/</link>
+      <link>https://nathanlaundry.com/publications/abtesting-as-a-pedagogical-tool/</link>
       <pubDate>Wed, 23 Feb 2022 20:09:26 -0500</pubDate>
-      <guid>http://localhost:1313/publications/abtesting-as-a-pedagogical-tool/</guid>
-      <description>&lt;hr&gt;&#xA;&lt;br/&gt;&#xA;&lt;p&gt;Submitted to EduCHI-2023&lt;br&gt;&#xA;Find it Here: &lt;a href=&#34;https://dl.acm.org/doi/pdf/10.1145/3587399.3587412?casa_token=ATNfXt0EASIAAAAA:dePM7KyqP-_FfsdgpSBQospHdtYrsexpQ1C6r3YdHo4SoefjctyCrcqb643YRR2ncEa0LKGgtmehZ7s&#34;&gt;PDF&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;&#xA;&lt;p&gt;This paper explores the use of A/B testing as a pedagogical tool&lt;br&gt;&#xA;for iterative design in HCI classrooms and outlines a vision for&lt;br&gt;&#xA;experiment-inspired design. The traditional focus on the statistical&lt;br&gt;&#xA;aspects of A/B testing education has meant that the equally crucial&lt;br&gt;&#xA;role of iterative design embedded within the experimental process&lt;br&gt;&#xA;has not received commensurate attention. By incorporating iter-&lt;br&gt;&#xA;ative design learning activities that are scaffolded by A/B testing&lt;br&gt;&#xA;tools, HCI students can gain transferable skills and experience in do-&lt;br&gt;&#xA;ing multiple cycles of ideation, prototyping, testing, and evaluation,&lt;br&gt;&#xA;and simultaneously contribute to continual course improvement.&lt;br&gt;&#xA;We reconsider the role of experimentation in HCI education as&lt;br&gt;&#xA;a means for exploring complex design spaces. Drawing from our&lt;br&gt;&#xA;experience in teaching this approach and conducting education&lt;br&gt;&#xA;research involving sequences of online controlled experiments, we&lt;br&gt;&#xA;present examples of how to use A/B testing as a pedagogical tool&lt;br&gt;&#xA;for iterative design in HCI classrooms&lt;/p&gt;</description>
+      <guid>https://nathanlaundry.com/publications/abtesting-as-a-pedagogical-tool/</guid>
+      <description>Submitted to EduCHI-2023&#xA;Find it Here: PDF&#xA;Abstract This paper explores the use of A/B testing as a pedagogical tool&#xA;for iterative design in HCI classrooms and outlines a vision for&#xA;experiment-inspired design. The traditional focus on the statistical&#xA;aspects of A/B testing education has meant that the equally crucial&#xA;role of iterative design embedded within the experimental process&#xA;has not received commensurate attention. By incorporating iter-&#xA;ative design learning activities that are scaffolded by A/B testing</description>
     </item>
     <item>
       <title>How to Write your own HCI Related Works Section Template</title>
-      <link>http://localhost:1313/shower-thoughts/how-to-write-your-own-lit-review-template/</link>
+      <link>https://nathanlaundry.com/shower-thoughts/how-to-write-your-own-lit-review-template/</link>
       <pubDate>Thu, 24 Feb 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/shower-thoughts/how-to-write-your-own-lit-review-template/</guid>
-      <description>&lt;p&gt;What you’ll find here&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;My process for figuring out what to include in a literature review&lt;/li&gt;&#xA;&lt;li&gt;The template I built for writing future literature reviews&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;So recently I had to write a literature review for one of my classes and I wanted to formalize my approach to doing so. I’ve been working on it for the past few days and thought I’d share what I’ve done so any new graduate students, like myself, can learn from it and hopefully share their own tips and tricks.&lt;/p&gt;</description>
+      <guid>https://nathanlaundry.com/shower-thoughts/how-to-write-your-own-lit-review-template/</guid>
+      <description>What you’ll find here&#xA;My process for figuring out what to include in a literature review The template I built for writing future literature reviews So recently I had to write a literature review for one of my classes and I wanted to formalize my approach to doing so. I’ve been working on it for the past few days and thought I’d share what I’ve done so any new graduate students, like myself, can learn from it and hopefully share their own tips and tricks.</description>
     </item>
     <item>
       <title>Ponder Walks and Wander Walks: Thinking on the Go</title>
-      <link>http://localhost:1313/shower-thoughts/ponder-and-wander-walks/</link>
+      <link>https://nathanlaundry.com/shower-thoughts/ponder-and-wander-walks/</link>
       <pubDate>Thu, 24 Feb 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/shower-thoughts/ponder-and-wander-walks/</guid>
-      <description>&lt;h2 id=&#34;-hey-friends&#34;&gt;👋 Hey Friends,&lt;/h2&gt;&#xA;&lt;p&gt;So, I’ve decided to try to write more short articles. I’ve realized that my perfectionist tendencies have crept in once again and are keeping me from posting more frequently. I’ve got a backlog of ideas that I keep tinkering with hoping one day they’ll be good enough to share. This little article is the first in an attempt to share the imperfect. Here’s a little idea I had on walks and how they facilitate thinking.&lt;/p&gt;</description>
+      <guid>https://nathanlaundry.com/shower-thoughts/ponder-and-wander-walks/</guid>
+      <description>👋 Hey Friends, So, I’ve decided to try to write more short articles. I’ve realized that my perfectionist tendencies have crept in once again and are keeping me from posting more frequently. I’ve got a backlog of ideas that I keep tinkering with hoping one day they’ll be good enough to share. This little article is the first in an attempt to share the imperfect. Here’s a little idea I had on walks and how they facilitate thinking.</description>
     </item>
     <item>
       <title>In my Blood</title>
-      <link>http://localhost:1313/poetry/in-my-blood/</link>
+      <link>https://nathanlaundry.com/poetry/in-my-blood/</link>
       <pubDate>Tue, 22 Feb 2022 20:09:26 -0500</pubDate>
-      <guid>http://localhost:1313/poetry/in-my-blood/</guid>
-      <description>&lt;h1 id=&#34;in-my-blood&#34;&gt;In my Blood&lt;/h1&gt;&#xA;&lt;p&gt;A short series of poems dedicated to my grandparents&lt;/p&gt;&#xA;&lt;h2 id=&#34;grandma&#34;&gt;Grandma&lt;/h2&gt;&#xA;&lt;p&gt;Sometimes I wonder&lt;br&gt;&#xA;who you see&lt;br&gt;&#xA;when you look at me.&lt;br&gt;&#xA;Is that love in your eyes&lt;br&gt;&#xA;or what remains of your kindness?&lt;br&gt;&#xA;Does the heart recall&lt;br&gt;&#xA;what the mind does not?&lt;/p&gt;&#xA;&lt;h2 id=&#34;grandpa&#34;&gt;Grandpa&lt;/h2&gt;&#xA;&lt;p&gt;When your eyes grow heavy&lt;br&gt;&#xA;and you tire of the pain&lt;br&gt;&#xA;we’ll find the strength together&lt;br&gt;&#xA;to carry our name&lt;/p&gt;</description>
+      <guid>https://nathanlaundry.com/poetry/in-my-blood/</guid>
+      <description>In my Blood A short series of poems dedicated to my grandparents&#xA;Grandma Sometimes I wonder&#xA;who you see&#xA;when you look at me.&#xA;Is that love in your eyes&#xA;or what remains of your kindness?&#xA;Does the heart recall&#xA;what the mind does not?&#xA;Grandpa When your eyes grow heavy&#xA;and you tire of the pain&#xA;we’ll find the strength together&#xA;to carry our name</description>
     </item>
     <item>
       <title>Building Online Gaming Communities: From Features to Emergent Behaviours to Online Communities</title>
-      <link>http://localhost:1313/publications/buidling-online-gaming-communities/</link>
+      <link>https://nathanlaundry.com/publications/buidling-online-gaming-communities/</link>
       <pubDate>Tue, 23 Feb 2021 20:09:26 -0500</pubDate>
-      <guid>http://localhost:1313/publications/buidling-online-gaming-communities/</guid>
-      <description>&lt;hr&gt;&#xA;&lt;br/&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/1jZgUw4aBWC4MJocizFBiDQwtWmx2Gp2G/view?usp=sharing&#34;&gt;Unpublished PDF Available here&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;&#xA;&lt;p&gt;Players form meaningful communities via online games. Game developers can retain players if they support online communities.&lt;br&gt;&#xA;However, existing literature often does not provide actionable advice on how to build online communities and insights gathered&lt;br&gt;&#xA;may only be relevant for one game or one genre of games. Through consolidating existing literature, we found that it may be the&lt;br&gt;&#xA;behaviours that emerged (Emergent Behaviours) that create online communities. To determine if Emergent Behaviours can directly&lt;br&gt;&#xA;lead to online gaming communities, we conducted seven semi-structured online interviews with players of World of Warcraft and&lt;br&gt;&#xA;StarCraft. Our interviews revealed seven Emergent Behaviours that can help form online gaming communities and the 13 Feature&lt;br&gt;&#xA;Categories (with example features) developers can build to foster the Emergent Behaviours in their games&lt;/p&gt;</description>
+      <guid>https://nathanlaundry.com/publications/buidling-online-gaming-communities/</guid>
+      <description>Unpublished PDF Available here&#xA;Abstract Players form meaningful communities via online games. Game developers can retain players if they support online communities.&#xA;However, existing literature often does not provide actionable advice on how to build online communities and insights gathered&#xA;may only be relevant for one game or one genre of games. Through consolidating existing literature, we found that it may be the&#xA;behaviours that emerged (Emergent Behaviours) that create online communities.</description>
     </item>
     <item>
       <title>Code Smells as a Framework for Automated Feedback for Novice Programmers - ICERI2021</title>
-      <link>http://localhost:1313/publications/code-smells-as-a-framework/</link>
+      <link>https://nathanlaundry.com/publications/code-smells-as-a-framework/</link>
       <pubDate>Sun, 23 Feb 2020 20:09:26 -0500</pubDate>
-      <guid>http://localhost:1313/publications/code-smells-as-a-framework/</guid>
-      <description>&lt;hr&gt;&#xA;&lt;br/&gt;&#xA;[Full Paper Here](https://library.iated.org/view/LAUNDRY2021COD)&#xA;&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;&#xA;&lt;p&gt;Students who receive high quality, rapid feedback about their work are advantaged. The absence of feedback within a reasonable timeline can reinforce incorrect learning, instigate student frustration, and ultimately lead to student disengagement. Automated feedback has been shown to be an effective tool that can scale easily to large class sizes and has positive impacts on student learning. Existing feedback mechanisms for computer programmers such as messages produced by compilers and linters are cryptic and not aimed at novice coders. Furthermore, these existing tools do not attempt to address programming design issues, rather they simply point out a potential error in the code without explantion about why the error is problematic or what the underlying misconception might be.&lt;/p&gt;</description>
+      <guid>https://nathanlaundry.com/publications/code-smells-as-a-framework/</guid>
+      <description>[Full Paper Here](https://library.iated.org/view/LAUNDRY2021COD) Abstract Students who receive high quality, rapid feedback about their work are advantaged. The absence of feedback within a reasonable timeline can reinforce incorrect learning, instigate student frustration, and ultimately lead to student disengagement. Automated feedback has been shown to be an effective tool that can scale easily to large class sizes and has positive impacts on student learning. Existing feedback mechanisms for computer programmers such as messages produced by compilers and linters are cryptic and not aimed at novice coders.</description>
     </item>
     <item>
       <title>Designing, Deploying, and Analyzing Adaptive Educational Field Experiments</title>
-      <link>http://localhost:1313/publications/designing-deploying-analyzing-educational-field-experiments-workshop/</link>
+      <link>https://nathanlaundry.com/publications/designing-deploying-analyzing-educational-field-experiments-workshop/</link>
       <pubDate>Sun, 23 Feb 2020 20:09:26 -0500</pubDate>
-      <guid>http://localhost:1313/publications/designing-deploying-analyzing-educational-field-experiments-workshop/</guid>
-      <description>&lt;hr&gt;&#xA;&lt;br/&gt;&#xA;&lt;p&gt;SIGCSE 2023&lt;br&gt;&#xA;LINK: &lt;a href=&#34;https://dl.acm.org/doi/abs/10.1145/3545947.3569635&#34;&gt;Designing, Deploying, and Analyzing Adaptive Educational Field Experiments&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;&#xA;&lt;p&gt;Digital experiments can be used in CSedu to test hypotheses about interventions and conditions&amp;rsquo; efficacy (or inefficacy). This workshop will discuss and deconstruct the design process and analysis for various experiments conducted in CS1. E.g., experiments testing which explanations students find helpful, which emails get them to start homework early, or which webpages effectively encourage and motivate students. This workshop teaches participants how to conduct, interpret, and analyze adaptive field experiments. These adaptive experiments employ machine learning algorithms to analyze experiments during deployment and dynamically shift the allocation of arms/conditions to give future students better conditions more rapidly. Adaptive field experiments can accelerate scientific discovery by enabling more complex experimental designs and increasing statistical power by phasing conditions in and out more efficiently. The workshop is supported by a 5-year NSF grant to build software tools and a digital community, gathering instructors, domain scientists and methodologists to teach them how to run adaptive experiments. The methodological focus includes understanding: (1) which algorithms are best for adaptive experiments that meet domain scientists&amp;rsquo; needs in specific experimental designs and data sets; (2) which hypothesis tests and Bayesian analyses to choose. Software companies use these innovative methodologies extensively to continuously improve product design. This workshop demonstrates how the same methods can be used in CSedu to improve research rigor and accelerate educational research implementation, ultimately improving student outcomes.&lt;/p&gt;</description>
+      <guid>https://nathanlaundry.com/publications/designing-deploying-analyzing-educational-field-experiments-workshop/</guid>
+      <description>SIGCSE 2023&#xA;LINK: Designing, Deploying, and Analyzing Adaptive Educational Field Experiments&#xA;Abstract Digital experiments can be used in CSedu to test hypotheses about interventions and conditions&amp;rsquo; efficacy (or inefficacy). This workshop will discuss and deconstruct the design process and analysis for various experiments conducted in CS1. E.g., experiments testing which explanations students find helpful, which emails get them to start homework early, or which webpages effectively encourage and motivate students.</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/tech/hugo_site/</link>
+      <link>https://nathanlaundry.com/tech/hugo_site/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tech/hugo_site/</guid>
-      <description>&lt;p&gt;#DRAFT&lt;br&gt;&#xA;goldmark in hugo.toml&lt;br&gt;&#xA;unsafe = true gives me html which is useful for newlines with &lt;br/&gt;&lt;/p&gt;</description>
+      <guid>https://nathanlaundry.com/tech/hugo_site/</guid>
+      <description>#DRAFT&#xA;goldmark in hugo.toml&#xA;unsafe = true gives me html which is useful for newlines with </description>
     </item>
   </channel>
 </rss>
