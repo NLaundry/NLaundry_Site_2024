@@ -49,6 +49,7 @@
 			<div>
 				<p>Hey friends,</p>
 <p>Welcome to the first Life and Lab post! If you&rsquo;re coming from <em>A Little Better</em> on Substack, thank you so much for sticking around for this new direction. I hope you enjoy it as much as I am right now.</p>
+<h3 id="table-of-contents">Table of Contents</h3>
 <!--toc:start-->
 <ul>
 <li><a href="#life">Life</a>
@@ -110,9 +111,11 @@
 <p>If you&rsquo;re not distro hopping on bare metal very often, this may sound less exciting. But, it&rsquo;s always a great idea to keep a few utility distros laying around for recovery. I&rsquo;ll be keeping an LTS Ubuntu ISO, ZFSBootMenu EFI executable, SystemRescue, Windows Live ISO, and Debian handy at the very least.</p>
 <p>Save yourself some time flashing drives. Give Ventoy a try!</p>
 <h4 id="links">Links:</h4>
-<p><a href="https://www.ventoy.net/en/index.html">Ventoy Website</a><br>
-<a href="https://www.system-rescue.org/manual/Overview/">System Rescue bootable linux environment</a><br>
-<a href="https://docs.zfsbootmenu.org/en/v2.3.x/index.html">ZFS Boot Menu with Recover Image</a></p>
+<ul>
+<li><a href="https://www.ventoy.net/en/index.html">Ventoy Website</a></li>
+<li><a href="https://www.system-rescue.org/manual/Overview/">System Rescue bootable linux environment</a></li>
+<li><a href="https://docs.zfsbootmenu.org/en/v2.3.x/index.html">ZFS Boot Menu with Recover Image</a></li>
+</ul>
 <h3 id="here-documents-in-bash-scripts">Here Documents in Bash Scripts</h3>
 <p>The ZFS Boot Menu install process requires a chroot into a newly bootstrapped linux environment. This means that at some point, you&rsquo;re shifting into a new shell environment which poses the question &ldquo;how do I keep executing things in the chroot from this script?&rdquo;. Luckily, there&rsquo;s a trick for this. We can use here-documents &hellip; and in a few cases, as ugly as it is, nested here-documents.</p>
 <p>What&rsquo;s a here-document?</p>
@@ -165,14 +168,16 @@
 </ol>
 <p>It was an interesting project to work on and I learned a lot about bash scripting and the ZFS Boot Menu in the process. I hope this helps you with your own bash scripting adventures! If you give the install script a try, note that it&rsquo;s still a work in progress and may need some tweaks for your system. I am happy to take pull requests if you find some quirks to fix. You&rsquo;ll find the link to the git repo below.</p>
 <h4 id="links-1">Links:</h4>
-<p><a href="https://github.com/NLaundry/zfsbootmenu-autoinstaller">ZFSBootMenu Install script Git Repo</a><br>
-<a href="https://docs.zfsbootmenu.org/en/v2.3.x/">ZFS Boot Menu Docs</a><br>
-<a href="https://openzfs.org/wiki/Main_Page">OpenZFS Docs</a><br>
-<a href="https://www.gnu.org/software/bash/manual/html_node/Redirections.html#Here-Documents">Bash Here Docs documentation</a></p>
+<ul>
+<li><a href="https://github.com/NLaundry/zfsbootmenu-autoinstaller">ZFSBootMenu Install script Git Repo</a></li>
+<li><a href="https://docs.zfsbootmenu.org/en/v2.3.x/">ZFS Boot Menu Docs</a></li>
+<li><a href="https://openzfs.org/wiki/Main_Page">OpenZFS Docs</a></li>
+<li><a href="https://www.gnu.org/software/bash/manual/html_node/Redirections.html#Here-Documents">Bash Here Docs documentation</a></li>
+</ul>
 <h2 id="wrap-up">Wrap up</h2>
 <p>Any way, that&rsquo;s all I&rsquo;ve got this week. I think the next issue will be shorter than this. I got on a bit of a ramble there. Have a great week!</p>
-<p>Cheers,<br>
-Nathan Laundry</p>
+<p>Cheers,</p>
+<p>Nathan Laundry</p>
 
 			</div>
 		</article>
