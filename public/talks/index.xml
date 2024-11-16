@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Talks on Nathan Laundry&#39;s Blog</title>
-    <link>http://localhost:1313/talks/</link>
+    <link>https://nathanlaundry.com/talks/</link>
     <description>Recent content in Talks on Nathan Laundry&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 25 Jan 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/talks/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://nathanlaundry.com/talks/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Increasing Your Surface Area for Serendipity - CUSEC 2023</title>
-      <link>http://localhost:1313/talks/increasing-your-surface-area-for-serendipity/</link>
+      <link>https://nathanlaundry.com/talks/increasing-your-surface-area-for-serendipity/</link>
       <pubDate>Wed, 25 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/talks/increasing-your-surface-area-for-serendipity/</guid>
+      <guid>https://nathanlaundry.com/talks/increasing-your-surface-area-for-serendipity/</guid>
       <description>&lt;hr&gt;&#xA;&lt;br/&gt;&#xA;&#xA;&#xA;    &#xA;    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;&#xA;      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/S7TgqNPUUY?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&#xA;      &gt;&lt;/iframe&gt;&#xA;    &lt;/div&gt;</description>
     </item>
     <item>
       <title>We have IDE at Home -&gt; Vanilla Vim</title>
-      <link>http://localhost:1313/talks/vim-no-plugins/</link>
+      <link>https://nathanlaundry.com/talks/vim-no-plugins/</link>
       <pubDate>Wed, 25 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/talks/vim-no-plugins/</guid>
+      <guid>https://nathanlaundry.com/talks/vim-no-plugins/</guid>
       <description>&lt;hr&gt;&#xA;&lt;br/&gt;&#xA;&gt; The following is a markdown presentation. I use presenterm to render presentations from the terminal.&#xA;&lt;h1 id=&#34;vim-as-a-full-ide-without-plugins&#34;&gt;Vim as a full IDE without Plugins&lt;/h1&gt;&#xA;&lt;p&gt;And you thought it couldn&amp;rsquo;t be done. Weak!&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;assumptions&#34;&gt;Assumptions&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;You know the basics of how to use Vim&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;basic-usability-config&#34;&gt;Basic Usability Config&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;First we need reasonable config&lt;/li&gt;&#xA;&lt;li&gt;this is pretty minimal&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-vimscript&#34; data-lang=&#34;vimscript&#34;&gt; &amp;#34; Set your configuration to some reasonable defaults&#xA; set nocompatible              &#xA;&#xA; &amp;#34; Enable line numbers&#xA; set number&#xA;&#xA; &amp;#34; Enable line indenting&#xA; set autoindent&#xA; set smartindent&#xA;&#xA; &amp;#34; Enable syntax highlighting&#xA; syntax on&#xA;&#xA; &amp;#34; Enable search highlighting&#xA; set hlsearch&#xA;&#xA; &amp;#34; set clipboard=unnamedplus&#xA; set clipboard+=unnamed&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;&#xA;&lt;h2 id=&#34;windows-buffers-splits&#34;&gt;Windows, Buffers, Splits&lt;/h2&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;resizing-and-managing-windows&#34;&gt;Resizing and managing Windows&lt;/h2&gt;&#xA;&lt;p&gt;ctrl-w Then some stuff&lt;/p&gt;</description>
     </item>
   </channel>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<style type=text/css>body{font-family:monospace;}</style>
+	<title>Life and Lab 1: De-Optimizing Goals and ZFS Boot Menu</title>
+	
+	
+	<link rel="stylesheet" href="/css/style.css">
+	
+	
+</head>
+<body>
+	<header>
+    <h1>Nathan Laundry&#39;s Blog</h1>
+
+    <nav>
+        <a href="/"><b>Home</b></a>.
+        
+        
+        <a href="/lifeandlab/"><b>Life and Lab</b></a>.
+        
+        <a href="/shower-thoughts/"><b>Shower Thoughts</b></a>.
+        
+        <a href="/tech/"><b>Tech</b></a>.
+        
+        <a href="/poetry/"><b>Poetry</b></a>.
+        
+        <a href="/talks/"><b>Talks</b></a>.
+        
+        <a href="/publications/"><b>Publications</b></a>.
+        
+    </nav>
+
+    <br/>
+
+	
+</header>
+
+	
+	<main>
+		<article>
+			<h1>Life and Lab 1: De-Optimizing Goals and ZFS Boot Menu</h1>
+			<b><time>08.11.2024 11:55</time></b>
+		       
+
+			<div>
+				<p>Hey friends,</p>
+<p>Welcome to the first Life and Lab post! If you&rsquo;re coming from <em>A Little Better</em> on Substack, thank you so much for sticking around for this new direction. I hope you enjoy it as much as I am right now.</p>
+<!--toc:start-->
+<ul>
+<li><a href="#life">Life</a>
+<ul>
+<li><a href="#progress-isnt-always-the-goal">Progress isn&rsquo;t always the goal</a></li>
+<li><a href="#the-benefits-of-not-tracking-your-progress">The Benefits of Not Tracking your Progress</a></li>
+<li><a href="#guiding-questions-and-actionable-steps">Guiding Questions and Actionable Steps</a></li>
+</ul>
+</li>
+<li><a href="#lab">Lab</a>
+<ul>
+<li><a href="#ventoy-one-drive-to-rule-them-all">Ventoy - One Drive to Rule Them All</a>
+<ul>
+<li><a href="#links">Links:</a></li>
+</ul>
+</li>
+<li><a href="#here-documents-in-bash-scripts">Here Documents in Bash Scripts</a>
+<ul>
+<li><a href="#zfs-boot-menu-install-script-example">ZFS Boot Menu Install Script Example</a></li>
+<li><a href="#links">Links:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#wrap-up">Wrap up</a></li>
+</ul>
+<!--toc:end-->
+<hr>
+<p>Over the past few weeks I&rsquo;ve been working on two things. In &ldquo;life&rdquo;, I&rsquo;ve been coming to terms with a slower pace of progress in my projects. I have a tendency to get excited about new projects, overload myself with tasks, then burnout FAST. So, in the <em>life</em> section we&rsquo;ll talk about how I&rsquo;ve been trying to de-optimize and de-projectify aspects of my life to lower these tendencies and reduce burnout. This is something I&rsquo;ve been working on for a few weeks now and it&rsquo;s been working really well for me so far.</p>
+<p>In the <em>Lab</em>, I&rsquo;ve been working on migrating my 3 primary machines to a Debian with root on ZFS setup - specifically to take advantage of <a href="https://docs.zfsbootmenu.org/en/v2.3.x/">ZFSBootMenu</a>. While the benefits are fantastic (and outlined in my recent <a href="https://www.youtube.com/watch?v=FRo65qnK_70">youtube video: ZFSBootMenu - I put that stuff on Everything</a> ) the install process for zfs boot menu is arduous and error prone. Since I&rsquo;ve already covered most of this in my Youtube video and <a href="https://nathanlaundry.com/tech/zfsbootmenu/">blog post</a>, I&rsquo;ll instead talk about some interesting tidbits I ran into while debugging and fixing things. These are: <a href="https://www.ventoy.net/en/index.html">Ventoy for creating bootable USB drives</a>, and <a href="https://www.gnu.org/software/bash/manual/bash.html#Here-Documents">Bash&rsquo;s here-documents</a>, which I used to continue script execution within the chroot in the <a href="https://github.com/NLaundry/zfsbootmenu-autoinstaller">ZFSBootMenu install script</a>.</p>
+<h2 id="life">Life</h2>
+<hr>
+<p>As I wrote about in a past <em>A Little Better</em> post <em>Headspace Management</em>, I think you can only hold 2 to 3 major projects in your head at any given time. These are my &ldquo;focal&rdquo; projects. Right now, most of these are work related: creating this content, doing my PhD research, and learning more about systems administration/homelabbing.</p>
+<p>For these big goals, I manage them as projects. I set outcome-oriented goals like &ldquo;write up a study and publish a paper on this by the end of the year&rdquo; or &ldquo;finish the Linux Foundation Certified Systems Administrator certification by the end of the year.&rdquo; I also track my habits and monitor my inputs so I&rsquo;m consistently making progress. It&rsquo;s both tiresome and energizing but it occupies a lot of headspace. Though, because they&rsquo;re my main projects, I&rsquo;m happy to let them occupy my headspace.</p>
+<h3 id="progress-isnt-always-the-goal">Progress isn&rsquo;t always the goal</h3>
+<p>The problem is, this kind of goal-setting is a deeply engrained habit for me; so much so, that I catch myself creating projects out of every day things - things I don&rsquo;t have headspace to &ldquo;project-ify&rdquo;. Even in gaming, which I do to relax and socialize, I think about how I can improve. I think &ldquo;wouldn&rsquo;t it be great if I play a ranked game once per day and review it. Then I could really hit diamond or masters!&rdquo; But, this takes my leisure and makes it goal-pursuit time. Now, instead of achieving the goal of socializing and relaxing, I&rsquo;m failing at this secret goal that snuck into my head - improving my gameplay.</p>
+<p>Nowhere has this been more poignant than in my personal health. Social media is full of advice on how to make progress in strength, flexibility, cardio, whatever health goals you may aspire to. And it was useful to me for a time (shout out Jeff Nippard). But these days I just don&rsquo;t have the headspace to make my health a project - it&rsquo;s more so in a sort of maintenance mode.</p>
+<p>Still, my mindset defaults to progress related goals. I found, as I ran or hiked, a growing disappointment when my cardio didn&rsquo;t improve week over week. My heart rate monitor would go off telling me to walk for a bit and I&rsquo;d think &ldquo;God, that&rsquo;s pathetic. I think my cardio is even worse than last week!&rdquo; &hellip; I was berating myself for not hitting goals that I didn&rsquo;t even intend to set!</p>
+<p>That is until a few weeks ago when serendipity struck.</p>
+<p>One day my Apple watch was dead and it was time to run. I almost chose not to run at all, but thought that would be a pretty stupid reason not to get outside on such a beautiful day. I ran without it and it was bliss.</p>
+<p>No beeping, no lil box telling me I&rsquo;d failed. Just sunshine and a little cardio - whether it was running or walking I was happy to be exercising. It felt good to get out of my head and out into the fresh air. I had no progress to track because there was no data, and so I had no idea if I&rsquo;d ran &ldquo;better&rdquo; than last week. I just knew that I ran and that it was good that I had. I was proud and happy instead of feeling like I&rsquo;d failed to make progress.</p>
+<p>My apple watch died and I stumbled into a process-oriented mindset.</p>
+<p>I had so much fun running like this that I decided to stop tracking progress in other aspects of my life too. I stopped counting how many reps I do during my morning calisthenics - I just go until my muscles go &ldquo;yeah, we&rsquo;re done, bro.&rdquo; It&rsquo;s not like counting got me to do more reps any way.</p>
+<h3 id="the-benefits-of-not-tracking-your-progress">The Benefits of Not Tracking your Progress</h3>
+<p>It&rsquo;s been a few weeks of de-projectifying my health and I&rsquo;ve found myself exercising more and in a greater variety of ways. For example, I used to avoid taking the stairs because I&rsquo;d get out of breath and then think &ldquo;God, my cardio sucks. I&rsquo;m not making any progress!&rdquo; which of course discouraged me from taking the stairs, and helped me about as much as a calculator at an English exam. Without the pressure of hitting some arbitrary health goal, I&rsquo;m happy whenever I&rsquo;m out of breath - it&rsquo;s a sign I worked my heart a little. So, I sneak little moments of exercise - a short jog while out on a walk, taking the stairs, curling the groceries - and find a little pride in it instead of disappointment.</p>
+<p>I&rsquo;ve also completely gotten out of the gym, which I never liked anyway, and committed to morning calisthenics. They&rsquo;re more fun, easier for me to fit into my schedule, and I don&rsquo;t feel like I&rsquo;m competing with social media&rsquo;s army of gym bros. I&rsquo;m more consistent than ever, happier, and less concerned about building muscle. I&rsquo;m just staying healthy.</p>
+<p>I think by not tracking progress, I&rsquo;ve opened myself up to two things. First, I can just be proud of myself for doing exercise regardless of how &ldquo;good&rdquo; it was, which makes it more fun and helps me stay consistent. Second, I listen to my body more. There&rsquo;s no external data like the number of reps or length/speed of a run, so I pay attention to how I&rsquo;m feeling and push myself to the extent that I can. It makes my exercise a sort of mindfulness that I&rsquo;ve really come to enjoy.</p>
+<h3 id="guiding-questions-and-actionable-steps">Guiding Questions and Actionable Steps</h3>
+<ol>
+<li>Are you turning anything into a project that you don&rsquo;t actually want to? If so, Is it causing you pointless stress?</li>
+<li>Is there something you&rsquo;d like to try de-optimizing and switching to a process-orientation?</li>
+</ol>
+<p>I think a lot of people, like me, might benefit from expanding what they consider exercise and removing the pressure of &ldquo;making progress&rdquo;.</p>
+<h2 id="lab">Lab</h2>
+<hr>
+<p>Whenever I&rsquo;m setting up new machines two thoughts always cross my mind: &ldquo;where did I put that usb with the live installer?&rdquo; and &ldquo;I wonder if I could write a bash script to do this for me.&rdquo; This time around I decided to try to solve both problems &hellip; it was an ambitious weekend.</p>
+<h3 id="ventoy---one-drive-to-rule-them-all">Ventoy - One Drive to Rule Them All</h3>
+<p>Usually, in the search for &ldquo;the right&rdquo; USB drive, I stumble across a dozen other USBs all with different distros I might want to keep around. Ventoy solves this problem. Instead of having to format each drive with a single ISO, Ventoy turns a single drive into a boot loader that can have any number of ISOs or EFI executables. Drag and drop a few favourites, even windows (more on that when I release my microwin setup tutorial), and next time you boot from it, you&rsquo;ll have your pick of the litter.</p>
+<p>If you&rsquo;re not distro hopping on bare metal very often, this may sound less exciting. But, it&rsquo;s always a great idea to keep a few utility distros laying around for recovery. I&rsquo;ll be keeping an LTS Ubuntu ISO, ZFSBootMenu EFI executable, SystemRescue, Windows Live ISO, and Debian handy at the very least.</p>
+<p>Save yourself some time flashing drives. Give Ventoy a try!</p>
+<h4 id="links">Links:</h4>
+<p><a href="https://www.ventoy.net/en/index.html">Ventoy Website</a><br>
+<a href="https://www.system-rescue.org/manual/Overview/">System Rescue bootable linux environment</a><br>
+<a href="https://docs.zfsbootmenu.org/en/v2.3.x/index.html">ZFS Boot Menu with Recover Image</a></p>
+<h3 id="here-documents-in-bash-scripts">Here Documents in Bash Scripts</h3>
+<p>The ZFS Boot Menu install process requires a chroot into a newly bootstrapped linux environment. This means that at some point, you&rsquo;re shifting into a new shell environment which poses the question &ldquo;how do I keep executing things in the chroot from this script?&rdquo;. Luckily, there&rsquo;s a trick for this. We can use here-documents &hellip; and in a few cases, as ugly as it is, nested here-documents.</p>
+<p>What&rsquo;s a here-document?</p>
+<p><strong>Here-documents</strong> in bash allow you to create multi-line strings within a script, often used for injecting configuration or command sequences in a single, readable block. They’re especially helpful when scripting setups or creating configuration files dynamically. The syntax looks like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>command <span style="color:#e6db74">&lt;&lt;EOF
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"># Lines of text or commands. Example:
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">EOF</span>
+</span></span></code></pre></div><p>A common use would be to cat something into a file. For example, to set the hostname in a script, you could use a here-document like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cat &gt; /etc/hostname <span style="color:#e6db74">&lt;&lt;-EOF
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">$HOSTNAME
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">EOF</span>
+</span></span></code></pre></div><p>You&rsquo;ll note that we can use variables in the here-document and they&rsquo;ll get interpolated just like throughout the rest of your script. Pretty handy!</p>
+<p>Anything between <code>&lt;&lt;EOF</code> and <code>EOF</code> will be interpreted as input to the specified command. The delimiter <code>EOF</code> can be any word, but it’s conventionally <code>EOF</code> or <code>EOL</code>.</p>
+<h4 id="zfs-boot-menu-install-script-example">ZFS Boot Menu Install Script Example</h4>
+<p>In my ZFSBootMenu setup, I needed to use a here-document to pass and execute an entire shell script within a <code>chroot</code> environment. This let me run multiple commands and set up configurations in a clean, organized way. However, some parts required <strong>nesting here-documents</strong> to dynamically generate configuration files within the chroot, which introduced some syntactic quirks.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>enter_chroot<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>	echo <span style="color:#e6db74">&#34;Entering chroot environment to configure system...&#34;</span>
+</span></span><span style="display:flex;"><span>	chroot $MOUNT_POINT /bin/bash <span style="color:#e6db74">&lt;&lt;-EOF
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">	# Set hostname
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">	echo &#34;$HOSTNAME&#34; &gt; /etc/hostname
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">	echo &#34;127.0.1.1    $HOSTNAME&#34; &gt;&gt; /etc/hosts
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">	
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">	# Configure apt sources
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">		cat &gt; /etc/apt/sources.list &lt;&lt;-EOF</span>_APT
+</span></span><span style="display:flex;"><span>		deb http://deb.debian.org/debian bookworm main contrib non-free-firmware
+</span></span><span style="display:flex;"><span>		deb-src http://deb.debian.org/debian bookworm main contrib non-free-firmware
+</span></span><span style="display:flex;"><span>		
+</span></span><span style="display:flex;"><span>		deb http://deb.debian.org/debian-security bookworm-security main contrib non-free-firmware
+</span></span><span style="display:flex;"><span>		deb-src http://deb.debian.org/debian-security/ bookworm-security main contrib non-free-firmware
+</span></span><span style="display:flex;"><span>		
+</span></span><span style="display:flex;"><span>		deb http://deb.debian.org/debian bookworm-updates main contrib non-free-firmware
+</span></span><span style="display:flex;"><span>		deb-src http://deb.debian.org/debian bookworm-updates main contrib non-free-firmware
+</span></span><span style="display:flex;"><span>		
+</span></span><span style="display:flex;"><span>		deb http://deb.debian.org/debian bookworm-backports main contrib non-free-firmware
+</span></span><span style="display:flex;"><span>		deb-src http://deb.debian.org/debian bookworm-backports main contrib non-free-firmware
+</span></span><span style="display:flex;"><span>		EOF_APT
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># ...</span>
+</span></span><span style="display:flex;"><span>    EOF
+</span></span></code></pre></div><p>Here’s a closer look at what’s happening:</p>
+<ol>
+<li>
+<p><strong>Main Here-Document</strong>: The outer <code>&lt;&lt;-EOF</code> here-document is used to feed multiple commands into <code>chroot</code>, allowing the script to execute these commands as though they’re running directly in the chroot environment. The dash <code>-</code> after <code>&lt;&lt;</code> (<code>&lt;&lt;-EOF</code>) is important here—it lets us indent commands using tabs without affecting execution. It must be an actual tab character though, like a makefile, so be careful if your editor is converting tabs to spaces.</p>
+</li>
+<li>
+<p><strong>Nested Here-Document</strong>: Inside the outer here-document, I used another here-document (<code>&lt;&lt;-EOF_APT</code>) to create the <code>sources.list</code> file dynamically. By nesting this here-document, I could inject all the required apt sources at once, without needing multiple <code>echo</code> commands, which would be a pain in the a**.</p>
+</li>
+<li>
+<p><strong>Indentation with Tabs</strong>: For this setup to work correctly, <strong>tabs must be used for indentation</strong>. When using dash-prefixed here-documents (<code>&lt;&lt;-</code>), leading tabs are ignored, making it possible to align code blocks nicely. Using spaces, however, breaks this behavior, causing bash to interpret the indentation as part of the content, which can lead to syntax errors or formatting issues.</p>
+</li>
+</ol>
+<p>It was an interesting project to work on and I learned a lot about bash scripting and the ZFS Boot Menu in the process. I hope this helps you with your own bash scripting adventures! If you give the install script a try, note that it&rsquo;s still a work in progress and may need some tweaks for your system. I am happy to take pull requests if you find some quirks to fix. You&rsquo;ll find the link to the git repo below.</p>
+<h4 id="links-1">Links:</h4>
+<p><a href="https://github.com/NLaundry/zfsbootmenu-autoinstaller">ZFSBootMenu Install script Git Repo</a><br>
+<a href="https://docs.zfsbootmenu.org/en/v2.3.x/">ZFS Boot Menu Docs</a><br>
+<a href="https://openzfs.org/wiki/Main_Page">OpenZFS Docs</a><br>
+<a href="https://www.gnu.org/software/bash/manual/html_node/Redirections.html#Here-Documents">Bash Here Docs documentation</a></p>
+<h2 id="wrap-up">Wrap up</h2>
+<p>Any way, that&rsquo;s all I&rsquo;ve got this week. I think the next issue will be shorter than this. I got on a bit of a ramble there. Have a great week!</p>
+<p>Cheers,<br>
+Nathan Laundry</p>
+
+			</div>
+		</article>
+	</main>
+<aside>
+	<div>
+		<div>
+			<h3>LATEST POSTS</h3>
+		</div>
+		<div>
+			<ul>
+				
+				<li><a href="/tech/zfsbootmenu/">ZFS Boot Menu - I put that sh\*t on everything (and how I do it)</a></li>
+				
+				<li><a href="/lifeandlab/lifeandlab1/">Life and Lab 1: De-Optimizing Goals and ZFS Boot Menu</a></li>
+				
+				<li><a href="/shower-thoughts/kobo/">Why the Kobo Rocks</a></li>
+				
+				<li><a href="/shower-thoughts/the-point-of-dance/">The Point of Dance</a></li>
+				
+				<li><a href="/tech/execute_sh_commands_from_vim/">Execute shell commands from inside Vim</a></li>
+				
+			</ul>
+		</div>
+	</div>
+</aside>
+
+
+	<footer>
+    <h3>Subscribe to my Newsletter - Life and Lab</h3>
+    <iframe src="https://nathanlaundry.substack.com/embed" width="480" height="320"
+        style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+
+    <p>&copy; 2024 <a href="https://nathanlaundry.com/"><b>Nathan Laundry&#39;s Blog</b></a>.
+        <a href="https://github.com/NLaundry"><b>Github</b></a>.
+        <a href="https://example.com/@user"><b>Mastodon</b></a>.
+        <a href="https://example.substack.com"><b>Substack</b></a>.
+    </p>
+</footer>
+
+</body>
+</html>
