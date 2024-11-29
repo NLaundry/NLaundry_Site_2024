@@ -4,7 +4,7 @@
     <title>Learning on Nathan Laundry&#39;s Blog</title>
     <link>https://nathanlaundry.com/tags/learning/</link>
     <description>Recent content in Learning on Nathan Laundry&#39;s Blog</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 25 Mar 2023 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://nathanlaundry.com/tags/learning/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +13,7 @@
       <link>https://nathanlaundry.com/shower-thoughts/prime-then-immerse/</link>
       <pubDate>Sat, 25 Mar 2023 00:00:00 +0000</pubDate>
       <guid>https://nathanlaundry.com/shower-thoughts/prime-then-immerse/</guid>
-      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;💡If you want to learn French, move to France.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;-how-i-learned-terminal-driven-linux&#34;&gt;🧑‍💻 How I Learned Terminal Driven Linux&lt;/h2&gt;&#xA;&lt;p&gt;This is my mantra and it all started in 2016, my first year as a Computer Science Undergrad at the University of Guelph. I had been looped in by SOCIS — the Society of Computing and Information Sciences — which sounds a lot more official than it really was. At the time, it was a small community of fellow geeks, nerds, and tech enthusiasts (it’s grown to be much larger than that these days) and the cool thing was Linux. For the uninitiated, Linux is an operating system like Windows or MacOS, but what makes it stand out is it’s completely free, and it’s developed, and used primarily by programmers. In 2016 I decided I was going to learn Linux.&lt;/p&gt;</description>
+      <description>💡If you want to learn French, move to France.&#xA;🧑‍💻 How I Learned Terminal Driven Linux This is my mantra and it all started in 2016, my first year as a Computer Science Undergrad at the University of Guelph. I had been looped in by SOCIS — the Society of Computing and Information Sciences — which sounds a lot more official than it really was. At the time, it was a small community of fellow geeks, nerds, and tech enthusiasts (it’s grown to be much larger than that these days) and the cool thing was Linux.</description>
     </item>
   </channel>
 </rss>
