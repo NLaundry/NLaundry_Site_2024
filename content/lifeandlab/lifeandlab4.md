@@ -1,83 +1,81 @@
 +++
-title = 'Lifeandlab4'
+title = 'Lifeandlab4: Why I started writing about Homelabbing'
 date = 2024-11-28T08:42:46-05:00
-draft = true
+draft = false
 +++
 
-## Lab
-
-I'm planning out my next youtube video which will be a part 2, to the DIY NAS series I'm working on. The ZFSBootMenu video I released a few weeks ago (#TODO: Link) was the unofficial part 1, since I'm using that on My NAS as well as other devices to eventually backup the root filesystems of all the machines on the network. But, that's a cooler problem for a later date. For this next video, I'll be using Ansible, ZFS, and tailscale, to setup this Debian box as proper, usable, network attached storage, with tailscale and zfs for creating an offshore backup.
-
-For my videos I like to summarize the key value of the video in 4 points
-1. What's the context/story - what's the problem and why is it worth solving?
-2. What's the solution and why is it the right solution for me in this context? what other solutions could work
-3. What's the main joke (keeping things light and humorous is part of my brand and how I am as a person)
-4. What's the moral of the story - I like to hook this into the joke and kinda flip the joke  on its head
-
-For this video, for example, it could be
-
-1. Context -> I'm getting into content creation (obviously) and want to setup Network attached storage in a data-safe, reliable, repeatable way. I have multiple computers that could edit: workstation + macbook pro. The workstation dualboots windows and linux, and the mac is obviously macos. 
-2. Solution -> to achieve data-safety and reliability, we're using zfs functionality (scrub) + following the 3-2-1 rule with dad's offsite NAS. for reproducibility we're using Ansible so if we ever wanted to register a new device to the network (say I hired an editor) they could gain access to the NAS easily and if something catastrophic happens with the NAS or I need to upgrade, I can reconfigure it using ZFSBootMenu auto installer + Ansible. 
-3. Joke -> Taking 10 hours to automate a 2 hour task. I could just as easily set all this up manually without Ansible.
-4. Moral -> Buuut, I'm doing two things: learning cool technologies, AND, more critically, I think there's a big difference in the value of 10 hours during prep before I rely on these tools, and 2 hours during a crisis. If I were in a professional environment, I'd happily spend the extra time making my steps repeatable and robust so that if a crisis comes up and stuff goes down, we can spin up a replacement more quickly and easily. That crisis time is way more costly than the 10 hours of prep prior to people being reliant on the tools. The same goes for homelab though. If stuff goes down, you don't want to spend your saturday trying to remember how to setup your NAS because you didn't write anything down. You'll be thanking yourself for taking the extra time.
+Hey Friends,
 
 
-## Lab - Automating DIY NAS Deployment with Ansible, ZFS, and Tailscale  
+For a long time, I thought that a career in tech meant software development and probably webdev or ML at that. This is comically short sighted especially, given that my father works in IT and that's how I became interested in tech in the first place. Still, there was something about my undergraduate experience that led me to believe, you either became a software developer, or you went into academia. Having despised my first internship as a junior full stack developer, and having always loved teaching, I decided Academia was the way for me.  
 
-A few weeks ago, I released a video on installing Debian with **ZFSBootMenu**, showing how I set up my NAS with root on ZFS. (#TODO: Link) While that laid the groundwork, it didn’t make my NAS particularly *useful*. So now it’s time for **Part 2**: turning this box into a proper, network-attached storage system that’s data-safe, reliable, and easy to replicate. 
 
-As a new video maker person (content creator feels like such an ugly phrase), I'm experimenting with different editing workflows on Mac, Linux, and Windows. So, setting up reliable Network Attached Storage for my videos makes it way easier to ferry files from one machine to the next as I edit on different devices. I'm also a lot less concerned about losing my files. 
+### Reconsidering Academia  
 
-If this goes well, I'd love to start consulting on homelabs for content creators, so reproducibility is key.
+About 3 years, one master's degree, and some time as a PhD student later, I don't think I want to be a researcher but I still want to teach.  
 
-Anyway, here’s the plan: I’ll use **Ansible** to automate the installation/setup process, **ZFS** to manage snapshots, pruning, backups, and scrubs, and **Tailscale** to connect my NAS to an offsite backup at my dad’s house.
+I thought it was doomed - that the only way to teach was in academia and so I had to make a choice: stick it out as a researcher so that I can teach, or give up on teaching and go into industry. That is, I thought that right up until I started homelabbing.  
 
-Might I be *spending 10 hours to automate a task that would take me 2?* Could be. But, my hope is that these ten hours of prep will save me headaches when something inevitably breaks or I have to migrate to a new host. Crisis time is always more expensive than prep time - especially when crisis time happens on Saturday morning and I'm in no mood to deal with nonsense. And besides, I've been meaning to learn Ansible for 6 months now!
 
----
+### Discovering My Love for Systems  
 
-### The Plan  
+My favourite parts about tech have always been tinkering with systems. I love configuration, optimizing environments to suit me perfectly, and understanding the backbone of things. Looking back, it's obvious that I should've been diving into devops, systems administration, cloud engineering, and the like long ago. Even better, there's tons of teaching opportunities both online, and in-person via certifications and continued learning.  
 
-This project isn’t just about building storage—it’s about making that storage **data-safe** and **reliable**, as well as making the configuration **repeatable** in a crisis or if a new host joins the network. So, here's the plan:  
+For me, what started out as a mini-pc with pi-hole installed on it, is becoming the career I'd like to pursue. But, it took a reframing of what "career in tech" means and what it means to teach, for me to get here.  
 
-1. **Data integrity and backups with ZFS**:  
-   - **Scrubs** to ensure data integrity.  
-   - **Snapshots** for quick, space-efficient backups.  
-   - **Send/Receive** to replicate data to an offsite NAS.  
 
-2. **Remote Access and Backups with Tailscale**:  
-   - Tailscale creates a secure, private network using **WireGuard**, making it easy to connect my NAS to an offsite backup (in this case, my dad’s almost identical NAS).
-   - I can also still access, albeit slowly, the NAS from anywhere in the world without making it publicly accessible.
+### The Narrow View of Tech Careers  
 
-3. **Reproducibility with Ansible**:  
-   - Ansible is a powerful automation tool that lets you define infrastructure as code. Think of it as a script that sets up your system exactly how you want it—every time.  
-   - For this project, I’ll use Ansible to:  
-     - Install and configure **SMB** for cross-platform file sharing.  
-     - Set up **Tailscale** for secure, remote access.  
-     - Automate client configurations so any new device (say, an editor’s laptop) can connect to the NAS without manual setup.  
-   - I'll set up dad's NAS with the same Ansible playbook too. So we're already saving a little time with automation
+Now, as a teaching assistant, I've seen lots of students fall into the same narrow view of a tech career that I did during my undergraduate years - webdev or ML, vs Academia. This makes the current hiring landscape even more harsh. Students are funneling themselves into the same positions - junior front/back/fullstack web dev roles - exacerbating the scarcity of these jobs and putting students through more stress.  
+
+
+### Exploring Tech Holistically  
+
+Of course, you can't fix the challenge of finding your first job, nor the issue of the current hiring environment. But, you can branch out and compete in smaller niches giving yourself a better shot - hopefully also having more fun along the way.  
+
+That's the point of Life and Lab - this newsletter and the youtube videos - helping students and early career techy folks, explore tech more holistically by sharing my homelab adventures. Nothing has been better for rekindling my love of tech than spinning up my homelab to tinker with industry DevOps, sysadmin, and cloud engineering, technologies. I want to share that with other people, especially people who know they want to "be in tech" but, maybe, aren't sure how yet.  
 
 
 
+## Why both Life and Lab?
 
----
+The Lab part is easy. Obviously, technical skills are important and, if you're like me, really fun to build. But, why do all the fluffy *life* stuff too?
 
-### Why Bother Automating?  
+Two reasons: learning tough skills is uncomfortable, and building a career is about more than just technical ability.
 
-Could I set all this up manually? Sure. It would take me a couple of hours, tops. But here’s the thing:  
-1. **Preparation vs. Crisis**: Those ten hours of automation will save me exponentially more time when things go wrong—because they *will* go wrong. Whether it’s a hardware failure or an OS upgrade, I’ll be able to rebuild my system with minimal effort.  
-2. **Scalability**: If I add new devices or need to migrate to a different machine, Ansible makes it painless.  
-3. **Learning Opportunity**: Ansible is a key tool in system administration, and this project gives me a chance to practice and learn.  
+### Resilience in Learning
 
-So yes, I’m spending ten hours to automate a two-hour task—but I’m also future-proofing my setup and leveling up my skills.  
+Learning hard things takes time, and it’s easy to burn out, even when you love what you’re doing. If there’s one thing I’ve learned throughout my master’s in computer science education, my PhD research on behavior change, it’s that metaskills and mindset are so important.
 
----
+It can sound corny, I know it did (and sometimes still does) to me, but taking a growth mindset, reframing failure as learning, being open to exploration, and habits like journaling are what make it possible to tackle challenging skills without losing steam.
 
-### Wrapping Up  
+### Finding Joy
 
-I’m still in the planning phase for this project, but I’m excited to see how it comes together. Automating my NAS with **Ansible**, **ZFS**, and **Tailscale** isn’t just about building storage—it’s about building *better systems*.  
+But it’s not just about productivity — it’s also about joy. I got into tech because I love it. I’m sure a lot of you did too. But so many times, I’ve seen my own mindset ruin that joy for me. Bad habits and thought patterns have introduced so much pointless stress, anger, and frustration — even in my hobby projects where there's nothing at stake!
 
-The moral? Preparation time is always cheaper than crisis time. Whether you’re in a professional environment or tinkering in a homelab, investing a little extra time up front pays off when something goes wrong. And trust me, if you’re like me, you don’t want to spend your Saturday night trying to remember how you set up your NAS.  
+That’s why the Life section of Life and Lab matters. Because learning can be slow, uncomfortable, and disappointing but it can also be incredibly exciting and fun! Both feelings are inevitable, still, metaksills and mindset shifts can help ease the discomfort and help us find more of those exciting joyous moments to keep us going. 
 
-Cheers,  
-Nathan Laundry  
+It is a skill knowing how to remind yourself to have fun, when to take a break, and when to push through a little more. One that I hope to foster in myself, and share with you along the way.
+
+
+## Conclusion
+
+Homelabbing, and sharing about my learning online with you all, has given me an opportunity to teach while I learn, and to explore tech in a totally different way than I expected when I was in undergrad. I hope that both the technical and the metaskills side of things help you as much as it's helping me!
+
+Anyway, if you're interested in homelab, infrastructure, and some of the mindset stuff I write about, here's some more of my content you might like:
+
+**Lab: **
+
+1. [How to setup ZFSBootMenu](https://youtu.be/FRo65qnK_70) 
+2. [Tiling window management on Windows 11](https://youtu.be/dcYCbILDmnY) 
+
+**Life: **
+
+1. [Headspace Management: sustainable creative output](https://nathanlaundry.substack.com/p/headspace-management)
+2. [Finding Meaning in your Work](https://nathanlaundry.substack.com/p/finding-doses-of-meaning-in-your)
+
+
+Cheers,
+
+Nathan Laundry
+
